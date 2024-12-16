@@ -24,16 +24,16 @@ import Button from '../components/Button.astro';
     <a href="/">forside</a>
 
     <section>
-    <div class="md:grid md:grid-cols-2 mx-xs">
-          <div class="mb-m flex flex-col gap-sm">
+    <div class="md:grid md:grid-cols-2 ">
+          <div class="mb-m flex flex-col gap-sm mx-xs md:mx-2xl">
                 <h2 class="text-red-800">Nysgerrig på din <br> nye bedste ven?</h2>
                 <h4 class="text-red-700">Få mere information <br> om indholdet i pakken</h4>
           </div>
-          <Image class="hidden md:block" src={mockup} alt="mockup af pakke"/>
+          <Image class="hidden w-screen md:block" src={mockup} alt="mockup af pakke"/>
     </div>
 
-    <div class="grid grid-rows-3 gap-ml md:grid-cols-3 mx-xs">
-        <div class="flex flex-row md:flex-col ">
+    <div class="grid grid-rows-3 gap-ml md:grid-cols-3 md:grid-row-1 mx-xs md:mt-[-400px] md:mx-2xl pb-3xl">
+        <div class="flex flex-row md:flex-col gap-sm">
             <Image class="h-[200px] w-auto md:w-full md:h-full" src={bind} alt="bind"/>
             <div>
                 <h4 class="text-blue-900">Pålidelige bind</h4>
@@ -41,7 +41,7 @@ import Button from '../components/Button.astro';
             </div>
         </div>
 
-        <div class="flex flex-row md:flex-col ">
+        <div class="flex flex-row md:flex-col gap-sm md:row-start-2 md:row-end-3 md:col-start-2 md:col-end-3 md:mt-[-200px]">
             <Image class="h-[200px] order-last md:order-first w-auto md:w-full  md:h-full" src={bind} alt="bind"/>
             <div>
                 <h4 class="text-blue-900">Komfortable tamponer</h4>
@@ -49,12 +49,16 @@ import Button from '../components/Button.astro';
             </div>
         </div>
 
-        <div class="flex flex-row md:flex-col">
+        <div class="flex flex-row md:flex-col gap-sm md:row-start-3 md:row-end-4 md:col-start-3 md:col-end-4 md:mt-[-200px]">
             <Image class="h-[200px] w-auto md:w-full md:h-full" src={bind} alt="bind"/>
             <div>
                 <h4 class="text-blue-900">Self-care goodies</h4>
                 <p>Bløde, sikre og altid der, når du har brug for dem. Vores bind er designet til at give dig ro i sindet – uanset om du chiller på sofaen eller løber til bussen. Komfort møder pålidelighed.</p>
             </div>
+        </div>
+        <div class=" flex flex-col md:row-start-3 md:row-end-4 md:col-start-1 md:col-end-3 md:mt-[300px] ">
+            <h5 class="text-blue-900 pb-xs pl-m">Lyder det som noget for dig?</h5>
+            <Button>Få abonnement</Button>
         </div>
     </div>
 
@@ -63,7 +67,7 @@ import Button from '../components/Button.astro';
    <section>
 <Wave></Wave>
         <section class="md:grid md:grid-cols-2 bg-red-50/60">
-            <div class=" grid grid-cols-2 mx-xs">
+            <div class=" grid grid-cols-2 mx-xs ">
                 <div class="img-box img-fluid col-span-2">
                     <Image class="image1 " src={info1} alt="info"/>
                     <Image class="image2 " src={info1hover} alt="info hover"/>
@@ -91,6 +95,7 @@ import Button from '../components/Button.astro';
                     <Image class="image2 " src={info6hover} alt="info hover"/>
                 </div>
             </div>
+         
         </section>
     <div class="rotate-180"><Wave></Wave></div>
    </section>
@@ -99,12 +104,12 @@ import Button from '../components/Button.astro';
 
     <section class="flex flex-col gap-ml items-center mt-ml mb-xl">
         <h3 class="text-red-800 text-center">Få en menstruationspakke, <br> som tager sig af dig</h3>
-        <div class="text-red-950 text-center">
+        <div class="text-red-950 text-center flex flex-col gap-s">
             <p>Din cyklus, din komfort.</p>
             <p>Med et abonnement hos os, er der ingen stress, kun self-care. <br>
                 Tilmeld dig Period. abonnementet i dag, og mærk forskellen!</p>
         </div>
-        <Button variant="primary" size="large">Abonnér</Button>
+        <Button variant="primary" size="medium">Abonnér</Button>
     </section>
 
 </MainLayout>
