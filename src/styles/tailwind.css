@@ -1,9 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    /* p{
-        @apply text-body;
-    } */
+@layer base {
+  h1 {
+    font-family: "Magilio";
+  }
+
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Sansita";
+  }
+
+  h6,
+  p {
+    font-family: "Gabarito";
+  }
+
+  h1 {
+    @apply text-xlargeMobile md:text-xlargeDesk font-extrabold uppercase;
+  }
+  h2 {
+    @apply text-largeMobile md:text-largeDesk font-bold;
+  }
+  h3 {
+    @apply text-mediumMobile md:text-mediumDesk;
+  }
+  h4 {
+    @apply text-smallDesk md:text-smallDesk;
+  }
+  h5 {
+    @apply text-baseMobile md:text-baseDesk font-bold;
+  }
+  h6 {
+    @apply text-bodyMobile md:text-bodyDesk;
+  }
+  p {
+    @apply text-konsultativMobile md:text-konsultativDesk;
+    line-height: 22.7px;
+  }
+}
+
+@media (min-width: 769px) {
+  /* General classnames */
+  .pc-only {
+    display: block;
+  }
+
+  .pc-hide {
+    display: none;
+  }
 }
