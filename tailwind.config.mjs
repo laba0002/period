@@ -61,10 +61,10 @@ export default {
     },
 
     /* Tilføj fonte herunder - husk også at tilføje webfonte i head-sektionen i MainLayout  */
-    // fontFamily: {
-    //     sans: ['Prompt', 'sans-serif'],
-    //     'display': ['Courier', 'monospace'], /* eksempel på ekstra font */
-    // },
+    fontFamily: {
+      sans: ["Gabarito", "serif"],
+      display: ["Courier", "monospace"] /* eksempel på ekstra font */,
+    },
 
     /* Tilføj dit typografiske hierarki herunder */
     // fontSize: {
