@@ -25,9 +25,9 @@ import Button from '../components/Button.astro';
 
     <section>
     <div class="md:grid md:grid-cols-2 mx-xs">
-          <div class="mb-m">
-                <h2 class="text-red-800">Nysgerrig på din nye bedste ven?</h2>
-                <h4 class="text-red-700">Få mere information om indholdet i pakken</h4>
+          <div class="mb-m flex flex-col gap-sm">
+                <h2 class="text-red-800">Nysgerrig på din <br> nye bedste ven?</h2>
+                <h4 class="text-red-700">Få mere information <br> om indholdet i pakken</h4>
           </div>
           <Image class="hidden md:block" src={mockup} alt="mockup af pakke"/>
     </div>
@@ -97,14 +97,14 @@ import Button from '../components/Button.astro';
 
     <div class="mt-lg"><Steps></Steps></div>
 
-    <section>
-        <h3>Få en menstruationspakke, <br> som tager sig af dig</h3>
-        <div>
+    <section class="flex flex-col gap-ml items-center mt-ml mb-xl">
+        <h3 class="text-red-800 text-center">Få en menstruationspakke, <br> som tager sig af dig</h3>
+        <div class="text-red-950 text-center">
             <p>Din cyklus, din komfort.</p>
             <p>Med et abonnement hos os, er der ingen stress, kun self-care. <br>
                 Tilmeld dig Period. abonnementet i dag, og mærk forskellen!</p>
         </div>
-        <Button></Button>
+        <Button variant="primary" size="large">Abonnér</Button>
     </section>
 
 </MainLayout>
