@@ -1,6 +1,44 @@
 ---
+import Wave from "./Wave.astro"
+import { Image } from 'astro:assets';
+import period from "../assets/images/Period.svg";
 ---
-<div>
-    <p class="max-w-screen-xl mx-auto text-white">Footer - tilføj footerindhold</p>
-</div>
+<section>
+<Wave></Wave>
+
+<div class="bg-red-50/60">
+    <Image class="w-full mx-auto " src={period} alt="Logo"/>
+
+    <div class="flex flex-row justify-around">
+        <div class="text-blue-950 "> 
+            <p class="font-extrabold">Information</p>
+            <p class="hover:text-blue-600">FAQ</p>
+            <p class="hover:text-blue-600">Om os</p>
+            <p class="hover:text-blue-600">Kontakt</p>
+            <p class="hover:text-blue-600">Vilkår og betingelser</p>
+            <p class="hover:text-blue-600">Privatlivspolitik</p>
+            <p class="hover:text-blue-600">Cookies</p>
+        </div>
+
+        <div class="text-blue-950"> 
+            <p class="font-extrabold">Udforsk Period</p>
+            <p class="hover:text-blue-600">Om pakken</p>
+            <p class="hover:text-blue-600">Om os</p>
+            <p class="hover:text-blue-600">Få dit abonnement</p>
+            <p class="hover:text-blue-600">Min profil</p>
+        </div>
+
+        <div class="text-blue-950"> 
+            <p class="font-extrabold">Tilmeld nyhedsbrev</p>
+            <input class="bg-red-300 rounded-border_radius-sm w-[200px] border-none enabled:border-blue-400 text-blue-950" type="text" placeholder="Din e-mail" required="" />
+           
+        </div>
       
+
+    </div>
+
+
+
+</div>
+
+</section>
