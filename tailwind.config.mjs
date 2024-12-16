@@ -42,22 +42,22 @@ export default {
 
     /* Tilføj din egen spacing nedenfor */
     spacing: {
-      "spacing-xxs": "8px",
-      "spacing-xs": "16px",
-      "spacing-s": "24px",
-      "spacing-sm": "32px",
-      "spacing-m": "40px",
-      "spacing-ml": "48px",
-      "spacing-lg": "64px",
-      "spacing-xl": "80px",
-      "spacing-2xl": "96px",
-      "spacing-3xl": "112px",
-      "spacing-4xl": "128px",
-      "spacing-5xl": "160px",
-      "spacing-6xl": "208px",
-      "spacing-7xl": "320px",
-      "spacing-8xl": "360px",
-      "spacing-9xl": "424px",
+      xxs: "8px",
+      xs: "16px",
+      s: "24px",
+      sm: "32px",
+      m: "40px",
+      ml: "48px",
+      lg: "64px",
+      xl: "80px",
+      "2xl": "96px",
+      "3xl": "112px",
+      "4xl": "128px",
+      "5xl": "160px",
+      "6xl": "208px",
+      "7xl": "320px",
+      "8xl": "360px",
+      "9xl": "424px",
     },
 
     /* Tilføj fonte herunder - husk også at tilføje webfonte i head-sektionen i MainLayout  */
@@ -90,9 +90,13 @@ export default {
     },
 
     /* Tilføj dit fontvægt-hierarki nedenfor */
-    //   fontWeight: {
-    //     regular: '400',
-    //   },
+    fontWeight: {
+      light: "300",
+      regular: "400",
+      semibold: "500",
+      bold: "600",
+      extrabold: "700",
+    },
 
     /* Borders - borderstørrelser herunder */
     borderWidth: {
@@ -124,10 +128,10 @@ export default {
 
     /* Box shadows herunder */
     BoxShadow: {
-      outerRed: "5px 6px 7px 0px #FF005D",
-      outerBlue: "5px 6px 7px 0px #A3AAEB",
-      innerRed: "5px 6px 7px 0px #FF005D inset",
-      innerBlue: "5px 6px 7px 0px #A3AAEB inset",
+      dropred: "5px 6px 7px 0px #FF005D",
+      dropblue: "5px 6px 7px 0px #A3AAEB",
+      innerred: "5px 6px 7px 0px #FF005D inset",
+      innerblue: "5px 6px 7px 0px #A3AAEB inset",
     },
 
     extend: {},

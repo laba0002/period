@@ -22,25 +22,25 @@
   }
 
   h1 {
-    @apply text-xlargeMobile md:text-xlargeDesk font-extrabold uppercase;
+    @apply text-largeMobile md:text-largeDesk;
   }
   h2 {
-    @apply text-largeMobile md:text-largeDesk font-bold;
+    @apply text-mediumLargeMobile font-bold md:text-mediumLargeDesk;
   }
   h3 {
-    @apply text-mediumMobile md:text-mediumDesk;
+    @apply text-mediumMobile font-extrabold  md:text-mediumDesk;
   }
   h4 {
-    @apply text-smallDesk md:text-smallDesk;
+    @apply text-smallMediumMobile md:text-smallMediumDesk;
   }
   h5 {
-    @apply text-baseMobile md:text-baseDesk font-bold;
+    @apply text-smallMobile md:text-smallDesk;
   }
   h6 {
-    @apply text-bodyMobile md:text-bodyDesk;
+    @apply text-baseMobile md:text-baseDesk;
   }
   p {
-    @apply text-konsultativMobile md:text-konsultativDesk;
+    @apply text-bodyMobile md:text-bodyDesk;
     line-height: 22.7px;
   }
 }
