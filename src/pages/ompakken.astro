@@ -1,10 +1,52 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Steps from "../components/Steps.astro";
+import { Image } from 'astro:assets';
+import mockup from "../assets/images/mockup.png";
+import bind from "../assets/images/bindis.png";
 ---
 
 <MainLayout>
     <a href="/">forside</a>
+
+    <section>
+    <div class="md:grid md:grid-cols-2">
+          <div class="mb-m">
+                <h2 class="text-red-800">Nysgerrig på din nye bedste ven?</h2>
+                <h4 class="text-red-700">Få mere information om indholdet i pakken</h4>
+          </div>
+          <Image class="hidden md:block" src={mockup} alt="mockup af pakke"/>
+    </div>
+
+    <div class="grid grid-rows-3 gap-ml md:grid-cols-3">
+        <div class="flex flex-row md:flex-col ">
+            <Image class="h-[200px] w-auto md:w-full md:h-full" src={bind} alt="bind"/>
+            <div>
+                <h4 class="text-blue-900">Pålidelige bind</h4>
+                <p>Bløde, sikre og altid der, når du har brug for dem. Vores bind er designet til at give dig ro i sindet – uanset om du chiller på sofaen eller løber til bussen. Komfort møder pålidelighed.</p>
+            </div>
+        </div>
+
+        <div class="flex flex-row md:flex-col ">
+            <Image class="h-[200px] order-last md:order-first w-auto md:w-full  md:h-full" src={bind} alt="bind"/>
+            <div>
+                <h4 class="text-blue-900">Komfortable tamponer</h4>
+                <p>Små, diskrete og klar til at følge dig overalt. Vores tamponer er som din bedste ven – altid der, når du har brug for støtte. Slip for bekymringer og få friheden tilbage!       </p>
+            </div>
+        </div>
+
+        <div class="flex flex-row md:flex-col">
+            <Image class="h-[200px] w-auto md:w-full md:h-full" src={bind} alt="bind"/>
+            <div>
+                <h4 class="text-blue-900">Self-care goodies</h4>
+                <p>Bløde, sikre og altid der, når du har brug for dem. Vores bind er designet til at give dig ro i sindet – uanset om du chiller på sofaen eller løber til bussen. Komfort møder pålidelighed.</p>
+            </div>
+        </div>
+
+    </div>
+
+    </section>
+
     <Steps></Steps>
 
 </MainLayout>
