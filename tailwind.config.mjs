@@ -101,16 +101,16 @@ export default {
     /* Borders - borderstørrelser herunder */
     borderWidth: {
       DEFAULT: "1px",
-      "border-none": "0px",
-      "border-xxs": "1px",
-      "border-xs": "2px",
-      "border-sm": "3px",
-      "border-md": "4px",
-      "border-lg": "5px",
-      "border-xl": "6px",
-      "border-2xl": "7px",
-      "border-3xl": "8px",
-      "border-4xl": "9px",
+      none: "0px",
+      xxs: "1px",
+      xs: "2px",
+      sm: "3px",
+      md: "4px",
+      lg: "5px",
+      xl: "6px",
+      "2xl": "7px",
+      "3xl": "8px",
+      "4xl": "9px",
     },
 
     /* Box shadows herunder */
@@ -136,5 +136,10 @@ export default {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms"), require("@tailwindcss/aspect-ratio"), require("@tailwindcss/container-queries")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/aspect-ratio"),
+    require("@tailwindcss/container-queries"),
+  ],
 };
