@@ -2,42 +2,61 @@
 import Wave from "./Wave.astro"
 import { Image } from 'astro:assets';
 import period from "../assets/images/Period.svg";
+import tiktok from "../assets/images/tiktok-knap.svg";
+import instagram from "../assets/images/instagram-knap.svg";
+import facebook from "../assets/images/facebook-knap.svg";
+import youtube from "../assets/images/youtube-knap.svg";
+import betaling from "../assets/images/betaling.png";
 ---
 <section>
-<Wave></Wave>
+<div class="overflow-clip"><Wave></Wave></div>
 
 <div class="bg-red-50/60">
-    <Image class="w-full mx-auto " src={period} alt="Logo"/>
+    <Image class="w-full mx-auto px-ml mb-lg " src={period} alt="Logo"/>
 
-    <div class="flex flex-row justify-around">
-        <div class="text-blue-950 "> 
-            <p class="font-extrabold">Information</p>
-            <p class="hover:text-blue-600">FAQ</p>
-            <p class="hover:text-blue-600">Om os</p>
-            <p class="hover:text-blue-600">Kontakt</p>
-            <p class="hover:text-blue-600">Vilkår og betingelser</p>
-            <p class="hover:text-blue-600">Privatlivspolitik</p>
-            <p class="hover:text-blue-600">Cookies</p>
+    <div class="flex flex-row justify-between mx-auto px-ml">
+        <div class="text-blue-950  "> 
+            <p class="font-extrabold pb-xs">Information</p>
+           <div class=" flex flex-col justify-around">
+                <p class="hover:text-blue-600">FAQ</p>
+                <p class="hover:text-blue-600">Om os</p>
+                <p class="hover:text-blue-600">Kontakt</p>
+                <p class="hover:text-blue-600">Vilkår og betingelser</p>
+                <p class="hover:text-blue-600">Privatlivspolitik</p>
+                <p class="hover:text-blue-600">Cookies</p>
+           </div>
         </div>
 
-        <div class="text-blue-950"> 
-            <p class="font-extrabold">Udforsk Period</p>
-            <p class="hover:text-blue-600">Om pakken</p>
-            <p class="hover:text-blue-600">Om os</p>
-            <p class="hover:text-blue-600">Få dit abonnement</p>
-            <p class="hover:text-blue-600">Min profil</p>
+        <div class="text-blue-950 flex flex-col "> 
+            <p class="font-extrabold pb-xs">Udforsk Period</p>
+       <div class="flex flex-col justify-around">
+                <p class="hover:text-blue-600">Om pakken</p>
+                <p class="hover:text-blue-600">Om os</p>
+                <p class="hover:text-blue-600">Få dit abonnement</p>
+                <p class="hover:text-blue-600">Min profil</p>
+       </div>
         </div>
 
-        <div class="text-blue-950"> 
-            <p class="font-extrabold">Tilmeld nyhedsbrev</p>
-            <input class="bg-red-300 rounded-border_radius-sm w-[200px] border-none enabled:border-blue-400 text-blue-950" type="text" placeholder="Din e-mail" required="" />
+        <div class="text-blue-950 hidden md:block "> 
+            <p class="font-extrabold pb-xs">Tilmeld nyhedsbrev</p>
+            <input class="bg-red-300 w-[280px] rounded-border_radius-sm  border-none enabled:border-red-400 text-blue-950 placeholder:text-blue-950" type="text" placeholder="Din e-mail" required="" />
            
         </div>
-      
-
     </div>
 
+    <div class="flex flex-row justify-between mx-auto px-ml mt-ml">
+        <Image class="w-auto" src={betaling} alt="betalingsmuligheder"/>
+        <div>
+            <div class="flex flex-row pb-xxs justify-end">
+                <Image class="" src={tiktok} alt="betalingsmuligheder"/>
+                <Image class="" src={instagram} alt="betalingsmuligheder"/>
+                <Image class="" src={facebook} alt="betalingsmuligheder"/>
+                <Image class="" src={youtube} alt="betalingsmuligheder"/>
+            </div>
+            <p class="text-konsultativMobile">© Period. 2024, alle rettigheder CVR 123456789</p>
 
+        </div>
+    </div>
 
 </div>
 
