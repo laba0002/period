@@ -1,0 +1,44 @@
+---
+import { Image } from 'astro:assets';
+import step1 from "../assets/images/bg.png";
+import step2 from "../assets/images/stepp2.png";
+import step3 from "../assets/images/stepp3.png";
+import drop from "../assets/images/drop.svg";
+---
+
+<section class="grid grid-rows-3 gap-ml md:flex md:flex-row md:justify-between mx-sm">
+    <div class="flex flex-row md:flex-col md:items-center">
+        <h4 class="text-blue-800 pb-s hidden md:block">Step 1</h4>
+        <Image class="shadow-dropblue h-[200px] w-[200px] md:h-[300px] md:w-[300px] rounded-full object-cover " src={step1} alt="step 1"/>
+       <div>
+            <h4 class="text-blue-800 pb-xs md:pb-s block text-right md:hidden">Step 1</h4>
+            <p class="text-right md:text-center md:w-[313px] text-red-950">Vælg de produkter, du har brug for - bind, tamponer og self-care som chokolade og te. Tilpas den, så den passer til din cyklus.</p>
+       </div>
+    </div>
+
+    <Image class="hidden md:block"  src={drop} alt="drop"/>
+
+
+    <div class="flex flex-row md:flex-col md:items-center">
+       <div>
+            <h4 class="text-blue-800 pb-xs md:pb-s">Step 2</h4>
+            <p class="md:text-center md:w-[313px] text-red-950 block md:hidden">Få din pakke leveret direkte til din dør, lige når du skal bruge den - altid diskret og på dine præmisser.</p>    
+       </div>
+        <Image class="shadow-dropblue h-[200px] w-[200px] md:h-[300px] md:w-[300px] rounded-full object-cover "  src={step2} alt="step 2"/>
+        <p class="text-right md:text-center md:w-[313px] text-red-950 hidden md:block">Få din pakke leveret direkte til din dør, lige når du skal bruge den - altid diskret og på dine præmisser.</p>    
+    </div>
+ 
+
+    <Image class="hidden md:block"  src={drop} alt="drop"/>
+
+    <div class="flex flex-row md:flex-col md:items-center">
+        <h4 class="text-blue-800 pb-s hidden md:block">Step 3</h4>
+        <Image class="drop-shadow-dropblue h-[200px] w-[200px] md:h-[300px] md:w-[300px] rounded-full object-cover "  src={step3} alt="step 3"/>
+       <div>
+            <h4 class="text-blue-800 pb-xs block text-right md:hidden">Step 3</h4>
+            <p class="text-right md:text-center md:w-[313px] text-red-950">Nyd en nemmere menstruation med alt, hvad du har brug for, samlet i én pakke. Self-care har aldrig været lettere!</p>
+       </div>
+    </div>
+
+
+</section>

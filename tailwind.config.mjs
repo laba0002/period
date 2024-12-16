@@ -113,28 +113,28 @@ export default {
       "border-4xl": "9px",
     },
 
-    /* Border radius størrelser herunder */
-    borderRadius: {
-      DEFAULT: "1.25rem",
-      none: "0px",
-      "border_radius-xs": "7px",
-      "border_radius-sm": "14px",
-      "border_radius-xl": "49px",
-      "border_radius-md": "21.5px",
-      "border_radius-lg": "35px",
-      "border_radius-2xl": "79px",
-      "border_radius-3xl": "100px",
-    },
-
     /* Box shadows herunder */
-    BoxShadow: {
-      dropred: "5px 6px 7px 0px #FF005D",
-      dropblue: "5px 6px 7px 0px #A3AAEB",
-      innerred: "5px 6px 7px 0px #FF005D inset",
-      innerblue: "5px 6px 7px 0px #A3AAEB inset",
-    },
 
-    extend: {},
+    extend: {
+      /* Border radius størrelser herunder */
+      borderRadius: {
+        DEFAULT: "1.25rem",
+        none: "0px",
+        "border_radius-xs": "7px",
+        "border_radius-sm": "14px",
+        "border_radius-xl": "49px",
+        "border_radius-md": "21.5px",
+        "border_radius-lg": "35px",
+        "border_radius-2xl": "79px",
+        "border_radius-3xl": "100px",
+      },
+      BoxShadow: {
+        dropred: "5px 6px 7px 0px #FF005D",
+        dropblue: "5px 6px 7px 0px #A3AAEB",
+        innerred: "5px 6px 7px 0px #FF005D inset",
+        innerblue: "5px 6px 7px 0px #A3AAEB inset",
+      },
+    },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms"), require("@tailwindcss/aspect-ratio"), require("@tailwindcss/container-queries")],
 };
