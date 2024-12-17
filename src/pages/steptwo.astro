@@ -2,7 +2,7 @@
 import Button from '../components/Button.astro';
 import AbonnerLayout from "../layouts/AbonnerLayout.astro";
 import { Image } from 'astro:assets';
-import Mockup2 from "../assets/images/mockup_steptwo.png";
+import Mockup2 from "../assets/images/mockup_steptwo.webp";
 ---
 
 <AbonnerLayout title="Abonnér på Period.">
@@ -19,19 +19,51 @@ import Mockup2 from "../assets/images/mockup_steptwo.png";
                 <li><a href="#">3. Privat levering</a></li>
             </ol>
         </nav>
-        <h1></h1>
         <form class="flex flex-col gap-6">
             <h4>Hvor ofte vil du modtage din levering?</h4>
             <section>
-                <div></div>
                 <Image class="" format="webp" src={Mockup2} alt="Mockup"/>
+                <div>
+                    <div class="flex flex-col justify-between">
+                        <div>
+                            <label for="snack1">
+                                <input type="checkbox" id="snack1" name="snack[]" value="chocolate">                                
+                                Prøvepakken
+                            </label>
+                        </div>
+                        <div>
+                            <label for="snack2">
+                                <input type="checkbox" id="snack2" name="snack[]" value="nuts">
+                                Hver måned
+                            </label>
+                        </div>
+                        <div>
+                            <label for="snack3">
+                                <input type="checkbox" id="snack3" name="snack[]" value="fruit">
+                                Hver anden måned
+                            </label>
+                        </div>
+                        <div>
+                            <label for="snack3">
+                                <input type="checkbox" id="snack3" name="snack[]" value="fruit">
+                                Hver tredje måned
+                            </label>
+                        </div>
+                        <div>
+                            <label for="snack3">
+                                <input type="checkbox" id="snack3" name="snack[]" value="fruit">
+                                Hvert halve år
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </section>
         </form>
     </article>
     <Button variant="secondary" size="medium" href="/steptwo">
         <a href="/abonner">Tilbage</a>
     </Button>
-    <Button variant="primary" size="large" href="/stepthree">
-        <a href="/stepthree">Næste</a>
+    <Button variant="primary" size="large">
+        <a href="/steptwo">Næste</a>
     </Button>
 </AbonnerLayout>
