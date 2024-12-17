@@ -77,22 +77,30 @@ const productImages = {
 
             <!-- Snack Preferences -->
             <section>
-                <h4 class="text-center">Noget i din diæt, vi skal vide?</h4>
-                <div class="flex flex-row justify-center gap-8">
-                    <label for="snack1" class="flex items-center cursor-pointer">
-                        <input type="checkbox" id="snack1" name="snack[]" value="snacks" class="mr-2">
-                        <span class="text-lg">Alle snacks</span>
-                    </label>
-                    <label for="snack2" class="flex items-center cursor-pointer">
-                        <input type="checkbox" id="snack2" name="snack[]" value="vegan" class="mr-2">
-                        <span class="text-lg">Veganer</span>
-                    </label>
-                    <label for="snack3" class="flex items-center cursor-pointer">
-                        <input type="checkbox" id="snack3" name="snack[]" value="glutenfree" class="mr-2">
-                        <span class="text-lg">Glutenfri</span>
-                    </label>
+                <h4 class="text-center mb-s">Hvad er din snackpræference?</h4>
+                <div class="flex flex-row items-center justify-center gap-s mx-auto w-auto">
+                  <label for="snack1" class="relative flex items-center justify-center px-[83px] py-[21px] w-[294px] h-[76px] bg-red-700 rounded-border_radius-md cursor-pointer text-red-50 text-smallDesk font-regular hover:border-sm hover:border-blue-500 transition">
+                    <input type="radio" id="snack1" name="snack" class="peer hidden" />
+                    <span>Alle snacks</span>
+                    <!-- Selected border stroke -->
+                    <div class="absolute inset-0 rounded-border_radius-md border-[3px] peer-checked:border-sm peer-checked:border-blue-500 peer-checked:bg-blue-500"></div>
+                  </label>
+              
+                  <!-- Veganer -->
+                  <label for="snack2" class="relative flex items-center justify-center px-[83px] py-[21px] w-[294px] h-[76px] bg-red-700 rounded-border_radius-md cursor-pointer text-red-50 text-smallDesk font-regular hover:border-sm hover:border-blue-500 transition">
+                    <input type="radio" id="snack2" name="snack" class="peer hidden" />
+                    <span>Veganer</span>
+                    <div class="absolute inset-0 rounded-border_radius-md border-[3px] border-transparent peer-checked:bg-blue-500"></div>
+                  </label>
+              
+                  <!-- Glutenfri -->
+                  <label for="snack3" class="relative flex items-center justify-center px-[83px] py-[21px] w-[294px] h-[76px] bg-red-700 rounded-border_radius-md cursor-pointer text-red-50 text-smallDesk font-regular hover:border-sm hover:border-blue-500 transition">
+                    <input type="radio" id="snack3" name="snack" class="peer hidden" />
+                    <span>Glutenfri</span>
+                    <div class="absolute inset-0 rounded-border_radius-md border-[3px] border-transparent peer-checked:bg-blue-500"></div>
+                  </label>
                 </div>
-            </section>
+              </section>
         </form>
 
         <!-- Next Button -->
