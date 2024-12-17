@@ -42,6 +42,7 @@ export default {
 
     /* Tilføj din egen spacing nedenfor */
     spacing: {
+      none: "0px",
       xxs: "8px",
       xs: "16px",
       s: "24px",
