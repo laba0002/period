@@ -1,5 +1,5 @@
 ---
-const {variant="primary", size="medium"} = Astro.props;
+const {variant="primary", size="medium", href="#"} = Astro.props;
 
 const buttonStyling = " border-blue-900 rounded-border_radius-3xl border-md tracking-wide font-bold transition ease-in-out delay-100"; 
 
@@ -22,8 +22,8 @@ const sizeClasses = {
 
 };
 ---
-<div>
+<a href={href}>
     <button class:list={[buttonStyling, variantClasses[variant], sizeClasses[size]]}><slot /></button>
-</div>
+</a>
 
 

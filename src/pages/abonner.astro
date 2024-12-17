@@ -1,0 +1,101 @@
+---
+import Button from '../components/Button.astro';
+import Link from '../components/Link.astro';
+import AbonnerLayout from "../layouts/AbonnerLayout.astro";
+---
+
+<AbonnerLayout title="Abonnér på Period.">
+    <article class="px-sm flex flex-col max-w-lg md:max-w-2xl lg:max-w-6xl mx-auto">
+        <nav>
+            <ol class="lg:hidden flex flex-row justify-between">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+            </ol>
+            <ol class="hidden lg:flex flex-row justify-between">
+                <li><a href="#">1. Vælg dit behov</a></li>
+                <li><a href="#">2. Planlæg dit abonnement</a></li>
+                <li><a href="#">3. Privat levering</a></li>
+            </ol>
+        </nav>
+        <h1></h1>
+        <form class="flex flex-col gap-6">
+            <!-- Section 1: Choose Product -->
+            <fieldset class="flex flex-col justify-between">
+                <legend class="sr-only">Vælg det produkt, der passer bedst til dig!</legend>
+                <h4>Vælg det produkt, der passer bedst til dig!</h4>
+                <div>
+                    <label for="product1">
+                        <input type="radio" id="product1" name="product" value="product1">
+                        Produkt 1
+                    </label>
+                </div>
+                <div>
+                    <label for="product2">
+                        <input type="radio" id="product2" name="product" value="product2">
+                        Produkt 2
+                    </label>
+                </div>
+                <div>
+                    <label for="product3">
+                        <input type="radio" id="product3" name="product" value="product3">
+                        Produkt 3
+                    </label>
+                </div>
+            </fieldset>
+        
+            <!-- Section 2: Choose Flow -->
+            <fieldset>
+                <legend class="sr-only">Hvad passer til dit flow?</legend>
+                <h4>Hvad passer til dit flow?</h4>
+                <div>
+                    <label for="flow1">
+                        <input type="radio" id="flow1" name="flow" value="light">
+                        Let flow
+                    </label>
+                </div>
+                <div>
+                    <label for="flow2">
+                        <input type="radio" id="flow2" name="flow" value="moderate">
+                        Moderat flow
+                    </label>
+                </div>
+                <div>
+                    <label for="flow3">
+                        <input type="radio" id="flow3" name="flow" value="heavy">
+                        Kraftigt flow
+                    </label>
+                </div>
+            </fieldset>
+        
+            <!-- Section 3: Snack Preference -->
+            <fieldset>
+                <legend class="sr-only">Din snackpræference</legend>
+                <h4>Din snackpræference</h4>
+                <div>
+                    <label for="snack1">
+                        <input type="checkbox" id="snack1" name="snack[]" value="chocolate">
+                        Chokolade
+                    </label>
+                </div>
+                <div>
+                    <label for="snack2">
+                        <input type="checkbox" id="snack2" name="snack[]" value="nuts">
+                        Nødder
+                    </label>
+                </div>
+                <div>
+                    <label for="snack3">
+                        <input type="checkbox" id="snack3" name="snack[]" value="fruit">
+                        Frugt
+                    </label>
+                </div>
+            </fieldset>
+        
+            <!-- Submit Button -->
+            <Button variant="primary">
+                Næste
+            </Button>
+        </form>
+    </article>
+</AbonnerLayout>
