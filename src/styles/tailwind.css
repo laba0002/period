@@ -23,7 +23,7 @@
   }
 
   h1 {
-    @apply text-largeMobile md:text-largeDesk;
+    @apply text-largeMobile md:text-largeDesk text-red-950;
   }
   h2 {
     @apply text-mediumLargeMobile font-bold md:text-mediumLargeDesk;

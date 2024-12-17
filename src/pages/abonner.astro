@@ -1,11 +1,10 @@
 ---
 import Button from '../components/Button.astro';
 import AbonnerLayout from "../layouts/AbonnerLayout.astro";
-const productImages = {
-  begge: '/images/begge.png',
-  bind: '/images/bind.png',
-  tamponer: '/images/tamponer.png',
-};
+import Image from 'astro/components/Image.astro';
+import begge from "../assets/images/begge.webp";
+import bind from "../assets/images/bind.webp";
+import tamponer from "../assets/images/tamponer.webp";
 ---
 
 <AbonnerLayout title="Abonnér på Period.">
@@ -23,31 +22,28 @@ const productImages = {
                 <li><a href="#">3. Privat levering</a></li>
             </ol>
         </nav>
-
-        <!-- Main Content -->
-        <h1 class="text-4xl font-bold text-center mt-6 mb-8 text-red-700">Tilpas dit eget abonnement</h1>
+        <h1 class="text-center">Tilpas dit eget abonnement</h1>
         
         <form class="flex flex-col gap-8">
-            <!-- Product Selection -->
             <section>
                 <h4 class="text-center">Vælg det produkt, der passer bedst til dig!</h4>
                 <div class="flex flex-row justify-center gap-8">
                     <!-- Begge Dele -->
                     <label for="product1" class="cursor-pointer flex flex-col items-center">
                         <input type="radio" id="product1" name="product" value="begge" class="hidden">
-                        <img src={productImages.begge} alt="Begge dele" class="w-24 h-24 object-cover mb-2 hover:scale-110 transition">
+                        <Image src={begge} alt="Begge dele" class="w-24 h-24 object-cover mb-2 hover:scale-110 transition">
                         <span class="text-lg font-medium text-red-600">Begge dele</span>
                     </label>
                     <!-- Bind -->
                     <label for="product2" class="cursor-pointer flex flex-col items-center">
                         <input type="radio" id="product2" name="product" value="bind" class="hidden">
-                        <img src={productImages.bind} alt="Bind" class="w-24 h-24 object-cover mb-2 hover:scale-110 transition">
+                        <Image src={bind} alt="Bind" class="w-24 h-24 object-cover mb-2 hover:scale-110 transition">
                         <span class="text-lg font-medium text-red-600">Bind</span>
                     </label>
                     <!-- Tamponer -->
                     <label for="product3" class="cursor-pointer flex flex-col items-center">
                         <input type="radio" id="product3" name="product" value="tamponer" class="hidden">
-                        <img src={productImages.tamponer} alt="Tamponer" class="w-24 h-24 object-cover mb-2 hover:scale-110 transition">
+                        <Image src={tamponer} alt="Tamponer" class="w-24 h-24 object-cover mb-2 hover:scale-110 transition">
                         <span class="text-lg font-medium text-red-600">Tamponer</span>
                     </label>
                 </div>
