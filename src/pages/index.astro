@@ -5,6 +5,7 @@ import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 import Steps from "../components/Steps.astro";
+import Wave from "../components/Wave.astro";
 ---
 <MainLayout title="Period">
 
@@ -13,7 +14,16 @@ import Steps from "../components/Steps.astro";
 
 	<Steps></Steps>
 
-	<section></section>
+	<section>
+		<div class="rotate-180 w-auto overflow-clip"><Wave></Wave></div>
+
+		<div class=" bg-red-50/60">
+
+		</div>
+
+		<div class="overflow-clip w-auto"><Wave></Wave></div>
+		
+	</section>
 
 	<section class="flex flex-row justify-center">
 		<div class="flex flex-col  w-9xl md:w-[500px]">
