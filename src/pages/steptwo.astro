@@ -1,0 +1,30 @@
+---
+import Button from '../components/Button.astro';
+import AbonnerLayout from "../layouts/AbonnerLayout.astro";
+---
+
+<AbonnerLayout title="Abonnér på Period.">
+    <article class="px-sm flex flex-col max-w-lg md:max-w-2xl lg:max-w-6xl mx-auto">
+        <nav>
+            <ol class="lg:hidden flex flex-row justify-between">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+            </ol>
+            <ol class="hidden lg:flex flex-row justify-between">
+                <li><a href="#">1. Vælg dit behov</a></li>
+                <li><a href="#">2. Planlæg dit abonnement</a></li>
+                <li><a href="#">3. Privat levering</a></li>
+            </ol>
+        </nav>
+        <h1></h1>
+        <form class="flex flex-col gap-6">
+        </form>
+    </article>
+    <Button variant="secondary" size="medium" href="/steptwo">
+        <a href="/steptwo">Tilbage</a>
+    </Button>
+    <Button variant="primary" size="large" href="/stepthree">
+        <a href="/stepthree">Næste</a>
+    </Button>
+</AbonnerLayout>
