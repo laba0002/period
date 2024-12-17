@@ -132,7 +132,7 @@ export default {
       boxShadow: {
         dropred: "9px 12px 10px rgba(0, 0, 255, 0.15)",
         innerred: "inset 0 2px 4px rgba(255, 0, 0, 0.1)",
-        dropblue: "9px 12px 10px rgba(0, 0, 255, 0.15)",
+        dropblue: "5px 6px 7px 0px rgba(0, 0, 255, 0.15)",
         innerblue: "inset 0 2px 4px rgba(0, 0, 255, 0.1)",
       },
     },
