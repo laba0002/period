@@ -35,7 +35,7 @@
     @apply text-smallMediumMobile md:text-smallMediumDesk text-red-500;
   }
   h5 {
-    @apply text-smallMobile md:text-smallDesk text-red-600;
+    @apply text-smallMobile md:text-smallDesk;
   }
   h6,
   summary {
