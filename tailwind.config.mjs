@@ -128,18 +128,13 @@ export default {
         "border_radius-2xl": "79px",
         "border_radius-3xl": "100px",
       },
-      BoxShadow: {
-        dropred: "5px 6px 7px 0px #FF005D",
-        dropblue: "5px 6px 7px 0px #A3AAEB",
-        innerred: "5px 6px 7px 0px #FF005D inset",
-        innerblue: "5px 6px 7px 0px #A3AAEB inset",
+      boxShadow: {
+        dropred: "0 4px 6px rgba(255, 0, 0, 0.1)",
+        innerred: "inset 0 2px 4px rgba(255, 0, 0, 0.1)",
+        dropblue: "0 4px 6px rgba(0, 0, 255, 0.1)",
+        innerblue: "inset 0 2px 4px rgba(0, 0, 255, 0.1)",
       },
     },
   },
-  plugins: [
-    require("@tailwindcss/typography"),
-    require("@tailwindcss/forms"),
-    require("@tailwindcss/aspect-ratio"),
-    require("@tailwindcss/container-queries"),
-  ],
+  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms"), require("@tailwindcss/aspect-ratio"), require("@tailwindcss/container-queries")],
 };
