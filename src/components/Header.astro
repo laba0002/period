@@ -7,7 +7,7 @@ import { Image } from 'astro:assets';
 import period from "../assets/images/Period.svg";
 ---
 
-<div x-data="{ showmenu: false }" class="text-white">
+<div x-data="{ showmenu: false }" class="">
     <section id="navbar" class="relative bg-gray-800">
         <div class="overflow-clip w-auto"><Wave></Wave></div>
         <a href="/">
@@ -17,17 +17,17 @@ import period from "../assets/images/Period.svg";
             <SmallLogo/>
         </div>
          <nav id="desktopmenu" class="hidden lg:absolute top-ml lg:flex flex-row items-center gap-s right-s p-4 z-10 text-red-700">
-            <Link>Om pakken</Link>
-            <Link>Om os</Link>
+            </a><Link>Om pakken</Link></a>
+            <a href="/omos"><Link>Om os</Link></a>
             <Button variant="primary" size="small">Abonnér</Button>
             <Button variant="secondary" size="small">Min profil</Button>
         </nav>
+
         <button id="burgermenu" class="absolute top-s right-s lg:hidden z-50 w-m h-h" x-on:click="showmenu = !showmenu">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#E7232D" class="w-8 h-8">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 6h18M3 12h18m-18 6h18" />
-        </svg>
-    </button>
-    
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#E7232D" class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 6h18M3 12h18m-18 6h18" />
+            </svg>
+        </button>
     </section>  
 
      <!-- Mobile Menu -->
