@@ -1,6 +1,114 @@
 ---
 import Button from '../components/Button.astro';
 import AbonnerLayout from "../layouts/AbonnerLayout.astro";
+const productImages = {
+  begge: '/images/begge.png',
+  bind: '/images/bind.png',
+  tamponer: '/images/tamponer.png',
+};
+---
+
+<AbonnerLayout title="Abonnér på Period.">
+    <article class="px-sm flex flex-col max-w-lg md:max-w-2xl lg:max-w-6xl mx-auto">
+        <!-- Navigation -->
+        <nav>
+            <ol class="lg:hidden flex flex-row justify-between">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+            </ol>
+            <ol class="hidden lg:flex flex-row justify-between">
+                <li><a href="#">1. Vælg dit behov</a></li>
+                <li><a href="#">2. Planlæg dit abonnement</a></li>
+                <li><a href="#">3. Privat levering</a></li>
+            </ol>
+        </nav>
+
+        <!-- Main Content -->
+        <h1 class="text-4xl font-bold text-center mt-6 mb-8 text-red-700">Tilpas dit eget abonnement</h1>
+        
+        <form class="flex flex-col gap-8">
+            <!-- Product Selection -->
+            <section>
+                <h4 class="text-center">Vælg det produkt, der passer bedst til dig!</h4>
+                <div class="flex flex-row justify-center gap-8">
+                    <!-- Begge Dele -->
+                    <label for="product1" class="cursor-pointer flex flex-col items-center">
+                        <input type="radio" id="product1" name="product" value="begge" class="hidden">
+                        <img src={productImages.begge} alt="Begge dele" class="w-24 h-24 object-cover mb-2 hover:scale-110 transition">
+                        <span class="text-lg font-medium text-red-600">Begge dele</span>
+                    </label>
+                    <!-- Bind -->
+                    <label for="product2" class="cursor-pointer flex flex-col items-center">
+                        <input type="radio" id="product2" name="product" value="bind" class="hidden">
+                        <img src={productImages.bind} alt="Bind" class="w-24 h-24 object-cover mb-2 hover:scale-110 transition">
+                        <span class="text-lg font-medium text-red-600">Bind</span>
+                    </label>
+                    <!-- Tamponer -->
+                    <label for="product3" class="cursor-pointer flex flex-col items-center">
+                        <input type="radio" id="product3" name="product" value="tamponer" class="hidden">
+                        <img src={productImages.tamponer} alt="Tamponer" class="w-24 h-24 object-cover mb-2 hover:scale-110 transition">
+                        <span class="text-lg font-medium text-red-600">Tamponer</span>
+                    </label>
+                </div>
+            </section>
+
+            <!-- Flow Selection -->
+            <section>
+                <h4 class="text-center">Hvad passer til dit flow?</h4>
+                <div class="flex flex-row justify-center gap-8">
+                    <label for="flow1" class="flex flex-col items-center cursor-pointer">
+                        <input type="radio" id="flow1" name="flow" value="light" class="hidden">
+                        <div class="w-8 h-8 bg-red-300 rounded-full mb-2"></div>
+                        <span class="text-lg">Let</span>
+                    </label>
+                    <label for="flow2" class="flex flex-col items-center cursor-pointer">
+                        <input type="radio" id="flow2" name="flow" value="moderate" class="hidden">
+                        <div class="w-12 h-12 bg-red-500 rounded-full mb-2"></div>
+                        <span class="text-lg">Moderat</span>
+                    </label>
+                    <label for="flow3" class="flex flex-col items-center cursor-pointer">
+                        <input type="radio" id="flow3" name="flow" value="heavy" class="hidden">
+                        <div class="w-16 h-16 bg-red-700 rounded-full mb-2"></div>
+                        <span class="text-lg">Kraftigt</span>
+                    </label>
+                </div>
+            </section>
+
+            <!-- Snack Preferences -->
+            <section>
+                <h4 class="text-center">Noget i din diæt, vi skal vide?</h4>
+                <div class="flex flex-row justify-center gap-8">
+                    <label for="snack1" class="flex items-center cursor-pointer">
+                        <input type="checkbox" id="snack1" name="snack[]" value="snacks" class="mr-2">
+                        <span class="text-lg">Alle snacks</span>
+                    </label>
+                    <label for="snack2" class="flex items-center cursor-pointer">
+                        <input type="checkbox" id="snack2" name="snack[]" value="vegan" class="mr-2">
+                        <span class="text-lg">Veganer</span>
+                    </label>
+                    <label for="snack3" class="flex items-center cursor-pointer">
+                        <input type="checkbox" id="snack3" name="snack[]" value="glutenfree" class="mr-2">
+                        <span class="text-lg">Glutenfri</span>
+                    </label>
+                </div>
+            </section>
+        </form>
+
+        <!-- Next Button -->
+        <div class="flex justify-center mt-8">
+            <Button variant="primary" size="large" href="/steptwo">
+                <a href="/steptwo" class="">Næste</a>
+            </Button>
+        </div>
+    </article>
+</AbonnerLayout>
+
+
+
+<!-- ---
+import Button from '../components/Button.astro';
+import AbonnerLayout from "../layouts/AbonnerLayout.astro";
 ---
 
 <AbonnerLayout title="Abonnér på Period.">
@@ -97,4 +205,4 @@ import AbonnerLayout from "../layouts/AbonnerLayout.astro";
             <a href="/steptwo">Næste</a>
         </Button>
   
-</AbonnerLayout>
+</AbonnerLayout> -->
