@@ -27,44 +27,44 @@ import Button from '../components/Button.astro';
 
     <section>
     <div class="md:grid md:grid-cols-2 ">
-          <div class="mb-m flex flex-col gap-sm mx-xs md:mx-2xl">
+          <div class="mb-m flex flex-col gap-sm mx-xs md:mx-2xl md:mt-2xl">
                 <h2 class="text-red-800">Nysgerrig på din <br> nye bedste ven?</h2>
                 <h4 class="text-red-700">Få mere information <br> om indholdet i pakken</h4>
           </div>
-          <Image class="hidden w-screen md:block" src={mockup} alt="mockup af pakke"/>
+          <Image class="hidden w-11/12 md:block" src={mockup} alt="mockup af pakke"/>
     </div>
 
-    <div class="grid grid-rows-3 gap-ml md:grid-cols-3  mx-xs md:mt-[-400px] md:mx-2xl pb-3xl">
-        <div class="flex flex-row md:flex-col gap-sm">
-            <Image class="h-[200px] w-auto md:w-full md:h-full" src={bind} alt="bind"/>
+    <div class="grid grid-rows-3 md:grid-rows-4 gap-ml md:grid-cols-3 md:max-h-full   mx-xs  md:mx-2xl  md:mt-[-10%]">
+        <div class="flex flex-row md:flex-col gap-sm md:row-end-3 md:row-start-1">
+            <Image class="h-[200px] w-auto md:w-full md:h-full " src={bind} alt="bind"/>
             <div>
                 <h4 class="text-blue-900">Pålidelige bind</h4>
-                <p>Bløde, sikre og altid der, når du har brug for dem. Vores bind er designet til at give dig ro i sindet – uanset om du chiller på sofaen eller løber til bussen. Komfort møder pålidelighed.</p>
+                <p class="text-red-950">Bløde, sikre og altid der, når du har brug for dem. Vores bind er designet til at give dig ro i sindet – uanset om du chiller på sofaen eller løber til bussen. Komfort møder pålidelighed.</p>
             </div>
         </div>
 
-        <div class="flex flex-row md:flex-col gap-sm md:row-start-2 md:col-start-2 md:col-end-3 md:mt-[-200px]">
+        <div class="flex flex-row md:flex-col gap-sm  md:row-start-2 md:row-end-4 md:col-start-2 md:col-end-3 ">
             <Image class="h-[200px] order-last md:order-first w-auto md:w-full  md:h-full" src={tampon} alt="tampon"/>
-            <div>
+            <div class="">
                 <h4 class="text-blue-900">Komfortable tamponer</h4>
-                <p>Små, diskrete og klar til at følge dig overalt. Vores tamponer er som din bedste ven – altid der, når du har brug for støtte. Slip for bekymringer og få friheden tilbage!       </p>
+                <p class="text-red-950">Små, diskrete og klar til at følge dig overalt. Vores tamponer er som din bedste ven – altid der, når du har brug for støtte. Slip for bekymringer og få friheden tilbage!       </p>
             </div>
         </div>
 
-        <div class="flex flex-row md:flex-col gap-sm md:row-start-3  md:col-start-3 md:col-end-4 md:mt-[-200px]">
-            <Image class="h-[200px] w-auto md:w-full md:h-full" src={selfcare} alt="selfcare"/>
-            <div>
+        <div class="flex flex-row md:flex-col gap-sm md:row-end-5 md:row-start-3  md:col-start-3 md:col-end-4 ">
+            <Image class="h-[200px] w-auto md:w-full md:h-full " src={selfcare} alt="selfcare"/>
+            <div class="">
                 <h4 class="text-blue-900">Self-care goodies</h4>
-                <p>Bløde, sikre og altid der, når du har brug for dem. Vores bind er designet til at give dig ro i sindet – uanset om du chiller på sofaen eller løber til bussen. Komfort møder pålidelighed.</p>
+                <p class="text-red-950">Bløde, sikre og altid der, når du har brug for dem. Vores bind er designet til at give dig ro i sindet – uanset om du chiller på sofaen eller løber til bussen. Komfort møder pålidelighed.</p>
             </div>
-        </div>
-        <div class=" flex flex-col md:row-start-3 md:row-end-4 md:col-start-1 md:col-end-3 md:mt-[300px] ">
-            <h5 class="text-blue-900 pb-xs pl-m">Lyder det som noget for dig?</h5>
-            <Button>Få abonnement</Button>
         </div>
     </div>
-
-    </section>
+    
+</section>
+<div class=" ml-sm mt-sm md:ml-lg md:mt-[-10%] flex flex-col md:row-start-3 md:row-end-4 md:col-start-1 md:col-end-3 mb-4xl ">
+    <h5 class="text-blue-900 pb-xs pl-m">Lyder det som noget for dig?</h5>
+    <Button>Få abonnement</Button>
+</div>
 
    <section>
 <div class="overflow-clip w-auto"><Wave></Wave></div>
