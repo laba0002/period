@@ -1,27 +1,29 @@
 ---
-const {variant="primary", size="medium"} = Astro.props;
+const {variant="primary", size="medium", href="#"} = Astro.props;
 
 const buttonStyling = " border-blue-900 rounded-border_radius-3xl border-md tracking-wide font-bold transition ease-in-out delay-100"; 
 
 const variantClasses = {
 "textlink": "underline",
 
-"primary": " border-red-500 bg-red-50 text-red-500 hover:border-blue-500 hover:bg-blue-400 shadow-dropred hover:shadow-innerred",
+"primary": " border-red-500 bg-red-50 text-red-500 shadow-dropred hover:shadow-innerred",
 
-"secondary": "border-blue-700 bg-blue-50 text-blue-700 hover:text-gray-200 hover:border-blue-900 hover:bg-blue-800 shadow-dropblue hover:shadow-innerblue",
+"secondary": "border-blue-700 bg-blue-50 text-blue-700 hover:text-gray-200 hover:border-blue-900 shadow-dropblue hover:shadow-innerblue",
 
 };
 
 const sizeClasses = {
 
-"large": "text-mediumDesk py-s px-lg",
+"large": "text-mediumDesk py-xs px-lg",
 
-"medium": "text-smallMediumDesk py-xs px-lg",
+"medium": "text-smallMediumDesk py-xxs px-lg",
 
-"small": "text-smallDesk py-[14px] px-m",
+"small": "text-baseDesk py-[5px] px-s",
 
 };
 ---
-<div>
+<a href={href}>
     <button class:list={[buttonStyling, variantClasses[variant], sizeClasses[size]]}><slot /></button>
-</div>
+</a>
+
+

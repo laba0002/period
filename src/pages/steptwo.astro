@@ -1,0 +1,37 @@
+---
+import Button from '../components/Button.astro';
+import AbonnerLayout from "../layouts/AbonnerLayout.astro";
+import { Image } from 'astro:assets';
+import Mockup2 from "../assets/images/mockup_steptwo.png";
+---
+
+<AbonnerLayout title="Abonnér på Period.">
+    <article class="px-sm flex flex-col max-w-lg md:max-w-2xl lg:max-w-6xl mx-auto">
+        <nav>
+            <ol class="lg:hidden flex flex-row justify-between">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+            </ol>
+            <ol class="hidden lg:flex flex-row justify-between">
+                <li><a href="#">1. Vælg dit behov</a></li>
+                <li><a href="#">2. Planlæg dit abonnement</a></li>
+                <li><a href="#">3. Privat levering</a></li>
+            </ol>
+        </nav>
+        <h1></h1>
+        <form class="flex flex-col gap-6">
+            <h4>Hvor ofte vil du modtage din levering?</h4>
+            <section>
+                <div></div>
+                <Image class="" format="webp" src={Mockup2} alt="Mockup"/>
+            </section>
+        </form>
+    </article>
+    <Button variant="secondary" size="medium" href="/steptwo">
+        <a href="/abonner">Tilbage</a>
+    </Button>
+    <Button variant="primary" size="large" href="/stepthree">
+        <a href="/stepthree">Næste</a>
+    </Button>
+</AbonnerLayout>
