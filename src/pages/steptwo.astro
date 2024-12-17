@@ -2,7 +2,7 @@
 import Button from '../components/Button.astro';
 import AbonnerLayout from "../layouts/AbonnerLayout.astro";
 import { Image } from 'astro:assets';
-import Mockup2 from "../assets/images/mockup_steptwo.png";
+import Mockup2 from "../assets/images/mockup_steptwo.webp";
 ---
 
 <AbonnerLayout title="Abonnér på Period.">
@@ -19,19 +19,18 @@ import Mockup2 from "../assets/images/mockup_steptwo.png";
                 <li><a href="#">3. Privat levering</a></li>
             </ol>
         </nav>
-        <h1></h1>
         <form class="flex flex-col gap-6">
             <h4>Hvor ofte vil du modtage din levering?</h4>
-            <section>
+            <section class="flex flex-">
                 <div></div>
-                <Image class="" format="webp" src={Mockup2} alt="Mockup"/>
+                <Image class="w-[450px] mx-auto" src={Mockup2} alt="Mockup"/>
             </section>
         </form>
     </article>
     <Button variant="secondary" size="medium" href="/steptwo">
         <a href="/abonner">Tilbage</a>
     </Button>
-    <Button variant="primary" size="large" href="/stepthree">
-        <a href="/stepthree">Næste</a>
+    <Button variant="primary" size="large">
+        <a href="/steptwo">Næste</a>
     </Button>
 </AbonnerLayout>

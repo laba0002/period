@@ -72,7 +72,7 @@ export default {
       konsultativDesk: ["1rem", { lineHeight: "1.2rem" }],
       bodyDesk: ["1.125rem", { lineHeight: "1.5rem" }],
       baseDesk: ["1.333rem", { lineHeight: "1.8rem" }],
-      smallDesk: ["1.777rem", { lineHeight: "2rem" }],
+      smallDesk: ["1.555rem", { lineHeight: "2rem" }],
       smallMediumDesk: ["2.369rem", { lineHeight: "2.5rem" }],
       mediumDesk: ["3.158rem", { lineHeight: "3.5rem" }],
       mediumLargeDesk: ["4.209rem", { lineHeight: "4rem" }],
