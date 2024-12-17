@@ -21,9 +21,42 @@ import Mockup2 from "../assets/images/mockup_steptwo.webp";
         </nav>
         <form class="flex flex-col gap-6">
             <h4>Hvor ofte vil du modtage din levering?</h4>
-            <section class="flex flex-">
-                <div></div>
-                <Image class="w-[450px] mx-auto" src={Mockup2} alt="Mockup"/>
+            <section>
+                <Image class="" format="webp" src={Mockup2} alt="Mockup"/>
+                <div>
+                    <div class="flex flex-col justify-between">
+                        <div>
+                            <label for="snack1">
+                                <input type="checkbox" id="snack1" name="snack[]" value="chocolate">                                
+                                Prøvepakken
+                            </label>
+                        </div>
+                        <div>
+                            <label for="snack2">
+                                <input type="checkbox" id="snack2" name="snack[]" value="nuts">
+                                Hver måned
+                            </label>
+                        </div>
+                        <div>
+                            <label for="snack3">
+                                <input type="checkbox" id="snack3" name="snack[]" value="fruit">
+                                Hver anden måned
+                            </label>
+                        </div>
+                        <div>
+                            <label for="snack3">
+                                <input type="checkbox" id="snack3" name="snack[]" value="fruit">
+                                Hver tredje måned
+                            </label>
+                        </div>
+                        <div>
+                            <label for="snack3">
+                                <input type="checkbox" id="snack3" name="snack[]" value="fruit">
+                                Hvert halve år
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </section>
         </form>
     </article>
