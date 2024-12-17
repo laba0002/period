@@ -1,0 +1,69 @@
+---
+import Button from '../components/Button.astro';
+import AbonnerLayout from "../layouts/AbonnerLayout.astro";
+import { Image } from 'astro:assets';
+import Mockup2 from "../assets/images/mockup_steptwo.webp";
+---
+
+<AbonnerLayout title="Abonnér på Period.">
+    <article class="px-sm flex flex-col max-w-lg md:max-w-2xl lg:max-w-6xl mx-auto">
+        <nav>
+            <ol class="lg:hidden flex flex-row justify-between">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+            </ol>
+            <ol class="hidden lg:flex flex-row justify-between">
+                <li><a href="#">1. Vælg dit behov</a></li>
+                <li><a href="#">2. Planlæg dit abonnement</a></li>
+                <li><a href="#">3. Privat levering</a></li>
+            </ol>
+        </nav>
+        <form class="flex flex-col gap-6">
+            <h4>Hvor ofte vil du modtage din levering?</h4>
+            <section class="lg:flex flex-row">
+                <Image class="" src={Mockup2} alt="Mockup"/>
+                <div>
+                    <div class="flex flex-col justify-between">
+                        <div>
+                            <label for="choice1">
+                                <input type="checkbox" id="choisenr1" name="snack[]" value="chocolate">                                
+                                Prøvepakken
+                            </label>
+                        </div>
+                        <div>
+                            <label for="choice2">
+                                <input type="checkbox" id="choisenr2" name="snack[]" value="nuts">
+                                Hver måned
+                            </label>
+                        </div>
+                        <div>
+                            <label for="choice3">
+                                <input type="checkbox" id="choisenr3" name="snack[]" value="fruit">
+                                Hver anden måned
+                            </label>
+                        </div>
+                        <div>
+                            <label for="choice4">
+                                <input type="checkbox" id="choisenr4" name="snack[]" value="fruit">
+                                Hver tredje måned
+                            </label>
+                        </div>
+                        <div>
+                            <label for="choice5">
+                                <input type="checkbox" id="choisenr5" name="snack[]" value="fruit">
+                                Hvert halve år
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </article>
+    <Button variant="secondary" size="medium" href="/steptwo">
+        <a href="/abonner">Tilbage</a>
+    </Button>
+    <Button variant="primary" size="large">
+        <a href="/steptwo">Næste</a>
+    </Button>
+</AbonnerLayout>

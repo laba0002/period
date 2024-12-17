@@ -7,27 +7,27 @@ import { Image } from 'astro:assets';
 import period from "../assets/images/Period.svg";
 ---
 
-<div x-data="{ showmenu: false }" class="max-w-screen-xl mx-auto text-white">
+<div x-data="{ showmenu: false }" class="">
     <section id="navbar" class="relative bg-gray-800">
-        <div class="overflow-clip w-screen md:ml-[-6.3%]"><Wave></Wave></div>
+        <div class="overflow-clip w-auto"><Wave></Wave></div>
         <a href="/">
             <Image class="w-6xl absolute top-m left-s hidden lg:block" src={period} alt="Logo"/>
         </a>   
-        <div class="lg:hidden block top-xxs left-s absolute z-10 p-4 w-lg">
+        <a href="/" class="lg:hidden block top-xxs left-s absolute z-10 p-4 w-lg">
             <SmallLogo/>
-        </div>
+        </a>
          <nav id="desktopmenu" class="hidden lg:absolute top-ml lg:flex flex-row items-center gap-s right-s p-4 z-10 text-red-700">
-            <Link>Om pakken</Link>
-            <Link>Om os</Link>
-            <Button variant="primary" size="small">Abonnér</Button>
+            <Link href="/ompakken">Om pakken</Link>
+            <Link href="/omos">Om os</Link>
+            <Button variant="primary" size="small" href="/abonner">Abonnér</Button>
             <Button variant="secondary" size="small">Min profil</Button>
         </nav>
+        
         <button id="burgermenu" class="absolute top-s right-s lg:hidden z-50 w-m h-h" x-on:click="showmenu = !showmenu">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#E7232D" class="w-8 h-8">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 6h18M3 12h18m-18 6h18" />
-        </svg>
-    </button>
-    
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#E7232D" class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 6h18M3 12h18m-18 6h18" />
+            </svg>
+        </button>
     </section>  
 
      <!-- Mobile Menu -->
@@ -37,11 +37,14 @@ import period from "../assets/images/Period.svg";
         </div>
             <ul class="p-4 absolute top-0 -right-3 md:-right-4 bg-beige-400 rounded-b-sm w-screen md:w-[40%] z-10">
                 <li class="text-start py-8 pl-7"><a href="/ompakken" class="transition hover:text-red-500"><h5>Om pakken</h5></a></li>
-                <li class="text-start py-8 pl-7"><a href="/omos" class="transition hover:text-red-500"><h5>Om os</h5></a></li>
-                <li class="text-start py-8 pl-7"><a href="#" class="transition hover:text-red-500"><h5>Få abonnement</h5></a></li>
-                <li class="text-start py-8 pl-7"><a href="#" class="transition hover:text-red-500"><h5>Min profil</h5></a></li>  
-            </ul>
+                <li class="text-start py-8 pl-7"><a href="/omos" class="transition hover:text-red-500"><h5>Om os</h5></a></li>            
+            <div class="flex flex-col">
+                <Button variant="primary" size="small" href="/abonner">Abonnér</Button>
+                <Button variant="secondary" size="small">Min profil</Button>
+            </div>
+        </ul>
     </nav>
+
 </div>
 
 <div class="pt-lg lg:pt-xxs">

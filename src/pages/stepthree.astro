@@ -1,0 +1,84 @@
+---
+import Button from '../components/Button.astro';
+import AbonnerLayout from "../layouts/AbonnerLayout.astro";
+---
+
+<AbonnerLayout title="Abonnér på Period.">
+    <article class="px-sm flex flex-col max-w-lg md:max-w-2xl lg:max-w-6xl mx-auto">
+        <nav>
+            <ol class="lg:hidden flex flex-row justify-between">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+            </ol>
+            <ol class="hidden lg:flex flex-row justify-between">
+                <li><a href="#">1. Vælg dit behov</a></li>
+                <li><a href="#">2. Planlæg dit abonnement</a></li>
+                <li><a href="#">3. Privat levering</a></li>
+            </ol>
+        </nav>
+        <h1></h1>
+        <form class="max-w-4xl mx-auto p-6 space-y-6">
+            <section>
+                <h2 class="text-2xl font-bold text-red-600 mb-4">Leveringsoplysninger</h2>
+                <div class="space-y-4">
+                    <label for="firstname" class="text-lg text-blue-700">Fornavn</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Fornavn" class="w-full p-3 rounded-lg border border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="space-y-4">
+                    <label for="lastname" class="text-lg text-blue-700">Efternavn</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Efternavn" class="w-full p-3 rounded-lg border border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="space-y-4">
+                    <label for="email" class="text-lg text-blue-700">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" class="w-full p-3 rounded-lg border border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="space-y-4">
+                    <label for="mobile" class="text-lg text-blue-700">Mobil</label>
+                    <input type="tel" id="mobile" name="mobile" placeholder="Mobil" class="w-full p-3 rounded-lg border border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="space-y-4">
+                    <label for="address" class="text-lg text-blue-700">Adresse</label>
+                    <input type="text" id="address" name="address" placeholder="Adresse" class="w-full p-3 rounded-lg border border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="flex space-x-4">
+                    <div class="w-1/2 space-y-4">
+                        <label for="number" class="text-lg text-blue-700">Nr.</label>
+                        <input type="text" id="number" name="number" placeholder="Nr." class="w-full p-3 rounded-lg border border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="w-1/2 space-y-4">
+                        <label for="postalcode" class="text-lg text-blue-700">Postnr.</label>
+                        <input type="text" id="postalcode" name="postalcode" placeholder="Postnr." class="w-full p-3 rounded-lg border border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <label for="country" class="text-lg text-blue-700">Land</label>
+                    <input type="text" id="country" name="country" placeholder="Land" class="w-full p-3 rounded-lg border border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+            </section>
+        
+            <section>
+                <h4 class="text-2xl font-bold text-red-600 mb-4">Ny bruger</h2>
+                <div class="space-y-4">
+                    <label for="username" class="text-lg text-blue-700">Brugernavn</label>
+                    <input type="text" id="username" name="username" placeholder="Brugernavn" class="w-full p-3 rounded-lg border border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="space-y-4">
+                    <label for="password" class="text-lg text-blue-700">Adgangskode</label>
+                    <input type="password" id="password" name="password" placeholder="Adgangskode" class="w-full p-3 rounded-lg border border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="space-y-4">
+                    <label for="confirm-password" class="text-lg text-blue-700">Gentag adgangskode</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Gentag adgangskode" class="w-full p-3 rounded-lg border border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+            </section>
+        </form>
+        
+    </article>
+    <Button variant="secondary" size="medium" href="/steptwo">
+        <a href="/steptwo">Tilbage</a>
+    </Button>
+    <Button type="submit" variant="primary" size="large" href="/stepthree">
+        <a href="/laststep">Abonnér</a>
+    </Button>
+</AbonnerLayout>
