@@ -7,9 +7,9 @@ import { Image } from 'astro:assets';
 import period from "../assets/images/Period.svg";
 ---
 
-<div x-data="{ showmenu: false }" class="max-w-screen-xl mx-auto text-white">
+<div x-data="{ showmenu: false }" class="text-white">
     <section id="navbar" class="relative bg-gray-800">
-        <div class="overflow-clip w-screen md:ml-[-6.3%]"><Wave></Wave></div>
+        <div class="overflow-clip w-auto"><Wave></Wave></div>
         <a href="/">
             <Image class="w-6xl absolute top-m left-s hidden lg:block" src={period} alt="Logo"/>
         </a>   
