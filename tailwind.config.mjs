@@ -42,6 +42,7 @@ export default {
 
     /* Tilføj din egen spacing nedenfor */
     spacing: {
+      none: "0px",
       xxs: "8px",
       xs: "16px",
       s: "24px",
@@ -71,7 +72,7 @@ export default {
       konsultativDesk: ["1rem", { lineHeight: "1.2rem" }],
       bodyDesk: ["1.125rem", { lineHeight: "1.5rem" }],
       baseDesk: ["1.333rem", { lineHeight: "1.8rem" }],
-      smallDesk: ["1.777rem", { lineHeight: "2rem" }],
+      smallDesk: ["1.555rem", { lineHeight: "2rem" }],
       smallMediumDesk: ["2.369rem", { lineHeight: "2.5rem" }],
       mediumDesk: ["3.158rem", { lineHeight: "3.5rem" }],
       mediumLargeDesk: ["4.209rem", { lineHeight: "4rem" }],
@@ -128,18 +129,13 @@ export default {
         "border_radius-2xl": "79px",
         "border_radius-3xl": "100px",
       },
-      BoxShadow: {
-        dropred: "5px 6px 7px 0px #FF005D",
-        dropblue: "5px 6px 7px 0px #A3AAEB",
-        innerred: "5px 6px 7px 0px #FF005D inset",
-        innerblue: "5px 6px 7px 0px #A3AAEB inset",
+      boxShadow: {
+        dropred: "5px 6px 7px 0px rgba(231, 35, 45, 0.8)",
+        innerred: "inset 0 2px 4px rgba(231, 35, 45, 0.8)",
+        dropblue: "5px 6px 7px 0px rgba(0, 0, 255, 0.5)",
+        innerblue: "inset 0 2px 4px rgba(0, 0, 255, 0.5)",
       },
     },
   },
-  plugins: [
-    require("@tailwindcss/typography"),
-    require("@tailwindcss/forms"),
-    require("@tailwindcss/aspect-ratio"),
-    require("@tailwindcss/container-queries"),
-  ],
+  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms"), require("@tailwindcss/aspect-ratio"), require("@tailwindcss/container-queries")],
 };

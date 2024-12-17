@@ -1,6 +1,51 @@
 ---
+import SmallLogo from "./SmallLogo.astro"
+import Button from "./Button.astro"
+import Link from "./Link.astro";
+import Wave from "./Wave.astro"
+import { Image } from 'astro:assets';
+import period from "../assets/images/Period.svg";
 ---
-<div class="max-w-screen-xl mx-auto text-white">
-    Header/Navigation
+
+<div x-data="{ showmenu: false }" class="">
+    <section id="navbar" class="relative bg-gray-800">
+        <div class="overflow-clip w-auto"><Wave></Wave></div>
+        <a href="/">
+            <Image class="w-6xl absolute top-m left-s hidden lg:block" src={period} alt="Logo"/>
+        </a>   
+        <a href="/" class="lg:hidden block top-xxs left-s absolute z-10 p-4 w-lg">
+            <SmallLogo/>
+        </a>
+         <nav id="desktopmenu" class="hidden lg:absolute top-ml lg:flex flex-row items-center gap-s right-s p-4 z-10 text-red-700">
+            <Link href="/ompakken">Om pakken</Link>
+            <Link href="/omos">Om os</Link>
+            <Button variant="primary" size="small" href="/abonner">Abonnér</Button>
+            <Button variant="secondary" size="small">Min profil</Button>
+        </nav>
+        
+        <button id="burgermenu" class="absolute top-s right-s lg:hidden z-50 w-m h-h" x-on:click="showmenu = !showmenu">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#E7232D" class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 6h18M3 12h18m-18 6h18" />
+            </svg>
+        </button>
+    </section>  
+
+     <!-- Mobile Menu -->
+    <nav id="mobilmenu" class="flex flex-col content-center relative" 
+    x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
+        <div class="fill-red-700 absolute -top-36 md:-right-4 w-screen h-40 -right-3 -z-10 transition">
+        </div>
+            <ul class="p-4 absolute top-0 -right-3 md:-right-4 bg-beige-400 rounded-b-sm w-screen md:w-[40%] z-10">
+                <li class="text-start py-8 pl-7"><a href="/ompakken" class="transition hover:text-red-500"><h5>Om pakken</h5></a></li>
+                <li class="text-start py-8 pl-7"><a href="/omos" class="transition hover:text-red-500"><h5>Om os</h5></a></li>            
+            <div class="flex flex-col">
+                <Button variant="primary" size="small" href="/abonner">Abonnér</Button>
+                <Button variant="secondary" size="small">Min profil</Button>
+            </div>
+        </ul>
+    </nav>
+
 </div>
-    
+
+<div class="pt-lg lg:pt-xxs">
+</div>
