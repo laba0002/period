@@ -4,14 +4,16 @@ import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import cirkelFotos from "../assets/images/om-os/portræt-runde.webp";
+import omOsPhoto1 from "../assets/images/om-os/SelmaLaura.webp";
 import omOsPhoto2 from "../assets/images/om-os/IdaSelma.webp";
 import haandMedBind from "../assets/images/om-os/haand-m-bind.webp";
 ---
 
 <MainLayout title="Om os">
-    
+    <a href="">this is a link</a>
+    <Link>This is a link<Link/>
     <section class="pt-lg grid grid-cols-1 md:grid-cols-2 max-w-screen-xl mx-auto"><div class="flex flex-col"><h1 class="text-red-700">Bag om<br>Period.</h1><h4>Fra en eksamensopgave til en pakke købt over hele Danmark - Her er stifterne Laura, Ida og Selma</h4></div><Image src={cirkelFotos} alt="tre portræt billeder"></Image></section>
-    <section class="pt-lg grid grid-cols-1 md:grid-cols-3 max-w-screen-xl mx-auto"><Image class="p-xs" src={omOsPhoto2} alt="Et billede af to piger der smiler"></Image><div class="flex flex-col gap-xs"><h2 class="text-red-700">Fra idé til abonnement</h2><p>I 2024 havde vi en idé til vores eksamensprojekt: et månedligt abonnement på menstruationsprodukter.
+    <section class="pt-lg grid grid-cols-1 md:grid-cols-3 max-w-screen-xl mx-auto"><Image class="p-xs" src={omOsPhoto1} alt="Et billede af to piger der smiler og spiser pizza"></Image><div class="flex flex-col gap-xs"><h2 class="text-red-700">Fra idé til abonnement</h2><p>I 2024 havde vi en idé til vores eksamensprojekt: et månedligt abonnement på menstruationsprodukter.
         </p>
         <p>Det hele startede som en brainstorm. Der tænkte vi på, hvordan vi kunne gøre det lettere for menstruerende personer, der ofte må løbe rundt i smerte og købe produkter, når de pludselig manglede dem. </p>
         <p>Hvor meget tid og energi kunne man ikke lige spare, hvis alt man skulle bruge, stod klar på dørtrinet hver månede?</p><p> Vi indså, at vi havde ramt noget, som virkelig kunne gøre en forskel i hverdagen for mange, og i dag bestilles kassen over hele Danmark.</p></div><Image class="p-xs" src={omOsPhoto2} alt="Et billede af to piger der smiler"></Image></section>
