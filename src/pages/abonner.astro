@@ -13,14 +13,14 @@ import AbonnerSteps from "../components/AbonnerSteps.astro";
         <AbonnerSteps></AbonnerSteps>
         <h1 class="text-center">Tilpas dit eget abonnement</h1>
         
-        <form class="flex flex-col gap-8" id="stepOneForm">
+        <form class="flex flex-col gap-sm" id="stepOneForm">
             <section>
                 <h4 class="text-center">Vælg det produkt, der passer bedst til dig!</h4>
                 <div class="grid grid-rows-3 grid-cols-2 md:flex flex-row justify-center lg:gap-lg">
                     <label for="product1" class="relative flex flex-col items-center cursor-pointer group">
                         <input type="radio" id="product1" name="product" value="begge" class="peer hidden">
                         <!-- Rød cirkel -->
-                        <div class="absolute w-3xl h-3xl md:w-4xl lg:w-5xl md:h-4xl lg:h-5xl top-xs bg-red-900 rounded-full -z-10 group-hover:stroke-blue-500 group-hover:stroke-[6px]"></div>
+                        <div class="absolute w-3xl h-3xl md:w-4xl lg:w-5xl md:h-4xl lg:h-5xl top-xs bg-red-700 rounded-full z-10 group-hover:stroke-blue-500 group-hover:stroke-[6px]"></div>
                         <Image 
                             src={begge} 
                             alt="Begge dele" 
@@ -30,7 +30,7 @@ import AbonnerSteps from "../components/AbonnerSteps.astro";
                     <label for="product2" class="relative flex flex-col items-center cursor-pointer group row-span-3 justify-center">
                         <input type="radio" id="product2" name="product" value="bind" class="peer hidden">
                         <!-- Rød cirkel -->
-                        <div class="absolute w-3xl h-3xl md:w-4xl lg:w-5xl md:h-4xl lg:h-5xl top-[150px] md:top-xs bg-red-900 rounded-full -z-10 group-hover:stroke-blue-500 group-hover:stroke-[6px]"></div>
+                        <div class="absolute w-3xl h-3xl md:w-4xl lg:w-5xl md:h-4xl lg:h-5xl top-[150px] md:top-xs bg-red-700 rounded-full z-10 group-hover:stroke-blue-500 group-hover:stroke-[6px]"></div>
                         <Image 
                             src={bind} 
                             alt="Bind" 
@@ -40,7 +40,7 @@ import AbonnerSteps from "../components/AbonnerSteps.astro";
                     <label for="product3" class="relative flex flex-col items-center cursor-pointer group row-start-3">
                         <input type="radio" id="product3" name="product" value="tamponer" class="peer hidden">
                         <!-- Rød cirkel -->
-                        <div class="absolute w-3xl h-3xl md:w-4xl lg:w-5xl md:h-4xl lg:h-5xl top-xs bg-red-900 rounded-full -z-10 group-hover:stroke-blue-500 group-hover:stroke-[6px]"></div>
+                        <div class="absolute w-3xl h-3xl md:w-4xl lg:w-5xl md:h-4xl lg:h-5xl top-xs bg-red-700 rounded-full z-10 group-hover:stroke-blue-500 group-hover:stroke-[6px]"></div>
                         <Image 
                             src={tamponer} 
                             alt="Tamponer" 
@@ -109,3 +109,4 @@ import AbonnerSteps from "../components/AbonnerSteps.astro";
         </div>
     </article>
 </AbonnerLayout>
+
