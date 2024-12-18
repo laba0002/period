@@ -1,22 +1,12 @@
 ---
 import Button from '../components/Button.astro';
 import AbonnerLayout from "../layouts/AbonnerLayout.astro";
+import AbonnerSteps from "../components/AbonnerSteps.astro";
 ---
 
 <AbonnerLayout title="Abonnér på Period.">
     <article class="px-sm flex flex-col max-w-lg md:max-w-2xl lg:max-w-6xl mx-auto">
-        <nav>
-            <ol class="lg:hidden flex flex-row justify-between">
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-            </ol>
-            <ol class="hidden lg:flex flex-row justify-between">
-                <li><a href="#">1. Vælg dit behov</a></li>
-                <li><a href="#">2. Planlæg dit abonnement</a></li>
-                <li><a href="#">3. Privat levering</a></li>
-            </ol>
-        </nav>
+        <AbonnerSteps href="/steptwo"></AbonnerSteps>
         <h1></h1>
         <form class="max-w-4xl mx-auto p-6 space-y-6">
             <section>
