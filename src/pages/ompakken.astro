@@ -65,94 +65,88 @@ import Button from '../components/Button.astro';
     <Button>Få abonnement</Button>
 </div>
 
-   <section>
-<div class="rotate-180 overflow-clip w-auto"><Wave></Wave></div>
-        <section class="md:grid md:grid-cols-2 bg-red-50/60 md:gap-xs ">
-            <div class=" grid grid-cols-2 gap-xs mb-xs mx-ml ">
-                <div class="img-box img-fluid col-span-2">
-                    <Image class="image1 " src={info1} alt="info"/>
-                    <Image class="image2 " src={info1hover} alt="info hover"/>
-                </div>
-                <div class="img-box img-fluid">
-                    <Image class="image1 " src={info2} alt="info"/>
-                    <Image class="image2 " src={info2hover} alt="info hover"/>
-                </div>
-                <div class="img-box img-fluid">
-                    <Image class="image1 " src={info3} alt="info"/>
-                    <Image class="image2 " src={info3hover} alt="info hover"/>
-                </div>
-            </div>
-            <div class="grid grid-cols-2 gap-xs  mx-ml">
-                <div class="img-box img-fluid col-span-2 md:order-last">
-                    <Image class="image1 " src={info4} alt="info"/>
-                    <Image class="image2 " src={info4hover} alt="info hover"/>
-                </div>
-                <div class="img-box img-fluid">
-                    <Image class="image1 " src={info5} alt="info"/>
-                    <Image class="image2 " src={info5hover} alt="info hover"/>
-                </div>
-                <div class="img-box img-fluid">
-                    <Image class="image1 " src={info6} alt="info"/>
-                    <Image class="image2 " src={info6hover} alt="info hover"/>
-                </div>
-            </div>
-         
-        </section>
-    <div class=" overflow-clip w-auto"><Wave></Wave></div>
-   </section>
-
-    <div class="mt-lg"><Steps></Steps></div>
-
-    <section class="flex flex-col gap-ml items-center mt-ml mb-xl">
-        <h3 class="text-red-800 text-center">Få en menstruationspakke, <br> som tager sig af dig</h3>
-        <div class="text-red-950 text-center flex flex-col gap-s">
-            <p>Din cyklus, din komfort.</p>
-            <p>Med et abonnement hos os, er der ingen stress, kun self-care. <br>
-                Tilmeld dig Period. abonnementet i dag, og mærk forskellen!</p>
+<section>
+    <div class="rotate-180 overflow-clip w-auto"><Wave></Wave></div>
+    <section class="md:grid md:grid-cols-2 bg-red-50/60 md:gap-xs">
+      <div class="grid grid-cols-2 gap-xs mb-xs mx-ml">
+        <div class="img-box col-span-2">
+          <Image class="image1" src={info1} alt="info" />
+          <Image class="image2" src={info1hover} alt="info hover" />
         </div>
-        <Button variant="primary" size="medium">Abonnér</Button>
+        <div class="img-box">
+          <Image class="image1" src={info2} alt="info" />
+          <Image class="image2" src={info2hover} alt="info hover" />
+        </div>
+        <div class="img-box">
+          <Image class="image1" src={info3} alt="info" />
+          <Image class="image2" src={info3hover} alt="info hover" />
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-xs mx-ml">
+        <div class="img-box col-span-2 md:order-last">
+          <Image class="image1" src={info4} alt="info" />
+          <Image class="image2" src={info4hover} alt="info hover" />
+        </div>
+        <div class="img-box">
+          <Image class="image1" src={info5} alt="info" />
+          <Image class="image2" src={info5hover} alt="info hover" />
+        </div>
+        <div class="img-box">
+          <Image class="image1" src={info6} alt="info" />
+          <Image class="image2" src={info6hover} alt="info hover" />
+        </div>
+      </div>
     </section>
-
-</MainLayout>
-
-<style>
-
-
-.img-box{
+    <div class="overflow-clip w-auto"><Wave></Wave></div>
+  </section>
+  
+  <div class="mt-lg"><Steps></Steps></div>
+  
+  <section class="flex flex-col gap-ml items-center mt-ml mb-xl">
+    <h3 class="text-red-800 text-center">Få en menstruationspakke,<br />som tager sig af dig</h3>
+    <div class="text-red-950 text-center flex flex-col gap-s">
+      <p>Din cyklus, din komfort.</p>
+      <p>
+        Med et abonnement hos os, er der ingen stress, kun self-care.<br />
+        Tilmeld dig Period. abonnementet i dag, og mærk forskellen!
+      </p>
+    </div>
+    <Button variant="primary" size="medium">Abonnér</Button>
+  </section>
+  </MainLayout>
+  
+  <style>
+  .img-box {
     max-height: 100%;
     max-width: 100%;
     justify-content: center;
     align-items: center;
     margin: auto;
     display: flex;
-    object-fit: contain;
-}
-
-@media (min-width: 769px) {
-    .img-box{
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
-    }
-}
-
-.image1{
     position: relative;
-    transition: 0.5s ease-in-out;
-}
-
-.image2{
+  }
+  
+  .image1,
+  .image2 {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .image2 {
     position: absolute;
-    transition: 0.5s ease-in-out;
+    top: 0;
+    left: 0;
     opacity: 0;
-}
-
-.img-box:hover .image1{
-  opacity: 0;
-}
-
-.img-box:hover .image2{
-   opacity: 100%;
-}
-
-</style>
+  }
+  
+  .img-box:hover .image1 {
+    opacity: 0;
+  }
+  
+  .img-box:hover .image2 {
+    opacity: 1;
+  }
+  </style>
+  
