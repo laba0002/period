@@ -11,11 +11,15 @@ import Wave from "../components/Wave.astro";
 <MainLayout title="Period">
 
 
-	<section class="grid grid-cols-2 max-w-screen-xl mx-auto">
-		<div class="flex flex-col justify-evenly">
-			<h1 class="text-red-500 text-[110px]">Period pakken</h1>
-			<h2 class="text-red-800">gør din mestruation <span class="font-bold">meget</span> lettere</h2>
-		<div class="flex flex-row place-items-center">
+	<section class="grid grid-cols-1 md:grid-cols-2 max-w-screen-xl mx-xs md:mx-auto pb-2xl pt-m md:pt-none">
+		<div class="flex flex-col justify-evenly ">
+			<h1 class="text-red-500 text-xlargeMobile md:text-[110px]">Period pakken</h1>
+			<h2 class="text-red-800 pb-m">gør din mestruation <span class="font-[800]">meget</span> lettere</h2>
+		<section>
+			<div class="flex md:hidden">
+				<img src="/gif/box-frame-5.gif" alt="">
+			</div>
+			<div class="flex flex-row place-items-center gap-s py-xxs">
 			<div>
 				<svg class="p-xxs" width="37" height="52" viewBox="0 0 37 52" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M18.4141 51.5C28.2917 51.5 36.3284 43.4652 36.3284 33.5882C36.3284 23.915 19.5393 1.96062 18.8243 1.03108L18.4141 0.5L18.0039 1.03455C17.2899 1.96235 0.5 23.9183 0.5 33.5899C0.500193 43.4652 8.53678 51.5 18.4141 51.5Z" fill="#981117"/>
@@ -23,7 +27,7 @@ import Wave from "../components/Wave.astro";
 				</div>
 		<h5 class="text-red-950">Skræddersyet menstruationspakke med bind, tamponer og selfcare goodies</h5>
 	</div>
-	<div class="flex flex-row place-items-center">
+	<div class="flex flex-row place-items-center gap-s py-xxs">
 		<div>
 			<svg class="p-xxs" width="37" height="52" viewBox="0 0 37 52" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M18.4141 51.5C28.2917 51.5 36.3284 43.4652 36.3284 33.5882C36.3284 23.915 19.5393 1.96062 18.8243 1.03108L18.4141 0.5L18.0039 1.03455C17.2899 1.96235 0.5 23.9183 0.5 33.5899C0.500193 43.4652 8.53678 51.5 18.4141 51.5Z" fill="#981117"/>
@@ -31,7 +35,7 @@ import Wave from "../components/Wave.astro";
 			</div>
 	<h5 class="text-red-950">Levering lige til din hoveddør - lige til tiden</h5>
 </div>
-<div class="flex flex-row place-items-center">
+<div class="flex flex-row place-items-center gap-s py-xxs">
 	<div>
 		<svg class="p-xxs" width="37" height="52" viewBox="0 0 37 52" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path d="M18.4141 51.5C28.2917 51.5 36.3284 43.4652 36.3284 33.5882C36.3284 23.915 19.5393 1.96062 18.8243 1.03108L18.4141 0.5L18.0039 1.03455C17.2899 1.96235 0.5 23.9183 0.5 33.5899C0.500193 43.4652 8.53678 51.5 18.4141 51.5Z" fill="#981117"/>
@@ -39,9 +43,11 @@ import Wave from "../components/Wave.astro";
 		</div>
 <h5 class="text-red-950">Hyggeligt og praktisk - på dine præmisser!</h5>
 </div>
-<Button variant="primary" size="large" href="/abonner">Abonnér</Button>
+</section>
+<div class="hidden md:flex"><Button variant="primary" size="large" href="/abonner">Få abonnement</Button></div>
+<div class="md:hidden flex"><Button variant="primary" size="medium" href="/abonner">abonnér</Button></div>
 		</div>
-		<div>
+		<div class="md:flex hidden">
 			<img src="/gif/box-frame-5.gif" alt="">
 		</div>
 	</section>
