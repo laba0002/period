@@ -16,73 +16,88 @@ import AbonnerSteps from "../components/AbonnerSteps.astro";
         <form class="flex flex-col gap-8">
             <section>
                 <h4 class="text-center">Vælg det produkt, der passer bedst til dig!</h4>
-                <div class="flex flex-row justify-center gap-8">
-                    <!-- Begge Dele -->
-                    <label for="product1" class="cursor-pointer flex flex-col items-center">
-                        <input type="radio" id="product1" name="product" value="begge" class="hidden">
-                        <Image src={begge} alt="Begge dele" class="w-24 h-24 object-cover hover:scale-110 transition">
-                        <span class="text-lg font-medium text-red-600">Begge dele</span>
+                <div class="grid grid-rows-3 grid-cols-2 md:flex flex-row justify-center lg:gap-lg">
+                    <label for="product1" class="relative flex flex-col items-center cursor-pointer group">
+                        <input type="radio" id="product1" name="product" value="begge" class="peer hidden">
+                        <!-- Rød cirkel -->
+                        <div class="absolute w-3xl h-3xl md:w-4xl lg:w-5xl md:h-4xl lg:h-5xl top-xs bg-red-900 rounded-full -z-10 group-hover:stroke-blue-500 group-hover:stroke-[6px]"></div>
+                        <Image 
+                            src={begge} 
+                            alt="Begge dele" 
+                            class="w-4xl h-4xl md:w-4xl lg:w-5xl md:h-4xl lg:h-5xl object-cover hover:scale-110 transition relative z-10"/>
+                        <div class="absolute inset-0 top-[150px] md:top-5xl lg:top-[190px] rounded-full border-[6px] border-transparent peer-checked:border-blue-500 group-hover:border-blue-500 z-10"></div>
                     </label>
-                    <!-- Bind -->
-                    <label for="product2" class="cursor-pointer flex flex-col items-center">
-                        <input type="radio" id="product2" name="product" value="bind" class="hidden">
-                        <Image src={bind} alt="Bind" class="w-24 h-24 object-cover mb-2 hover:scale-110 transition">
-                        <span class="text-lg font-medium text-red-600">Bind</span>
+                    <label for="product2" class="relative flex flex-col items-center cursor-pointer group row-span-3 justify-center">
+                        <input type="radio" id="product2" name="product" value="bind" class="peer hidden">
+                        <!-- Rød cirkel -->
+                        <div class="absolute w-3xl h-3xl md:w-4xl lg:w-5xl md:h-4xl lg:h-5xl top-[150px] md:top-xs bg-red-900 rounded-full -z-10 group-hover:stroke-blue-500 group-hover:stroke-[6px]"></div>
+                        <Image 
+                            src={bind} 
+                            alt="Bind" 
+                            class="w-4xl h-4xl md:w-4xl lg:w-5xl md:h-4xl lg:h-5xl  object-cover hover:scale-110 transition relative z-10"/>
+                        <div class="absolute inset-0 top-[280px] md:top-5xl lg:top-[190px] rounded-full border-[6px] border-transparent peer-checked:border-blue-500 group-hover:border-blue-500 z-10"></div>
                     </label>
-                    <!-- Tamponer -->
-                    <label for="product3" class="cursor-pointer flex flex-col items-center">
-                        <input type="radio" id="product3" name="product" value="tamponer" class="hidden">
-                        <Image src={tamponer} alt="Tamponer" class="w-24 h-24 object-cover hover:scale-110 transition">
-                        <span class="text-lg font-medium text-red-600">Tamponer</span>
+                    <label for="product3" class="relative flex flex-col items-center cursor-pointer group row-start-3">
+                        <input type="radio" id="product3" name="product" value="tamponer" class="peer hidden">
+                        <!-- Rød cirkel -->
+                        <div class="absolute w-3xl h-3xl md:w-4xl lg:w-5xl md:h-4xl lg:h-5xl top-xs bg-red-900 rounded-full -z-10 group-hover:stroke-blue-500 group-hover:stroke-[6px]"></div>
+                        <Image 
+                            src={tamponer} 
+                            alt="Tamponer" 
+                            class="w-4xl h-4xl md:w-4xl lg:w-5xl md:h-4xl lg:h-5xl object-cover hover:scale-110 transition relative z-10"/>
+                        <div class="absolute inset-0 top-[150px] md:top-5xl lg:top-[190px] rounded-full border-[6px] border-transparent peer-checked:border-blue-500 group-hover:border-blue-500 z-10"></div>
                     </label>
                 </div>
             </section>
+            
 
-            <!-- Flow Selection -->
             <section>
                 <h4 class="text-center">Hvad passer til dit flow?</h4>
-                <div class="flex flex-row justify-center gap-8">
-                    <label for="flow1" class="flex flex-col items-center cursor-pointer">
-                        <input type="radio" id="flow1" name="flow" value="light" class="hidden">
+                <div class="flex flex-row justify-center align-bottom object-bottom gap-m">
+                    <label for="flow1" class="relative flex flex-col items-center cursor-pointer group">
+                        <input type="radio" id="flow1" name="flow" value="light" class="peer hidden">
                         <div class="w-8 h-8 bg-red-300 rounded-full"></div>
-                        <span class="text-lg">Let</span>
+                        <svg class="transition-all group-hover:stroke-blue-500 group-hover:stroke-[6px]" width="53" height="75" viewBox="-3 -3 59 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26.3443 75C40.8701 75 52.6889 63.1841 52.6889 48.6591C52.6889 34.4338 27.999 2.14797 26.9475 0.781002L26.3443 0L25.741 0.786105C24.691 2.15052 0 34.4386 0 48.6617C0.000283485 63.1841 11.8188 75 26.3443 75Z" fill="#B8141C"/>
+                        </svg>
+                        <div class="absolute inset-0 top-xl rounded-border_radius-md border-[6px] border-transparent peer-checked:border-blue-500 peer-checked:bg-blue-500"></div>
                     </label>
-                    <label for="flow2" class="flex flex-col items-center cursor-pointer">
-                        <input type="radio" id="flow2" name="flow" value="moderate" class="hidden">
+                    <label for="flow2" class="relative flex flex-col items-center cursor-pointer group">
+                        <input type="radio" id="flow2" name="flow" value="moderate" class="peer hidden">
                         <div class="w-12 h-12 bg-red-500 rounded-full"></div>
-                        <span class="text-lg">Moderat</span>
+                        <svg class="transition-all group-hover:stroke-blue-500 group-hover:stroke-[6px]" width="83" height="118" viewBox="-3 -3 89 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M41.4998 118C64.382 118 83 99.4096 83 76.557C83 54.1759 44.1064 3.37947 42.4501 1.22878L41.4998 0L40.5495 1.2368C38.8954 3.38348 0 54.1835 0 76.561C0.00044657 99.4096 18.618 118 41.4998 118Z" fill="#B8141C"/>
+                        </svg>
+                        <div class="absolute inset-0 top-4xl rounded-border_radius-md border-[6px] border-transparent peer-checked:border-blue-500 peer-checked:bg-blue-500"></div>
                     </label>
-                    <label for="flow3" class="flex flex-col items-center cursor-pointer">
-                        <input type="radio" id="flow3" name="flow" value="heavy" class="hidden">
+                    <label for="flow3" class="relative flex flex-col items-center cursor-pointer group">
+                        <input type="radio" id="flow3" name="flow" value="heavy" class="peer hidden">
                         <div class="w-16 h-16 bg-red-700 rounded-full"></div>
-                        <span class="text-lg">Kraftigt</span>
+                        <svg class="transition-all group-hover:stroke-blue-500 group-hover:stroke-[6px]" width="106" height="150" viewBox="-3 -3 112 156" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M52.6886 150C81.7402 150 105.378 126.368 105.378 97.3182C105.378 68.8676 55.998 4.29594 53.8951 1.562L52.6886 0L51.4821 1.57221C49.382 4.30104 0 68.8773 0 97.3233C0.000566971 126.368 23.6376 150 52.6886 150Z" fill="#B8141C"/>
+                        </svg>
+                        <div class="absolute inset-0 top-5xl rounded-border_radius-md border-[6px] border-transparent peer-checked:border-blue-500 peer-checked:bg-blue-500"></div>
                     </label>
                 </div>
             </section>
-
-            <!-- Snack Preferences -->
+            
             <section>
                 <h4 class="text-center">Hvad er din snackpræference?</h4>
                 <div class="flex flex-col md:flex-row items-center justify-center gap-s mx-auto w-auto">
                   <label for="snack1" class="relative flex items-center justify-center w-[294px] h-[76px] bg-red-700 rounded-border_radius-md cursor-pointer text-red-50 text-smallDesk font-regular hover:border-sm hover:border-blue-500 transition">
                     <input type="radio" id="snack1" name="snack" class="peer hidden" />
                     <span>Alle snacks</span>
-                    <!-- Selected border stroke -->
-                    <div class="absolute inset-0 rounded-border_radius-md border-[3px] peer-checked:border-sm peer-checked:border-blue-500 peer-checked:bg-blue-500"></div>
-                  </label>
-              
-                  <!-- Veganer -->
+                    <div class="absolute inset-0 top-xl md:top-[90px] rounded-border_radius-md border-[6px] border-transparent peer-checked:border-blue-500 peer-checked:bg-blue-500"></div>
+                  </label>    
                   <label for="snack2" class="relative flex items-center justify-center w-[294px] h-[76px] bg-red-700 rounded-border_radius-md cursor-pointer text-red-50 text-smallDesk font-regular hover:border-sm hover:border-blue-500 transition">
                     <input type="radio" id="snack2" name="snack" class="peer hidden" />
                     <span>Veganer</span>
-                    <div class="absolute inset-0 rounded-border_radius-md border-[3px] border-transparent peer-checked:bg-blue-500"></div>
+                    <div class="absolute inset-0 top-xl md:top-[90px] rounded-border_radius-md border-[6px] border-transparent peer-checked:bg-blue-500"></div>
                   </label>
-              
-                  <!-- Glutenfri -->
                   <label for="snack3" class="relative flex items-center justify-center w-[294px] h-[76px] bg-red-700 rounded-border_radius-md cursor-pointer text-red-50 text-smallDesk font-regular hover:border-sm hover:border-blue-500 transition">
                     <input type="radio" id="snack3" name="snack" class="peer hidden" />
                     <span>Glutenfri</span>
-                    <div class="absolute inset-0 rounded-border_radius-md border-[3px] border-transparent peer-checked:bg-blue-500"></div>
+                    <div class="absolute inset-0 top-xl md:top-[90px] rounded-border_radius-md border-[6px] border-transparent peer-checked:bg-blue-500"></div>
                   </label>
                 </div>
               </section>
