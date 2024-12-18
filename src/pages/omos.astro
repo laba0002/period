@@ -24,11 +24,10 @@ import bgIndhold3 from "../assets/images/om-os/scroll-3.png";
       </section>
       <section class="">
         <div class="overflow-clip bg-no-repeat bg-center bg-contain bg-fixed" style="background-image: url('bg-horisontal.png');">
-          <section id="horisontalscrollsection" class="h-[300vw] p-none">
+          <section id="horisontalscrollsection" class="h-[100vw] p-none">
             <ul id="horisontalliste" class="list-none pl-0 flex sticky top-[4vh]">
-            <li class="pl-0 flex w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><figure class="flex flex-row"><Image src={bgIndhold1} class="" alt="foto" /></figure></li>
-            <li class="flex w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><figure class="flex flex-row"><Image src={bgIndhold2} class="" alt="foto" /></figure></li>
-            <li class="flex w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><figure class="flex flex-row"><Image src={bgIndhold3} class="" alt="foto" /></figure></li>
+            <li class="pl-0 flex w-[200vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><figure class="flex flex-row"><Image src={bgIndhold} class="" alt="foto" /></figure></li>
+
             </ul>
             
           </section>
@@ -49,7 +48,7 @@ import bgIndhold3 from "../assets/images/om-os/scroll-3.png";
 
 	scroll(
 	animate("#horisontalliste", {
-		transform: ["none", "translateX(-300vw)"]
+		transform: ["none", "translateX(-100vw)"]
 	}),
 	{ target: document.querySelector("#horisontalscrollsection") }
 	); 
