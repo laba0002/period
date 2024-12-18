@@ -33,7 +33,7 @@
     @apply text-mediumMobile font-extrabold  md:text-mediumDesk;
   }
   h4 {
-    @apply text-smallMediumMobile md:text-smallMediumDesk text-red-500 py-sm;
+    @apply text-smallMediumMobile md:text-smallMediumDesk text-red-500 pt-sm pb-xxs;
   }
   h5 {
     @apply text-smallMobile md:text-smallDesk;
