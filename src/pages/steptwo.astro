@@ -12,35 +12,40 @@ import AbonnerSteps from "../components/AbonnerSteps.astro";
         <h4>Hvor ofte vil du modtage din levering?</h4>
         <form class="flex flex-col">
             <section class="lg:flex flex-row justify-center items-center">
-                <Image class="w-1/2 h-1/2" src={Mockup2} alt="Mockup"/>
+                <Image class="w-1/2 h-1/2" src={Mockup2} alt="Mockup" />
                 <div class="flex flex-col items-center justify-center gap-s mx-auto w-auto">
-                  <label for="choice1" class="relative flex items-center justify-center w-[250px] h-[60px] bg-red-700 rounded-border_radius-md cursor-pointer text-red-50 text-smallDesk font-regular hover:border-sm hover:border-blue-500 transition">
+                  <label for="choisenr1" class="relative flex items-center justify-center w-[250px] h-[60px] bg-red-700 rounded-2xl cursor-pointer text-red-50 text-sm font-regular hover:border hover:border-blue-500 transition">
                     <input type="radio" id="choisenr1" name="choise" class="peer hidden" />
                     <span>Prøvepakken</span>
-                    <div class="absolute inset-0 top-xl md:top-[90px] rounded-border_radius-md border-[6px] border-transparent peer-checked:border-blue-500 peer-checked:bg-blue-500"></div>
+                    <div class="absolute inset-0 top-lg rounded-md border-[6px] border-transparent peer-checked:border-blue-500 peer-checked:bg-blue-500 pointer-events-none"></div>
                   </label>    
-                  <label for="choice2" class="relative flex items-center justify-center w-[250px] h-[60px] bg-red-700 rounded-border_radius-md cursor-pointer text-red-50 text-smallDesk font-regular hover:border-sm hover:border-blue-500 transition">
+              
+                  <label for="choisenr2" class="relative flex items-center justify-center w-[250px] h-[60px] bg-red-700 rounded-2xl cursor-pointer text-red-50 text-sm font-regular hover:border hover:border-blue-500 transition">
                     <input type="radio" id="choisenr2" name="choise" class="peer hidden" />
                     <span>Hver måned</span>
-                    <div class="absolute inset-0 top-xl md:top-[90px] rounded-border_radius-md border-[6px] border-transparent peer-checked:bg-blue-500"></div>
+                    <div class="absolute inset-0 top-lg rounded-md border-[6px] border-transparent peer-checked:bg-blue-500 pointer-events-none"></div>
                   </label>
-                  <label for="choice3" class="relative flex items-center justify-center w-[250px] h-[60px] bg-red-700 rounded-border_radius-md cursor-pointer text-red-50 text-smallDesk font-regular hover:border-sm hover:border-blue-500 transition">
+              
+                  <label for="choisenr3" class="relative flex items-center justify-center w-[250px] h-[60px] bg-red-700 rounded-2xl cursor-pointer text-red-50 text-sm font-regular hover:border hover:border-blue-500 transition">
                     <input type="radio" id="choisenr3" name="choise" class="peer hidden" />
                     <span>Hver anden måned</span>
-                    <div class="absolute inset-0 top-xl md:top-[90px] rounded-border_radius-md border-[6px] border-transparent peer-checked:bg-blue-500"></div>
+                    <div class="absolute inset-0 top-lg rounded-md border-[6px] border-transparent peer-checked:bg-blue-500 pointer-events-none"></div>
                   </label>
-                  <label for="choice4" class="relative flex items-center justify-center w-[250px] h-[60px] bg-red-700 rounded-border_radius-md cursor-pointer text-red-50 text-smallDesk font-regular hover:border-sm hover:border-blue-500 transition">
+              
+                  <label for="choisenr4" class="relative flex items-center justify-center w-[250px] h-[60px] bg-red-700 rounded-2xl cursor-pointer text-red-50 text-sm font-regular hover:border hover:border-blue-500 transition">
                     <input type="radio" id="choisenr4" name="choise" class="peer hidden" />
                     <span>Hver tredje måned</span>
-                    <div class="absolute inset-0 top-xl md:top-[90px] rounded-border_radius-md border-[6px] border-transparent peer-checked:bg-blue-500"></div>
+                    <div class="absolute inset-0 top-lg rounded-md border-[6px] border-transparent peer-checked:bg-blue-500 pointer-events-none"></div>
                   </label>
-                  <label for="choice5" class="relative flex items-center justify-center w-[250px] h-[60px] bg-red-700 rounded-border_radius-md cursor-pointer text-red-50 text-smallDesk font-regular hover:border-sm hover:border-blue-500 transition">
+              
+                  <label for="choisenr5" class="relative flex items-center justify-center w-[250px] h-[60px] bg-red-700 rounded-2xl cursor-pointer text-red-50 text-sm font-regular hover:border hover:border-blue-500 transition">
                     <input type="radio" id="choisenr5" name="choise" class="peer hidden" />
                     <span>Hvert halve år</span>
-                    <div class="absolute inset-0 top-xl md:top-[90px] rounded-border_radius-md border-[6px] border-transparent peer-checked:bg-blue-500"></div>
+                    <div class="absolute inset-0 top-lg rounded-md border-[6px] border-transparent peer-checked:bg-blue-500 pointer-events-none"></div>
                   </label>
                 </div>
               </section>
+              
         </form>
         <section class="md:flex flex-row justify-between">
            <Button variant="secondary" size="medium" href="/steptwo">
