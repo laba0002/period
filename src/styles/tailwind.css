@@ -12,7 +12,8 @@
   h2,
   h3,
   h4,
-  h5 {
+  h5,
+  a {
     font-family: "Sansita";
   }
 
@@ -23,7 +24,7 @@
   }
 
   h1 {
-    @apply text-largeMobile md:text-largeDesk text-red-950;
+    @apply text-largeMobile md:text-largeDesk text-red-950 pb-xs;
   }
   h2 {
     @apply text-mediumLargeMobile font-bold md:text-mediumLargeDesk;
@@ -32,7 +33,7 @@
     @apply text-mediumMobile font-extrabold  md:text-mediumDesk;
   }
   h4 {
-    @apply text-smallMediumMobile md:text-smallMediumDesk text-red-500;
+    @apply text-smallMediumMobile md:text-smallMediumDesk text-red-500 py-sm;
   }
   h5 {
     @apply text-smallMobile md:text-smallDesk;
