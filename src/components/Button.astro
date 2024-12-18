@@ -1,7 +1,7 @@
 ---
 const {variant="primary", size="medium", href="#"} = Astro.props;
 
-const buttonStyling = " border-blue-700 rounded-border_radius-3xl border-md tracking-wide font-bold transition ease-in-out delay-100"; 
+const buttonStyling = "font-sansita border-blue-700 rounded-border_radius-3xl border-md tracking-wide font-bold transition ease-in-out delay-100"; 
 
 const variantClasses = {
 "textlink": "underline",
@@ -14,16 +14,16 @@ const variantClasses = {
 
 const sizeClasses = {
 
-"large": "text-mediumDesk py-xs px-lg",
+"large": "text-smallMediumDesk py-xs px-lg mt-lg",
 
-"medium": "text-smallMediumDesk py-xxs px-lg",
+"medium": "text-smallDesk py-xxs px-lg mt-ml",
 
 "small": "text-bodyDesk py-[5px] px-s",
 
 };
 ---
 <a href={href}>
-    <button class:list={[buttonStyling, variantClasses[variant], sizeClasses[size]]}><h5><slot /></h5></button>
+    <button class:list={[buttonStyling, variantClasses[variant], sizeClasses[size]]}><slot /></button>
 </a>
 
 
