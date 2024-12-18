@@ -9,6 +9,7 @@ import omOsPhoto2 from "../assets/images/om-os/IdaSelma.webp";
 import haandMedBind from "../assets/images/om-os/haand-m-bind.webp";
 import bgContainer from "../assets/images/om-os/bg-horisontal.png";
 import bgIndhold from "../assets/images/om-os/indhold-scroll-3.png";
+import bgIndholdPhone from "../assets/images/om-os/mobil-indhold.png";
 import bgIndhold1 from "../assets/images/om-os/scroll-1.png";
 import bgIndhold2 from "../assets/images/om-os/scroll-2.png";
 import bgIndhold3 from "../assets/images/om-os/scroll-3.png";
@@ -22,14 +23,21 @@ import bgIndhold3 from "../assets/images/om-os/scroll-3.png";
         <p>Det hele startede som en brainstorm. Der tænkte vi på, hvordan vi kunne gøre det lettere for menstruerende personer, der ofte må løbe rundt i smerte og købe produkter, når de pludselig manglede dem. </p>
         <p>Hvor meget tid og energi kunne man ikke lige spare, hvis alt man skulle bruge, stod klar på dørtrinet hver månede?</p><p> Vi indså, at vi havde ramt noget, som virkelig kunne gøre en forskel i hverdagen for mange, og i dag bestilles kassen over hele Danmark.</p></div><Image class="p-xs" src={omOsPhoto2} alt="Et billede af to piger der smiler"></Image>
       </section>
-      <section class="py-xl">
+      <section class="py-xl hidden md:flex">
         <div class="overflow-clip">
           <section id="horisontalscrollsection" class="h-[100vw] p-none">
             <ul id="horisontalliste" class="list-none pl-0 flex sticky top-[4vh]">
             <li class="pl-0 flex w-[200vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><figure class="flex flex-row"><Image src={bgIndhold} class="" alt="foto" /></figure></li>
-
-            </ul>
-            
+            </ul> 
+          </section>
+        </div>
+      </section>
+      <section class="py-xl md:hidden">
+        <div class="overflow-clip">
+          <section id="horisontalscrollsectionphone" class="h-[300vw] p-none">
+            <ul id="horisontallistephone" class="list-none pl-0 flex sticky top-[4vh]">
+            <li class="pl-0 flex w-[400vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><figure class="flex flex-row"><Image src={bgIndholdPhone} class="" alt="foto" /></figure></li>
+            </ul> 
           </section>
         </div>
       </section>
@@ -47,7 +55,7 @@ import bgIndhold3 from "../assets/images/om-os/scroll-3.png";
 	/* Import af Motion One biblioteket */
 	import { animate, stagger, inView, scroll, timeline } from "motion";
 
-	scroll(
+  scroll(
 	animate("#horisontalliste", {
 		transform: ["none", "translateX(-100vw)"]
 	}),
@@ -55,3 +63,17 @@ import bgIndhold3 from "../assets/images/om-os/scroll-3.png";
 	); 
 
     </script>
+    <script>
+      /* Horisontal scroll sektion */
+      
+	/* Import af Motion One biblioteket */
+	import { animate, stagger, inView, scroll, timeline } from "motion";
+
+  scroll(
+	animate("#horisontallistephone", {
+		transform: ["none", "translateX(-300vw)"]
+	}),
+	{ target: document.querySelector("#horisontalscrollsectionphone") }
+	); 
+    </script>
+    
