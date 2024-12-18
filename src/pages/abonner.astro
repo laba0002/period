@@ -63,7 +63,7 @@ import AbonnerSteps from "../components/AbonnerSteps.astro";
             <!-- Snack Preferences -->
             <section>
                 <h4 class="text-center">Hvad er din snackpræference?</h4>
-                <div class="flex flex-row items-center justify-center gap-s mx-auto w-auto">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-s mx-auto w-auto">
                   <label for="snack1" class="relative flex items-center justify-center w-[294px] h-[76px] bg-red-700 rounded-border_radius-md cursor-pointer text-red-50 text-smallDesk font-regular hover:border-sm hover:border-blue-500 transition">
                     <input type="radio" id="snack1" name="snack" class="peer hidden" />
                     <span>Alle snacks</span>
@@ -87,9 +87,7 @@ import AbonnerSteps from "../components/AbonnerSteps.astro";
                 </div>
               </section>
         </form>
-
-        <!-- Next Button -->
-        <div class="flex justify-center mt-8">
+        <div class="flex justify-end">
            <Button variant="primary" size="large" href="/steptwo">
                 Næste
             </Button>
