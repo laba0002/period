@@ -7,10 +7,9 @@ import AbonnerSteps from "../components/AbonnerSteps.astro";
 <AbonnerLayout title="Abonnér på Period.">
     <article class="px-sm flex flex-col max-w-lg md:max-w-2xl lg:max-w-6xl mx-auto">
         <AbonnerSteps href="/steptwo"></AbonnerSteps>
-        <h1></h1>
-        <form class="max-w-4xl mx-auto p-6 space-y-6">
-            <section>
-                <h2 class="mt-s mb-xxs">Leveringsoplysninger</h2>
+        <form class="p-6 space-y-6 lg:grid grid-cols-2 lg:gap-xl">
+            <section class="order-2">
+                <h3 class="mt-s mb-xxs">Leveringsoplysninger</h3>
                 <div class="space-y-4">
                     <label for="firstname" class="text-lg text-blue-950">Fornavn</label>
                     <input type="text" id="firstname" name="firstname" placeholder="Fornavn" class="w-full p-3 rounded-3xl bg-blue-300 border-none focus:ring-blue-500">
@@ -47,7 +46,7 @@ import AbonnerSteps from "../components/AbonnerSteps.astro";
                 </div>
             </section>
         
-            <section>
+            <section class="order-1" >
                 <h4 class="">Ny bruger</h2>
                 <div class="w-3xl h-[2px] bg-blue-950"></div>
                 <div class="space-y-4 pt-xxs">
