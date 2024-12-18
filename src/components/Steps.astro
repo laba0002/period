@@ -10,12 +10,12 @@ import drop from "../assets/images/drop.svg";
 
     <div class="flex flex-row md:flex-col gap-sm md:items-center">
         <h4 class="text-blue-800 pb-s hidden md:block">Step 1</h4>
-<div class="overflow-hidden rounded-full shadow-dropblue">
-             <Image class=" h-[200px] w-[200px] md:h-[310px] md:w-[310px] rounded-full object-cover transition-all hover:scale-105" src={step1} alt="step 1"/>
+<div class="overflow-hidden md:rounded-full md:shadow-dropblue">
+             <Image class="shadow-dropblue  h-[200px] w-[200px] md:h-[310px] md:w-[310px] rounded-full object-cover md:transition-all md:hover:scale-105" src={step1} alt="step 1"/>
      
 </div>       <div>
             <h4 class="text-blue-800 pb-xs md:pb-s block text-right md:hidden">Step 1</h4>
-            <p class="text-right md:text-center md:w-[313px] text-red-950">Vælg de produkter, du har brug for - bind, tamponer og self-care som chokolade og te. Tilpas den, så den passer til din cyklus.</p>
+            <p class="text-right md:text-center md:w-[313px] text-red-950 ">Vælg de produkter, du har brug for - bind, tamponer og self-care som chokolade og te. Tilpas den, så den passer til din cyklus.</p>
        </div>
     </div>
 
@@ -23,23 +23,32 @@ import drop from "../assets/images/drop.svg";
 
 
     <div class="flex flex-row md:flex-col gap-sm md:items-center">
-       <div>
-            <h4 class="text-blue-800 pb-xs md:pb-s">Step 2</h4>
-            <p class="md:text-center md:w-[313px] text-red-950 block md:hidden">Få din pakke leveret direkte til din dør, lige når du skal bruge den - altid diskret og på dine præmisser.</p>    
-       </div>
-<div class="overflow-hidden rounded-full shadow-dropblue">
-             <Image class="shadow-dropblue h-[200px] w-[200px] md:h-[300px] md:w-[300px] rounded-full object-cover transition-all hover:scale-105 "  src={step2} alt="step 2"/>
-     
-</div>        <p class="text-right md:text-center md:w-[313px] text-red-950 hidden md:block">Få din pakke leveret direkte til din dør, lige når du skal bruge den - altid diskret og på dine præmisser.</p>    
-    </div>
- 
+        <div>
+          <h4 class="text-blue-800 pb-xs md:pb-s">Step 2</h4>
+          <p class="md:text-center md:w-[313px] text-red-950 block md:hidden">
+            Få din pakke leveret direkte til din dør, lige når du skal bruge den - altid diskret og på dine præmisser.
+          </p>
+        </div>
+        <div class="md:overflow-hidden md:rounded-full md:shadow-dropblue">
+          <Image
+            class=" shadow-dropblue h-[200px] w-[200px] md:h-[310px] md:w-[310px] rounded-full md:object-cover md:transition-all md:hover:scale-105"
+            src={step2}
+            alt="step 2"
+          />
+        </div>
+        <p class="text-right  md:text-center md:w-[313px] text-red-950 hidden md:block">
+          Få din pakke leveret direkte til din dør, lige når du skal bruge den - altid diskret og på dine præmisser.
+        </p>
+      </div>
+      
+
 
     <Image class="hidden md:block"  src={drop} alt="drop"/>
 
     <div class="flex flex-row md:flex-col gap-sm md:items-center">
         <h4 class="text-blue-800 pb-s hidden md:block">Step 3</h4>
-<div class="overflow-hidden rounded-full shadow-dropblue">
-             <Image class="shadow-dropblue h-[200px] w-[200px] md:h-[300px] md:w-[300px] rounded-full object-cover transition-all hover:scale-105 "  src={step3} alt="step 3"/>
+<div class="md:overflow-hidden md:rounded-full md:shadow-dropblue">
+    <Image class="shadow-dropblue h-[200px] w-[200px] md:h-[310px] md:w-[310px] rounded-full md:object-cover md:transition-all md:hover:scale-105" src={step3} alt="step 3"/>
      
 </div>       <div>
             <h4 class="text-blue-800 pb-xs block text-right md:hidden">Step 3</h4>
