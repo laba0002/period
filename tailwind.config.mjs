@@ -104,10 +104,10 @@ export default {
       baseMobile: ["1.2rem", { lineHeight: "1.8rem" }],
       smallMobile: ["1.44rem", { lineHeight: "2rem" }],
       smallMediumMobile: ["1.728rem", { lineHeight: "2.5rem" }],
-      mediumMobile: ["2.074rem", { lineHeight: "3rem" }],
-      mediumLargeMobile: ["2.488rem", { lineHeight: "3.5rem" }],
-      largeMobile: ["2.986rem", { lineHeight: "4rem" }],
-      xlargeMobile: ["4rem", { lineHeight: "6rem" }],
+      mediumMobile: ["1.9rem", { lineHeight: "2.4rem" }],
+      mediumLargeMobile: ["2.488rem", { lineHeight: "3.1rem" }],
+      largeMobile: ["2.986rem", { lineHeight: "3.7rem" }],
+      xlargeMobile: ["4rem", { lineHeight: "4rem" }],
     },
 
     /* Tilføj dit fontvægt-hierarki nedenfor */
