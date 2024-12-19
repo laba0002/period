@@ -13,8 +13,26 @@ import ida from "../assets/images/ida.png";
 import Steps from "../components/Steps.astro";
 import Wave from "../components/Wave.astro";
 ---
-<MainLayout title="Period">
 
+<MainLayout title="Period">
+	<div id="popup" class="w-9xl fixed bottom-[2%] right-[2%] z-50 p-s bg-blue-300 shadow-dropblue rounded-border_radius-lg" style="display: none;">
+		<div class="flex flex-row justify-between">
+			<h6>Kunne du tænke dig noget rabat?</h6>
+			<button id="close-btn">
+				<svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M1 1L24 24" stroke="#6974DE" stroke-width="2" stroke-linecap="round"/>
+				<path d="M24 1.35278L1 24.3528" stroke="#6974DE" stroke-width="2" stroke-linecap="round"/>
+				</svg>
+				</button>
+		</div>
+		<h5>Tilmeld dig vores nyhedsbrev,<br> og få 15% rabat på din næste ordre!</h5>
+		<form class="pt-m">
+			<input class="bg-blue-100 p-xs rounded-border_radius-md w-full border-none hover:bg-blue-200 enabled:border-red-400 text-blue-950 placeholder:text-blue-950" type="email" placeholder="Din e-mail" required="" />
+		  </form>
+		  <div class="flex place-content-end pt-xxs">
+			<Button  variant="primary" size="small" value="Submit">Tilmeld</Button>
+		  </div>
+	  </div>
 	<section class="grid grid-cols-1 lg:grid-cols-2 lg:auto-cols-fr mx-xs md:mx-2xl mb-4xl md:pt-xxs pt-none">
 		<div class="flex flex-col md:pt-lg ">
 			<h1 class="text-red-500 text-xlargeMobile md:text-xlargeDesk ">Period pakken</h1>
@@ -366,6 +384,17 @@ details[open] summary::before {
 }
 
 </style>
+
+<script>
+	setTimeout(function() {
+	  document.getElementById("popup").style.display = "block";
+	}, 5000);
+  
+	document.getElementById("close-btn").addEventListener("click", function() {
+	  document.getElementById("popup").style.display = "none";
+	});
+  
+  </script>
 
 <!--  
 <script>
