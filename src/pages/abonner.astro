@@ -56,8 +56,49 @@ import AbonnerSteps from "../components/AbonnerSteps.astro";
             </section>
             
 
-            <section>
-                <h4 class="text-center mb-[18px] mt-sm">Hvad passer til dit flow?</h4>
+            <section class="flex flex-col ">
+                <div class="flex flex-row justify-center gap-s">  
+                  <h4 class="text-center mb-[18px] mt-sm">Hvad passer til dit flow?</h4>
+                  <div class="relative flex flex-row">
+                      <span class= "rounded-border_radius-xs bg-transparent border border-2 border-blue-900 text-blue-900 hover:border-blue-500 hover:text-blue-500 py-[10px] px-[20px] my-sm flex items-center justify-center " onClick="toggleInfo()">?</span>
+                      <div id="info-box" class="bg-blue-50 rounded-border_radius-xs hidden absolute p-sm translate-[-50%] top-[50%]  right-[50%] z-10 w-[800px]">
+                      <div class="grid grid-cols-3 gap-s">
+                           <div >
+                                  <h3 class="text-red-800 my-5">
+                                    Light flow
+                                  </h3>
+                               <ul class="flex flex-col gap-xs">
+                                <li>Du skifter sjældent bind eller tampon (fx hver 6.-8. time).</li>
+                                <li>Din menstruation varer måske kun 2-3 dage.</li>
+                                <li>Du oplever ikke meget synligt blod på dine trusser, hvis du bruger mindre beskyttelse som trusseindlæg.</li>
+                               </ul>
+                           </div>
+                           <div>
+                                <h3 class="text-red-800 my-5">
+                                  Medium flow
+                                </h3>
+                             <ul class="flex flex-col gap-xs">
+                              <li>Du skifter bind eller tampon regelmæssigt (ca. hver 3.-4. time).</li>
+                              <li>Din menstruation varer typisk 4-5 dage.</li>
+                              <li>Der kan være dage, hvor det føles som om, der er lidt mere blod, men det er stadig håndterbart uden hyppige skift.</li>
+                             </ul>
+                           </div>
+                           <div>
+                           <h3 class="text-red-800 my-5">
+                              Heavy flow
+                            </h3>
+                          <ul class="flex flex-col gap-xs">
+                              <li>Prøv at holde øje med, hvor mange produkter (bind, tamponer eller kopper) du bruger på en dag.</li>
+                              <li>Du oplever gennemblødning, hvis du ikke bruger et produkt med høj absorptionsevne.</li>
+                              <li>Din menstruation varer længere (ofte 6+ dage) eller inkluderer mange klumper (koaguleret blod).</li>
+                          </ul>
+                   </div>
+                  </div>
+                       <div>
+                      </div>
+                  </div>
+              </div>
+          </div>
                 <div class="flex flex-row justify-center align-bottom object-bottom gap-m">
                     <label for="flow1" class="relative flex flex-col items-center cursor-pointer group">
                         <input type="radio" id="flow1" name="flow" value="light" class="peer hidden">
