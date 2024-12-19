@@ -235,8 +235,11 @@ details summary::before {
   background-repeat: no-repeat;
   transition: transform 0.2s ease-in-out; /* Animation for rotation */
 }
-summary .icon-caret{
-   display: none;
+details,
+details summary {
+padding-left:0;
+background-image:none;
+-webkit-appearance:none;
 }
 
 details[open] summary::before {
