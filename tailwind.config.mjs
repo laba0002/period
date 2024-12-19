@@ -107,7 +107,7 @@ export default {
       mediumMobile: ["2.074rem", { lineHeight: "3rem" }],
       mediumLargeMobile: ["2.488rem", { lineHeight: "3.5rem" }],
       largeMobile: ["2.986rem", { lineHeight: "4rem" }],
-      xlargeMobile: ["6rem", { lineHeight: "6rem" }],
+      xlargeMobile: ["4rem", { lineHeight: "6rem" }],
     },
 
     /* Tilføj dit fontvægt-hierarki nedenfor */
