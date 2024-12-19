@@ -10,7 +10,15 @@ import AbonnerSteps from "../components/AbonnerSteps.astro";
 
 <AbonnerLayout title="Abonnér på Period.">
     <article class="px-sm flex flex-col mx-xs md:mx-2xl">
-        <AbonnerSteps></AbonnerSteps>
+        <div class="flex flex-col">
+            <AbonnerSteps href="#"></AbonnerSteps>
+           <div class=" flex flex-row items-center">
+                <span class="w-full h-[5px] bg-blue-950"></span>
+                <span class="w-full h-[2px] bg-blue-950"></span>
+                <span class="w-full h-[2px] bg-blue-950"></span>
+           </div>
+            
+        </div>
         <h1 class="text-center mt-sm mt:mb-m lg:mt-lg">Tilpas dit eget abonnement</h1>
         
         <form class="flex flex-col gap-sm" id="stepOneForm">
@@ -35,7 +43,7 @@ import AbonnerSteps from "../components/AbonnerSteps.astro";
                             class="w-4xl h-4xl md:w-4xl lg:w-5xl md:h-4xl lg:h-5xl  object-cover hover:scale-110 transition relative z-10"/>
                         <div class="absolute inset-0 top-[280px] md:top-5xl lg:top-[190px] rounded-full border-[6px] border-transparent peer-checked:border-blue-500 group-hover:border-blue-500 z-10"></div>
                     </label>
-                    <label for="product3" class="relative flex flex-col items-center cursor-pointer group row-start-3">
+                    <label for="product3" class="relative flex flex-col items-center cursor-pointer row-start-3">
                         <input type="radio" id="product3" name="product" value="tamponer" class="peer hidden">
                         <div class="absolute w-3xl h-3xl md:w-4xl lg:w-[150px] md:h-4xl lg:h-[150px] top-xs lg:top-s bg-red-700 rounded-full z-10 group-hover:stroke-blue-500 group-hover:stroke-[6px]"></div>
                         <Image 
@@ -81,17 +89,17 @@ import AbonnerSteps from "../components/AbonnerSteps.astro";
             <section>
                 <h4 class="text-center mb-[18px] mt-sm">Hvad er din snackpræference?</h4>
                 <div class="flex flex-col md:flex-row items-center justify-center gap-s mx-auto w-auto">
-                  <label for="snack1" class="relative flex items-center justify-center w-[250px] h-[60px] bg-red-700 rounded-border_radius-md cursor-pointer text-red-50 text-smallDesk font-regular hover:border-sm hover:border-blue-500 transition">
+                  <label for="snack1" class="relative flex items-center justify-center w-[250px] h-[60px] bg-red-700 rounded-border_radius-md cursor-pointer text-red-50 text-smallDesk font-regular hover:border-[5px] hover:border-blue-500 transition">
                     <input type="radio" id="snack1" name="snack" class="peer hidden" />
                     <span>Alle snacks</span>
                     <div class="absolute inset-0 -left-s top-s md:top-xl md:left-1/2 rounded-border_radius-md border-[6px] border-transparent peer-checked:border-blue-500 peer-checked:bg-blue-500"></div>
                   </label>    
-                  <label for="snack2" class="relative flex items-center justify-center w-[250px] h-[60px] bg-red-700 rounded-border_radius-md cursor-pointer text-red-50 text-smallDesk font-regular hover:border-sm hover:border-blue-500 transition">
+                  <label for="snack2" class="relative flex items-center justify-center w-[250px] h-[60px] bg-red-700 rounded-border_radius-md cursor-pointer text-red-50 text-smallDesk font-regular hover:border-[5px] hover:border-blue-500 transition">
                     <input type="radio" id="snack2" name="snack" class="peer hidden" />
                     <span>Veganer</span>
                     <div class="absolute inset-0 -left-s top-s md:top-xl md:left-1/2 rounded-border_radius-md border-[6px] border-transparent peer-checked:bg-blue-500"></div>
                   </label>
-                  <label for="snack3" class="relative flex items-center justify-center w-[250px] h-[60px] bg-red-700 rounded-border_radius-md cursor-pointer text-red-50 text-smallDesk font-regular hover:border-sm hover:border-blue-500 transition">
+                  <label for="snack3" class="relative flex items-center justify-center w-[250px] h-[60px] bg-red-700 rounded-border_radius-md cursor-pointer text-red-50 text-smallDesk font-regular hover:border-[5px] hover:border-blue-500 transition">
                     <input type="radio" id="snack3" name="snack" class="peer hidden" />
                     <span>Glutenfri</span>
                     <div class="absolute inset-0 -left-s top-s md:top-xl md:left-1/2 rounded-border_radius-md border-[6px] border-transparent peer-checked:bg-blue-500"></div>
@@ -106,4 +114,3 @@ import AbonnerSteps from "../components/AbonnerSteps.astro";
         </div>
     </article>
 </AbonnerLayout>
-
