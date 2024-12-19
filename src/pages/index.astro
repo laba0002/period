@@ -5,12 +5,15 @@ import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 import woman1 from "../assets/images/woman1.png";
+import laura from "../assets/images/mig.png";
+import selma from "../assets/images/selma.png";
+import ida from "../assets/images/ida.png";
 import Steps from "../components/Steps.astro";
 import Wave from "../components/Wave.astro";
 ---
 <MainLayout title="Period">
 
-	<section class="grid grid-cols-1 lg:grid-cols-2 lg:auto-cols-fr mx-xs md:mx-2xl pb-4xl md:pt-xxs pt-none">
+	<section class="grid grid-cols-1 lg:grid-cols-2 lg:auto-cols-fr mx-xs md:mx-2xl mb-4xl md:pt-xxs pt-none">
 		<div class="flex flex-col md:pt-lg">
 			<h1 class="text-red-500 text-xlargeMobile md:text-xlargeDesk">Period pakken</h1>
 			<h2 class="text-red-800 max-w-xl">gør din mestruation <span class="font-[800]">meget</span> lettere</h2>
@@ -53,12 +56,12 @@ import Wave from "../components/Wave.astro";
 
 	<Steps></Steps>
 
-	<section>
-		<div class="rotate-180 w-auto overflow-clip"><Wave></Wave></div>
+	<section class="mt-2xl md:mt-4xl">
+		<div class=" rotate-180 w-auto overflow-clip"><Wave></Wave></div>
 
 		<div class=" bg-red-50/60 w-full overflow-x-auto scroll-snap-x ">
 			<div class="flex space-x-4 gap-sm custom-scroll">
-				<article class="flex flex-col gap-sm items-center min-w-9xl mx-xs md:mx-lg mb-m">
+				<article class="flex flex-col gap-sm items-center pl-xs min-w-7xl md:min-w-9xl mx-xs md:mx-lg mb-m">
 					<div>
 						<svg xmlns="http://www.w3.org/2000/svg" width="232" height="38" viewBox="0 0 232 38" fill="none">
 						<path d="M16.81 5.95614C17.4031 4.10181 20.0269 4.10182 20.6199 5.95614L22.4691 11.7379C22.7341 12.5664 23.5042 13.1287 24.374 13.1287H30.4245C32.3543 13.1287 33.1648 15.5918 31.6122 16.7378L26.6632 20.3907C25.9733 20.8999 25.6848 21.7923 25.946 22.6091L27.8235 28.4793C28.4146 30.3275 26.292 31.85 24.7308 30.6977L19.9027 27.134C19.1966 26.6129 18.2333 26.6129 17.5273 27.134L12.6992 30.6977C11.138 31.85 9.01538 30.3275 9.60649 28.4793L11.484 22.6091C11.7452 21.7923 11.4567 20.8999 10.7667 20.3907L5.81777 16.7378C4.26512 15.5918 5.07569 13.1287 7.00548 13.1287H13.0559C13.9258 13.1287 14.6959 12.5664 14.9609 11.7379L16.81 5.95614Z" fill="#E7232D"/>
@@ -72,7 +75,7 @@ import Wave from "../components/Wave.astro";
 					<Image class="h-[100px] w-[100px] md:h-[160px] md:w-[160px] rounded-full object-cover " src={woman1} alt="kvinde anmeldelse 1"></Image>
 				</article>
 	
-				<article class="flex flex-col gap-sm items-center min-w-9xl mx-xs mb-m">
+				<article class="flex flex-col gap-sm items-center min-w-7xl md:min-w-9xl mx-xs mb-m">
 					<div>
 						<svg xmlns="http://www.w3.org/2000/svg" width="232" height="38" viewBox="0 0 232 38" fill="none">
 						<path d="M16.81 5.95614C17.4031 4.10181 20.0269 4.10182 20.6199 5.95614L22.4691 11.7379C22.7341 12.5664 23.5042 13.1287 24.374 13.1287H30.4245C32.3543 13.1287 33.1648 15.5918 31.6122 16.7378L26.6632 20.3907C25.9733 20.8999 25.6848 21.7923 25.946 22.6091L27.8235 28.4793C28.4146 30.3275 26.292 31.85 24.7308 30.6977L19.9027 27.134C19.1966 26.6129 18.2333 26.6129 17.5273 27.134L12.6992 30.6977C11.138 31.85 9.01538 30.3275 9.60649 28.4793L11.484 22.6091C11.7452 21.7923 11.4567 20.8999 10.7667 20.3907L5.81777 16.7378C4.26512 15.5918 5.07569 13.1287 7.00548 13.1287H13.0559C13.9258 13.1287 14.6959 12.5664 14.9609 11.7379L16.81 5.95614Z" fill="#E7232D"/>
@@ -86,7 +89,7 @@ import Wave from "../components/Wave.astro";
 					<Image class="h-[100px] w-[100px] md:h-[160px] md:w-[160px] rounded-full object-cover" src={woman1} alt="kvinde anmeldelse 1"></Image>
 				</article>
 	
-				<article class="flex flex-col gap-sm items-center min-w-9xl mx-xs mb-m">
+				<article class="flex flex-col gap-sm items-center min-w-7xl md:min-w-9xl mx-xs mb-m">
 					<div>
 						<svg xmlns="http://www.w3.org/2000/svg" width="232" height="38" viewBox="0 0 232 38" fill="none">
 						<path d="M16.81 5.95614C17.4031 4.10181 20.0269 4.10182 20.6199 5.95614L22.4691 11.7379C22.7341 12.5664 23.5042 13.1287 24.374 13.1287H30.4245C32.3543 13.1287 33.1648 15.5918 31.6122 16.7378L26.6632 20.3907C25.9733 20.8999 25.6848 21.7923 25.946 22.6091L27.8235 28.4793C28.4146 30.3275 26.292 31.85 24.7308 30.6977L19.9027 27.134C19.1966 26.6129 18.2333 26.6129 17.5273 27.134L12.6992 30.6977C11.138 31.85 9.01538 30.3275 9.60649 28.4793L11.484 22.6091C11.7452 21.7923 11.4567 20.8999 10.7667 20.3907L5.81777 16.7378C4.26512 15.5918 5.07569 13.1287 7.00548 13.1287H13.0559C13.9258 13.1287 14.6959 12.5664 14.9609 11.7379L16.81 5.95614Z" fill="#E7232D"/>
@@ -100,7 +103,7 @@ import Wave from "../components/Wave.astro";
 					<Image class="h-[100px] w-[100px] md:h-[160px] md:w-[160px] rounded-full object-cover" src={woman1} alt="kvinde anmeldelse 1"></Image>
 				</article>
 
-				<article class="flex flex-col gap-sm items-center min-w-9xl mx-xs mb-m">
+				<article class="flex flex-col gap-sm items-center min-w-7xl md:min-w-9xl mx-xs mb-m">
 					<div>
 						<svg xmlns="http://www.w3.org/2000/svg" width="232" height="38" viewBox="0 0 232 38" fill="none">
 						<path d="M16.81 5.95614C17.4031 4.10181 20.0269 4.10182 20.6199 5.95614L22.4691 11.7379C22.7341 12.5664 23.5042 13.1287 24.374 13.1287H30.4245C32.3543 13.1287 33.1648 15.5918 31.6122 16.7378L26.6632 20.3907C25.9733 20.8999 25.6848 21.7923 25.946 22.6091L27.8235 28.4793C28.4146 30.3275 26.292 31.85 24.7308 30.6977L19.9027 27.134C19.1966 26.6129 18.2333 26.6129 17.5273 27.134L12.6992 30.6977C11.138 31.85 9.01538 30.3275 9.60649 28.4793L11.484 22.6091C11.7452 21.7923 11.4567 20.8999 10.7667 20.3907L5.81777 16.7378C4.26512 15.5918 5.07569 13.1287 7.00548 13.1287H13.0559C13.9258 13.1287 14.6959 12.5664 14.9609 11.7379L16.81 5.95614Z" fill="#E7232D"/>
@@ -114,7 +117,7 @@ import Wave from "../components/Wave.astro";
 					<Image class="h-[100px] w-[100px] md:h-[160px] md:w-[160px] rounded-full object-cover" src={woman1} alt="kvinde anmeldelse 1"></Image>
 				</article>
 	
-				<article class="flex flex-col gap-sm items-center min-w-9xl mx-xs mb-m">
+				<article class="flex flex-col gap-sm items-center min-w-7xl md:min-w-9xl mx-xs mb-m">
 					<div>
 						<svg xmlns="http://www.w3.org/2000/svg" width="232" height="38" viewBox="0 0 232 38" fill="none">
 						<path d="M16.81 5.95614C17.4031 4.10181 20.0269 4.10182 20.6199 5.95614L22.4691 11.7379C22.7341 12.5664 23.5042 13.1287 24.374 13.1287H30.4245C32.3543 13.1287 33.1648 15.5918 31.6122 16.7378L26.6632 20.3907C25.9733 20.8999 25.6848 21.7923 25.946 22.6091L27.8235 28.4793C28.4146 30.3275 26.292 31.85 24.7308 30.6977L19.9027 27.134C19.1966 26.6129 18.2333 26.6129 17.5273 27.134L12.6992 30.6977C11.138 31.85 9.01538 30.3275 9.60649 28.4793L11.484 22.6091C11.7452 21.7923 11.4567 20.8999 10.7667 20.3907L5.81777 16.7378C4.26512 15.5918 5.07569 13.1287 7.00548 13.1287H13.0559C13.9258 13.1287 14.6959 12.5664 14.9609 11.7379L16.81 5.95614Z" fill="#E7232D"/>
@@ -128,7 +131,7 @@ import Wave from "../components/Wave.astro";
 					<Image class="h-[100px] w-[100px] md:h-[160px] md:w-[160px] rounded-full object-cover" src={woman1} alt="kvinde anmeldelse 1"></Image>
 				</article>
 	
-				<article class="flex flex-col gap-sm items-center min-w-9xl mx-xs mb-m">
+				<article class="flex flex-col gap-sm items-center min-w-7xl md:min-w-9xl mx-xs mb-m">
 					<div>
 						<svg xmlns="http://www.w3.org/2000/svg" width="232" height="38" viewBox="0 0 232 38" fill="none">
 						<path d="M16.81 5.95614C17.4031 4.10181 20.0269 4.10182 20.6199 5.95614L22.4691 11.7379C22.7341 12.5664 23.5042 13.1287 24.374 13.1287H30.4245C32.3543 13.1287 33.1648 15.5918 31.6122 16.7378L26.6632 20.3907C25.9733 20.8999 25.6848 21.7923 25.946 22.6091L27.8235 28.4793C28.4146 30.3275 26.292 31.85 24.7308 30.6977L19.9027 27.134C19.1966 26.6129 18.2333 26.6129 17.5273 27.134L12.6992 30.6977C11.138 31.85 9.01538 30.3275 9.60649 28.4793L11.484 22.6091C11.7452 21.7923 11.4567 20.8999 10.7667 20.3907L5.81777 16.7378C4.26512 15.5918 5.07569 13.1287 7.00548 13.1287H13.0559C13.9258 13.1287 14.6959 12.5664 14.9609 11.7379L16.81 5.95614Z" fill="#E7232D"/>
@@ -150,8 +153,8 @@ import Wave from "../components/Wave.astro";
 		
 	</section>
 
-	<section class="flex flex-row justify-center">
-		<div class="flex flex-col mx-sm w-auto md:w-[500px]">
+	<section class="mt-2xl  flex flex-row justify-center">
+		<div class="flex flex-col mx-sm w-auto md:w-[600px]">
 			<h2 class="text-red-800 mb-xs md:mb-sm ">Q&A</h2>
 			
 	  <div class=" flex flex-col gap-xs md:gap-sm ">
@@ -206,6 +209,30 @@ import Wave from "../components/Wave.astro";
 				</details>
 		</div>
 	</div>
+	</section>
+
+	<section class="mt-2xl  mb-lg mx-m md:mx-4xl grid lg:grid-cols-2 items-center">
+		<div class="flex flex-row gap-s mx-xxs md:gap-none justify-around md:justify-between lg:grid lg:grid-rows-3 lg:grid-cols-2  md:mx-auto pb-sm">
+			<Image class="h-[110px] w-[110px] md:h-[190px] md:w-[190px] lg:col-start-1 md:col-end-2 lg:row-start-2 lg:row-end-3 rounded-full object-cover" src={selma} alt="Selma"></Image>
+			<Image class="h-[110px] w-[110px] md:h-[190px] md:w-[190px] lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2  rounded-full object-cover" src={ida} alt="Ida"></Image>
+			<Image class="h-[110px] w-[110px] md:h-[190px] md:w-[190px] lg:col-start-2 lg:col-end-3 lg:row-start-3 lg:row-end-4 rounded-full object-cover" src={laura} alt="Laura"></Image>
+		</div>
+		<div class="flex flex-col">
+			<div class="flex flex-col gap-xs pb-s">
+				<h3 class="text-red-700">Vi er her for dig og din cyklus</h3>
+				<p class="text-red-950">Vi er tre unge kvinder med en mission: at gøre menstruationen nemmere, mere bekvem og bæredygtig. Vi tror på, at alle fortjener self-care uden stress - og at små handlinger kan gøre en stor forskel for vores planet. </p>
+				<p class="text-red-950">Derfor kombinerer vi praktiske løsninger til din cyklus med en bæredygtig tilgang, der planter træer og passer på jorden. Det handler om dig, din komfort og vores fælles fremtid.</p>
+			</div>
+			<div class="flex gap-s flex-row items-end mx-auto">
+				<div class="block md:hidden"><Button variant="secondary" size="small" href="/omos">Læs mere</Button></div>
+				<div class="block md:hidden"><Button class="flex-end" variant="primary" size="medium" href="/abonner">Abonnér</Button></div>
+			</div>
+			<div class="flex  gap-s flex-row items-end">
+				<div class="hidden md:block"><Button variant="secondary" size="medium" href="/omos">Læs mere</Button></div>
+				<div class="hidden md:block"><Button class="flex-end" variant="primary" size="large" href="/abonner">Abonnér</Button></div>
+			</div>
+		</div>
+
 	</section>
 	
 </MainLayout>
