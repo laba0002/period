@@ -8,7 +8,15 @@ import AbonnerSteps from "../components/AbonnerSteps.astro";
 
 <AbonnerLayout title="Abonnér på Period.">
     <article class="px-sm flex flex-col max-w-lg md:max-w-2xl lg:max-w-6xl mx-auto">
-        <AbonnerSteps href="/abonner"></AbonnerSteps>            
+        <div class="flex flex-col">
+            <AbonnerSteps></AbonnerSteps>
+           <div class=" flex flex-row items-center">
+                <span class="w-full h-[2px] bg-blue-950"></span>
+                <span class="w-full h-[5px] bg-blue-950"></span>
+                <span class="w-full h-[2px] bg-blue-950"></span>
+           </div>
+            
+        </div>      
         <h4 class="mb-[18px] mt-sm text-center">Hvor ofte vil du modtage din levering?</h4>
         <form class="flex flex-col">
             <section class="lg:flex flex-row justify-center items-center">
