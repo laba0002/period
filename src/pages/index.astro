@@ -235,6 +235,9 @@ details summary::before {
   background-repeat: no-repeat;
   transition: transform 0.2s ease-in-out; /* Animation for rotation */
 }
+summary .icon-caret{
+   display: none;
+}
 
 details[open] summary::before {
   transform: translateY(-50%) rotate(180deg); /* Rotate arrow when open */
