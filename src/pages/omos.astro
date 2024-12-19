@@ -13,6 +13,9 @@ import bgIndholdPhone from "../assets/images/om-os/mobil-indhold.png";
 import bgIndhold1 from "../assets/images/om-os/scroll-1.png";
 import bgIndhold2 from "../assets/images/om-os/scroll-2.png";
 import bgIndhold3 from "../assets/images/om-os/scroll-3.png";
+import laura from "../assets/images/mig.png";
+import selma from "../assets/images/selma.png";
+import ida from "../assets/images/ida.png";
 ---
 
 <MainLayout title="Om os">
@@ -22,76 +25,84 @@ import bgIndhold3 from "../assets/images/om-os/scroll-3.png";
         <h1 class="hidden md:flex text-red-700">Bag om<br>Period.</h1>
         <h1 class=" md:hidden text-red-700">Bag om Period.</h1>
         <Image src={cirkelFotos} class="block md:hidden" alt="tre portræt billeder"></Image>
-        <h3 class="md:max-w-xl max-w-full">En idé, og masser af hårdt arbejde – sådan blev vores eksamensprojekt til virkelighed!</h3>
+        <h3 class="md:max-w-xl max-w-full">
+          En idé, og masser af hårdt arbejde - sådan blev vores eksamensprojekt til virkelighed!
+        </h3>
       </div>
       <Image class="md:block hidden" src={cirkelFotos} alt="tre portræt billeder"></Image>
     </section>
+
     <section class="py-xl grid grid-cols-1 lg:grid-cols-3  mx-xs md:mx-2xl justify-items-center">
       <Image class="p-xs" src={omOsPhoto1} alt="Et billede af to piger der smiler og spiser pizza"></Image>
       <div class="flex flex-col gap-xs">
         <h2 class="">Fra idé til abonnement</h2>
-        <p>Det hele startede med en simpel tanke: Hvordan gør vi livet lettere for menstruerende personer? Vi kendte frustrationen ved pludselig at mangle produkter og tænkte: Hvorfor ikke levere alt det nødvendige direkte til døren – hver måned?</p>
+        <p>Det hele startede med en simpel tanke: Hvordan gør vi livet lettere for menstruerende personer? Vi kendte frustrationen ved pludselig at mangle produkter og tænkte: Hvorfor ikke levere alt det nødvendige direkte til døren - hver måned?</p>
         <p>I dag er idéen blevet til virkelighed. Vores kasser bliver bestilt af mennesker over hele Danmark, og vi elsker at gøre hverdagen lidt nemmere for alle, der har brug for en hjælpende hånd.</p>
       </div>
       <Image class="p-xs" src={omOsPhoto2} alt="Et billede af to piger der smiler"></Image>
     </section>
-    </article>
-      <section class="py-xl hidden lg:block">
-        <div class="overflow-clip">
-          <section id="horisontalscrollsection" class="h-[100vw] p-none">
-            <ul id="horisontalliste" class="list-none pl-0 flex sticky top-[4vh]">
-              <li class="pl-0 flex w-[200vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
-                <figure class="flex flex-row">
-                  <Image src={bgIndhold} class="" alt="foto" />
-                </figure>
-              </li>
-            </ul> 
-          </section>
-        </div>
+  </article>
+
+  <section class="py-xl hidden lg:block">
+    <div class="overflow-clip">
+      <section id="horisontalscrollsection" class="h-[100vw] p-none">
+        <ul id="horisontalliste" class="list-none pl-0 flex sticky top-[4vh]">
+          <li class="pl-0 flex w-[200vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+            <figure class="flex flex-row">
+              <Image src={bgIndhold} class="" alt="foto" />
+            </figure>
+          </li>
+        </ul> 
       </section>
-      <section class="py-xl hidden md:block lg:hidden">
-        <div class="overflow-clip">
-          <section id="horisontalscrollsectiontablet" class="h-[100vw] p-none">
-            <ul id="horisontallistetablet" class="list-none pl-0 flex sticky top-[4vh]">
-              <li class="pl-0 flex w-[200vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
-                <figure class="flex flex-row">
-                  <Image src={bgIndholdPhone} class="" alt="foto" />
-                </figure>
-              </li>
-            </ul> 
-          </section>
-        </div>
+    </div>
+   </section>
+
+  <section class="py-xl hidden md:block lg:hidden">
+    <div class="overflow-clip">
+      <section id="horisontalscrollsectiontablet" class="h-[100vw] p-none">
+        <ul id="horisontallistetablet" class="list-none pl-0 flex sticky top-[4vh]">
+          <li class="pl-0 flex w-[200vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+            <figure class="flex flex-row">
+              <Image src={bgIndholdPhone} class="" alt="foto" />
+            </figure>
+          </li>
+        </ul> 
       </section>
-      <section class="py-xl md:hidden ">
-        <div class="overflow-clip">
-          <section id="horisontalscrollsectionphone" class="h-[300vw] p-none">
-            <ul id="horisontallistephone" class="list-none pl-0 flex sticky top-[4vh]">
-              <li class="pl-0 flex w-[400vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
-                <figure class="flex flex-row">
-                  <Image src={bgIndholdPhone} class="" alt="foto" />
-                </figure>
-              </li>
-            </ul> 
-          </section>
-        </div>
+    </div>
+  </section>
+
+  <section class="py-xl md:hidden ">
+    <div class="overflow-clip">
+      <section id="horisontalscrollsectionphone" class="h-[300vw] p-none">
+        <ul id="horisontallistephone" class="list-none pl-0 flex sticky top-[4vh]">
+          <li class="pl-0 flex w-[400vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+            <figure class="flex flex-row">
+              <Image src={bgIndholdPhone} class="" alt="foto" />
+            </figure>
+          </li>
+        </ul> 
       </section>
-        <h2 class="text-center pt-xl pb-sm md:pb-none">Hold dig opdateret!</h2>
-        <section class="grid grid-cols-1 md:grid-cols-2 items-center pb-xl"> 
-          <Image class="order-last md:-order-1" src={haandMedBind} alt="Et billede af et par hænder der holder et menstruations bind"></Image>
-          <section class="px-sm md:px-[0px] pb-ml md:pb-none justify-self-center md:justify-self-auto">
-            <div class="max-w-lg h-min bg-blue-100 rounded-border_radius-md flex flex-col p-sm shadow-dropblue">
-              <h6 class="text-red-950">Vil du være med i familien?</h6>
-              <h4 class="pt-xxs text-red-950">Tilmeld dig vores nyhedsbrev, og bliv opdateret på Period.</h4>
-              <form class="pt-m">
-                <input class="bg-blue-400 p-xs rounded-border_radius-md w-full border-none hover:bg-blue-400 enabled:border-red-400 text-blue-950 placeholder:text-blue-950" type="email" placeholder="Din e-mail" required="" />
-              </form>
-              <div class="place-self-end pt-xxs">
-                <Button variant="primary" size="small" value="Submit">Tilmeld</Button>
-              </div>
-            </div>
-         </section>
-        </section>
-    </MainLayout>
+    </div>
+  </section>
+
+  <h2 class="text-center pt-xl pb-sm md:pb-none">Hold dig opdateret!</h2>
+  <section class="grid grid-cols-1 md:grid-cols-2 items-center pb-xl"> 
+    <Image class="order-last md:-order-1" src={haandMedBind} alt="Et billede af et par hænder der holder et menstruations bind"></Image>
+    <section class="px-sm md:px-[0px] pb-ml md:pb-none justify-self-center md:justify-self-auto">
+      <div class="max-w-lg h-min bg-blue-100 rounded-border_radius-md flex flex-col p-sm shadow-dropblue">
+        <h6 class="text-red-950">Vil du være med i familien?</h6>
+        <h4 class="pt-xxs text-red-950">Tilmeld dig vores nyhedsbrev, og bliv opdateret på Period.</h4>
+        <form class="pt-m">
+          <input class="bg-blue-400 p-xs rounded-border_radius-md w-full border-none hover:bg-blue-400 enabled:border-red-400 text-blue-950 placeholder:text-blue-950" type="email" placeholder="Din e-mail" required="" />
+        </form>
+        <div class="place-self-end pt-xxs">
+          <Button variant="primary" size="small" value="Submit">Tilmeld</Button>
+        </div>
+      </div>
+    </section>
+    </section>
+
+</MainLayout>
 
 
 <script>
@@ -133,5 +144,61 @@ import bgIndhold3 from "../assets/images/om-os/scroll-3.png";
 	}),
 	{ target: document.querySelector("#horisontalscrollsectionphone") }
 	); 
-    </script>
+ 
+
+	const inviewelement = document.querySelector(".titel");
+	inView(
+		inviewelement , () => {
+			inviewelement.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+		})
+
+		const inviewelement1 = document.querySelector(".point1");
+	inView(
+		inviewelement1 , () => {
+			inviewelement1.classList.add("animate__animated","animate__fadeInUp", "animate__delay-2s")
+		})
+		
+		const inviewelement2 = document.querySelector(".point2");
+	inView(
+		inviewelement2 , () => {
+			inviewelement2.classList.add("animate__animated","animate__fadeInUp", "animate__delay-1s")
+		})
+
+		const inviewelement3 = document.querySelector(".point3");
+	inView(
+		inviewelement3 , () => {
+			inviewelement3.classList.add("animate__animated","animate__fadeInUp", "animate__delay-1s")
+		})
+
+		const inviewelement4 = document.querySelector(".knap1");
+	inView(
+		inviewelement4 , () => {
+			inviewelement4.classList.add("animate__animated","animate__bounceInUp", "animate__delay-1s")
+		})
+
+		const inviewelement5 = document.querySelector(".section1");
+	inView(
+		inviewelement5 , () => {
+			inviewelement5.classList.add("animate__animated","animate__fadeInUp", "animate__delay-1s")
+		})
+
+		const inviewelement6 = document.querySelector(".section2");
+	inView(
+		inviewelement6 , () => {
+			inviewelement6.classList.add("animate__animated","animate__fadeInUp", "animate__delay-1s")
+		})
+	
+		const inviewelement7 = document.querySelector(".section3");
+	inView(
+		inviewelement7 , () => {
+			inviewelement7.classList.add("animate__animated","animate__fadeInUp", "animate__delay-1s")
+		})
+
+		const inviewelement8 = document.querySelector(".knap2");
+	inView(
+		inviewelement8 , () => {
+			inviewelement8.classList.add("animate__animated","animate__bounceInUp", "animate__delay-2s")
+		})
+
+</script>
     
