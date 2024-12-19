@@ -60,15 +60,17 @@ import Button from '../components/Button.astro';
     </div>
     
 </section>
-<div class=" ml-sm mt-sm md:ml-lg lg:mt-[-10%] flex flex-col md:row-start-3 md:row-end-4 md:col-start-1 md:col-end-3 mb-4xl ">
-    <h5 class="text-blue-900 pb-xxs md:pb-xs pl-xs">Lyder det som noget for dig?</h5>
-    <Button variant="primary" size="large" href="/abonner">Abonnér</Button>
+<div class=" ml-s lg:pl-s mt-sm md:ml-lg lg:mt-[-10%] flex flex-col md:row-start-3 md:row-end-4 md:col-start-1 md:col-end-3 mb-xl md:mb-4xl ">
+    <h5 class="text-blue-900 pb-xs md:pb-xs pl-xxs">Lyder det som noget for dig?</h5>
+</section>
+<div class="hidden md:flex"><Button variant="primary" size="large" href="/abonner">Få abonnement</Button></div>
+<div class="md:hidden flex"><Button variant="primary" size="medium" href="/abonner">Abonnér her</Button></div>
 </div>
 
 <section>
     <div class="rotate-180 overflow-clip w-auto"><Wave></Wave></div>
     <section class="  bg-red-50/60 ">
-        <div class="mx-ml md:grid md:grid-cols-2 gap-sm ">
+        <div class=" max-w-xl md:max-w-4xl lg:max-w-6xl md:mx-auto mx-sm md:grid lg:grid-cols-2 gap-sm ">
        <h6 class="block pb-sm lg:hidden">Klik på billederne og få mere viden</h6>
           <div class="grid grid-cols-2 gap-xs pb-xs min-h-full  ">
             <div class="img-box col-span-2">
