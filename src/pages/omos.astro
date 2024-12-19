@@ -34,11 +34,20 @@ import bgIndhold3 from "../assets/images/om-os/scroll-3.png";
           </section>
         </div>
       </section>
-      <section class="py-xl lg:hidden ">
+      <section class="py-xl hidden md:block lg:hidden">
         <div class="overflow-clip">
-          <section id="horisontalscrollsectionphone" class="h-[300vw] p-none">
+          <section id="horisontalscrollsectiontablet" class="h-[100vw] p-none">
+            <ul id="horisontallistetablet" class="list-none pl-0 flex sticky top-[4vh]">
+            <li class="pl-0 flex w-[200vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><figure class="flex flex-row"><Image src={bgIndholdPhone} class="" alt="foto" /></figure></li>
+            </ul> 
+          </section>
+        </div>
+      </section>
+      <section class="py-xl md:hidden ">
+        <div class="overflow-clip">
+          <section id="horisontalscrollsectionphone" class="h-[200vw] p-none">
             <ul id="horisontallistephone" class="list-none pl-0 flex sticky top-[4vh]">
-            <li class="pl-0 flex w-[400vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><figure class="flex flex-row"><Image src={bgIndholdPhone} class="" alt="foto" /></figure></li>
+            <li class="pl-0 flex w-[300vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><figure class="flex flex-row"><Image src={bgIndholdPhone} class="" alt="foto" /></figure></li>
             </ul> 
           </section>
         </div>
@@ -70,6 +79,19 @@ import bgIndhold3 from "../assets/images/om-os/scroll-3.png";
 	{ target: document.querySelector("#horisontalscrollsection") }
 	); 
 
+    </script>
+    <script>
+      /* Horisontal scroll sektion */
+      
+	/* Import af Motion One biblioteket */
+	import { animate, stagger, inView, scroll, timeline } from "motion";
+
+  scroll(
+	animate("#horisontallistetablet", {
+		transform: ["none", "translateX(-100vw)"]
+	}),
+	{ target: document.querySelector("#horisontalscrollsectiontablet") }
+	); 
     </script>
     <script>
       /* Horisontal scroll sektion */
