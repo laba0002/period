@@ -9,12 +9,6 @@ import Steps from "../components/Steps.astro";
 import Wave from "../components/Wave.astro";
 ---
 <MainLayout title="Period">
-<h1>Hej</h1>
-<h2>Hej</h2>
-<h3>Hej</h3>
-<h4>Hej</h4>
-<h5>Hej</h5>
-<h6>Hej</h6>
 
 	<section class="grid grid-cols-1 md:grid-cols-2 mx-xs md:mx-2xl pb-2xl pt-m md:pt-none">
 		<div class="flex flex-col justify-evenly ">
@@ -245,6 +239,17 @@ details summary::before {
 details[open] summary::before {
   transform: translateY(-50%) rotate(180deg); /* Rotate arrow when open */
 }
+
+.accordion-button::after {
+  background-image: initial;
+  width: 0;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: initial;
+  width: 0;
+}
+
 
 .custom-scroll {
   width: 100%;

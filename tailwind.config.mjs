@@ -69,6 +69,16 @@ export default {
 
     /* Tilføj dit typografiske hierarki herunder */
     fontSize: {
+      // konsultativDesk: ["1rem", { lineHeight: "1.2rem" }],
+      // bodyDesk: ["1.125rem", { lineHeight: "1.5rem" }],
+      // baseDesk: ["1.25rem", { lineHeight: "1.8rem" }],
+      // smallDesk: ["1777rem", { lineHeight: "2rem" }],
+      // smallMediumDesk: ["2.369rem", { lineHeight: "2.5rem" }],
+      // mediumDesk: ["3.157rem", { lineHeight: "3.5rem" }],
+      // mediumLargeDesk: ["4.209rem", { lineHeight: "4rem" }],
+      // largeDesk: ["5.61rem", { lineHeight: "5rem" }],
+      // xlargeDesk: ["6rem", { lineHeight: "6rem" }],
+
       konsultativDesk: ["1rem", { lineHeight: "1.2rem" }],
       bodyDesk: ["1.125rem", { lineHeight: "1.5rem" }],
       baseDesk: ["1.25rem", { lineHeight: "1.8rem" }],
@@ -79,8 +89,18 @@ export default {
       largeDesk: ["5.61rem", { lineHeight: "5rem" }],
       xlargeDesk: ["6rem", { lineHeight: "6rem" }],
 
-      konsultativMobile: ["0.8rem", { lineHeight: "1rem" }],
-      bodyMobile: ["1rem", { lineHeight: "1.5rem" }],
+      // konsultativMobile: ["0.8rem", { lineHeight: "1rem" }],
+      // bodyMobile: ["1rem", { lineHeight: "1.5rem" }],
+      // baseMobile: ["1.2rem", { lineHeight: "1.8rem" }],
+      // smallMobile: ["1.44rem", { lineHeight: "2rem" }],
+      // smallMediumMobile: ["1.728rem", { lineHeight: "2.5rem" }],
+      // mediumMobile: ["2.074rem", { lineHeight: "3rem" }],
+      // mediumLargeMobile: ["2.488rem", { lineHeight: "3.5rem" }],
+      // largeMobile: ["2.986rem", { lineHeight: "4rem" }],
+      // xlargeMobile: ["6rem", { lineHeight: "6rem" }],
+
+      konsultativMobile: ["0.75rem", { lineHeight: "1rem" }],
+      bodyMobile: ["0.85rem", { lineHeight: "1.25rem" }],
       baseMobile: ["1.2rem", { lineHeight: "1.8rem" }],
       smallMobile: ["1.44rem", { lineHeight: "2rem" }],
       smallMediumMobile: ["1.728rem", { lineHeight: "2.5rem" }],
