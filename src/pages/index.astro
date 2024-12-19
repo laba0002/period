@@ -5,6 +5,9 @@ import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 import woman1 from "../assets/images/woman1.png";
+import laura from "../assets/images/mig.png";
+import selma from "../assets/images/selma.png";
+import ida from "../assets/images/ida.png";
 import Steps from "../components/Steps.astro";
 import Wave from "../components/Wave.astro";
 ---
@@ -206,6 +209,30 @@ import Wave from "../components/Wave.astro";
 				</details>
 		</div>
 	</div>
+	</section>
+
+	<section class="mt-lg mb-lg mx-m md:mx-4xl grid lg:grid-cols-2 items-center">
+		<div class="flex flex-row gap-s md:gap-none justify-around md:justify-between lg:grid lg:grid-rows-3 lg:grid-cols-2  md:mx-auto pb-xs">
+			<Image class="h-[110px] w-[110px] md:h-[190px] md:w-[190px] lg:col-start-1 md:col-end-2 lg:row-start-2 lg:row-end-3 rounded-full object-cover" src={selma} alt="Selma"></Image>
+			<Image class="h-[110px] w-[110px] md:h-[190px] md:w-[190px] lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2  rounded-full object-cover" src={ida} alt="Ida"></Image>
+			<Image class="h-[110px] w-[110px] md:h-[190px] md:w-[190px] lg:col-start-2 lg:col-end-3 lg:row-start-3 lg:row-end-4 rounded-full object-cover" src={laura} alt="Laura"></Image>
+		</div>
+		<div class="flex flex-col">
+			<div class="flex flex-col gap-xs pb-s">
+				<h3 class="text-red-700">Vi er her for dig og din cyklus</h3>
+				<p class="text-red-950">Vi er tre unge kvinder med en mission: at gøre menstruationen nemmere, mere bekvem og bæredygtig. Vi tror på, at alle fortjener self-care uden stress - og at små handlinger kan gøre en stor forskel for vores planet. </p>
+				<p class="text-red-950">Derfor kombinerer vi praktiske løsninger til din cyklus med en bæredygtig tilgang, der planter træer og passer på jorden. Det handler om dig, din komfort og vores fælles fremtid.</p>
+			</div>
+			<div class="flex gap-s flex-row items-end mx-auto">
+				<div class="block md:hidden"><Button variant="secondary" size="small" href="/omos">Læs mere</Button></div>
+				<div class="block md:hidden"><Button class="flex-end" variant="primary" size="medium" href="/abonner">Abonnér</Button></div>
+			</div>
+			<div class="flex  gap-s flex-row items-end">
+				<div class="hidden md:block"><Button variant="secondary" size="medium" href="/omos">Læs mere</Button></div>
+				<div class="hidden md:block"><Button class="flex-end" variant="primary" size="large" href="/abonner">Abonnér</Button></div>
+			</div>
+		</div>
+
 	</section>
 	
 </MainLayout>
