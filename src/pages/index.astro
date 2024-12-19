@@ -235,20 +235,17 @@ details summary::before {
   background-repeat: no-repeat;
   transition: transform 0.2s ease-in-out; /* Animation for rotation */
 }
+details,
+details summary {
+padding-left:0;
+background-image:none;
+-webkit-appearance:none;
+}
 
 details[open] summary::before {
   transform: translateY(-50%) rotate(180deg); /* Rotate arrow when open */
 }
 
-.accordion-button::after {
-  background-image: initial;
-  width: 0;
-}
-
-.accordion-button:not(.collapsed)::after {
-  background-image: initial;
-  width: 0;
-}
 
 
 .custom-scroll {
