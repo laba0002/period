@@ -24,23 +24,23 @@
   }
 
   h1 {
-    @apply text-largeMobile md:text-largeDesk text-red-950 md:pb-xs;
+    @apply text-largeMobile md:text-largeDesk text-red-800 md:pb-xxs;
   }
   h2 {
-    @apply text-mediumLargeMobile font-bold md:text-mediumLargeDesk;
+    @apply text-mediumLargeMobile font-bold md:text-mediumLargeDesk text-red-700 md:pb-xxs;
   }
   h3 {
-    @apply text-mediumMobile font-extrabold  md:text-mediumDesk;
+    @apply text-mediumMobile font-extrabold  md:text-mediumDesk text-red-800 md:pb-xxs;
   }
   h4 {
-    @apply text-smallMediumMobile md:text-smallMediumDesk text-red-500 pt-sm pb-xxs;
+    @apply text-smallMediumMobile md:text-smallMediumDesk text-blue-900 md:pb-xxs;
   }
   h5 {
-    @apply text-smallMobile md:text-smallDesk;
+    @apply text-smallMobile md:text-smallDesk text-blue-950 md:pb-xxs;
   }
   h6,
   summary {
-    @apply text-baseMobile md:text-baseDesk;
+    @apply text-baseMobile md:text-baseDesk text-red-700;
   }
   p {
     @apply text-bodyMobile md:text-bodyDesk;
