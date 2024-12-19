@@ -57,7 +57,35 @@ import AbonnerSteps from "../components/AbonnerSteps.astro";
             
 
             <section>
+              <div class="flex flex-row">  
                 <h4 class="text-center mb-[18px] mt-sm">Hvad passer til dit flow?</h4>
+                <div class="info-container">
+                    <span class="question-mark" onClick="toggleInfo()">?</span>
+                    <div id="info-box" class="info-box">
+                     <div>
+                            <h3 class="text-red-800 my-5">
+                              Light flow
+                            </h3>
+                         <ul>
+                          <li>Du skifter sjældent bind eller tampon (fx hver 6.-8. time).</li>
+                          <li>Din menstruation varer måske kun 2-3 dage.</li>
+                          <li>Du oplever ikke meget synligt blod på dine trusser, hvis du bruger mindre beskyttelse som trusseindlæg.</li>
+                         </ul>
+                     </div>
+                     <div>
+                          <h3 class="text-red-800 my-5">
+                            Medium flow
+                          </h3>
+                       <ul>
+                        <li>Du skifter bind eller tampon regelmæssigt (ca. hver 3.-4. time).</li>
+                        <li>Din menstruation varer typisk 4-5 dage.</li>
+                        <li>Der kan være dage, hvor det føles som om, der er lidt mere blod, men det er stadig håndterbart uden hyppige skift.</li>
+                       </ul>
+                     </div>
+                     <div>
+                    </div>
+                </div>
+            </div>
                 <div class="flex flex-row justify-center align-bottom object-bottom gap-m">
                     <label for="flow1" class="relative flex flex-col items-center cursor-pointer group">
                         <input type="radio" id="flow1" name="flow" value="light" class="peer hidden">
@@ -114,4 +142,57 @@ import AbonnerSteps from "../components/AbonnerSteps.astro";
         </div>
     </article>
 </AbonnerLayout>
+
+<style>
+    .info-container {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+  
+    .question-mark {
+      background-color: var(--accent-color-100);
+      color: var(--secondary-color-100);
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+  
+    .info-box {
+      display: none;
+      background-color: var(--secondary-color-100) ;
+      padding: 10px;
+      width: 700px;
+      position: absolute;
+      top: 47px;
+      left: 0;
+      z-index: 10;
+    }
+  
+    .info-box p {
+      color: var(--primary-color-100);
+      margin: 20px
+    }
+  
+    .info-box h3 {
+      color: var(--accent-color-100);
+      margin: 20px
+    }
+  
+  </style>
+
+<script>
+    function toggleInfo() {
+      const infoBox = document.getElementById("info-box");
+      if (infoBox.style.display === "none" || infoBox.style.display === "") {
+        infoBox.style.display = "block";
+      } else {
+        infoBox.style.display = "none";
+      }
+    }
+  </script>
+
+
+
 
