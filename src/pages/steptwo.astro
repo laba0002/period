@@ -9,45 +9,80 @@ import AbonnerSteps from "../components/AbonnerSteps.astro";
 <AbonnerLayout title="Abonnér på Period.">
     <article class="px-sm flex flex-col max-w-lg md:max-w-2xl lg:max-w-6xl mx-auto">
         <AbonnerSteps href="/abonner"></AbonnerSteps>            
-        <h4 class="mb-[18px] mt-sm">Hvor ofte vil du modtage din levering?</h4>
+        <h4 class="mb-[18px] mt-sm text-center">Hvor ofte vil du modtage din levering?</h4>
         <form class="flex flex-col">
             <section class="lg:flex flex-row justify-center lg:gap-ml items-center">
                 <Image class="w-1/2 h-1/2 mx-auto pb-s lg:ml-lg flex items-end" src={Mockup2} alt="Mockup" />
                 <div class="flex flex-col items-center justify-center gap-s lg:ml-m lg:mr-auto w-auto">
-                  <label for="choisenr1" class="relative flex items-center justify-center w-[250px] h-[60px] bg-red-700 rounded-2xl cursor-pointer text-red-50 text-sm font-regular hover:border hover:border-blue-500 transition">
+                  <label for="choisenr1" class="relative flex items-center justify-center w-[250px] h-[60px] py-m bg-red-700 rounded-2xl cursor-pointer text-red-50 text-sm font-regular hover:border hover:border-blue-500 transition">
                     <input type="radio" id="choisenr1" name="choise" class="peer hidden" />
-                    <span>Prøvepakken</span>
-                    <div class="absolute inset-0 top-lg rounded-md border-[6px] border-transparent peer-checked:border-blue-500 peer-checked:bg-blue-500 pointer-events-none"></div>
+                    <div class="text-center">
+                        <h6 class="text-red-50">Prøvepakken</h6>
+                        <span class="block w-fill h-[2px] bg-red-50 justify-center"></span>
+                        <div class="">
+                            <span style="font-family: 'Sansita', sans-serif;">75 KR</span>
+                            <span style="font-family: 'Sansita', sans-serif;" class="text-red-400 line-through">99 KR/måned</span>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 -left-s top-sm rounded-md border-[6px] border-transparent peer-checked:border-blue-500 peer-checked:bg-blue-500 pointer-events-none"></div>
                   </label>    
               
-                  <label for="choisenr2" class="relative flex items-center justify-center w-[250px] h-[60px] bg-red-700 rounded-2xl cursor-pointer text-red-50 text-sm font-regular hover:border hover:border-blue-500 transition">
+                  <label for="choisenr2" class="relative flex items-center justify-center w-[250px] h-[60px] py-m bg-red-700 rounded-2xl cursor-pointer text-red-50 text-sm font-regular hover:border hover:border-blue-500 transition">
                     <input type="radio" id="choisenr2" name="choise" class="peer hidden" />
-                    <span>Hver måned</span>
-                    <div class="absolute inset-0 top-lg rounded-md border-[6px] border-transparent peer-checked:bg-blue-500 pointer-events-none"></div>
+                    <div class="text-center">
+                        <h6 class="text-red-50">Hver måned</h6>
+                        <span class="block w-fill h-[2px] bg-red-50 justify-center"></span>
+                        <div>
+                            <span style="font-family: 'Sansita', sans-serif;">99 KR</span>
+                            <!-- <span class="text-red-400">1.188 KR/år</span> -->
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 -left-s top-sm rounded-md border-[6px] border-transparent peer-checked:bg-blue-500 pointer-events-none"></div>
                   </label>
               
-                  <label for="choisenr3" class="relative flex items-center justify-center w-[250px] h-[60px] bg-red-700 rounded-2xl cursor-pointer text-red-50 text-sm font-regular hover:border hover:border-blue-500 transition">
+                  <label for="choisenr3" class="relative flex items-center justify-center w-[250px] h-[60px] py-m bg-red-700 rounded-2xl cursor-pointer text-red-50 text-sm font-regular hover:border hover:border-blue-500 transition">
                     <input type="radio" id="choisenr3" name="choise" class="peer hidden" />
-                    <span>Hver anden måned</span>
-                    <div class="absolute inset-0 top-lg rounded-md border-[6px] border-transparent peer-checked:bg-blue-500 pointer-events-none"></div>
+                    <div class="text-center">
+                        <h6 class="text-red-50">Hver anden måned</h6>
+                        <span class="block w-fill h-[2px] bg-red-50 justify-center"></span>
+                        <div>
+                            <span style="font-family: 'Sansita', sans-serif;">198 KR</span>
+                            <!-- <span class="text-red-400 line-through">99 KR</span> -->
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 -left-s top-sm rounded-md border-[6px] border-transparent peer-checked:bg-blue-500 pointer-events-none"></div>
                   </label>
               
-                  <label for="choisenr4" class="relative flex items-center justify-center w-[250px] h-[60px] bg-red-700 rounded-2xl cursor-pointer text-red-50 text-sm font-regular hover:border hover:border-blue-500 transition">
+                  <label for="choisenr4" class="relative flex items-center justify-center w-[250px] h-[60px] py-m bg-red-700 rounded-2xl cursor-pointer text-red-50 text-sm font-regular hover:border hover:border-blue-500 transition">
                     <input type="radio" id="choisenr4" name="choise" class="peer hidden" />
-                    <span>Hver tredje måned</span>
-                    <div class="absolute inset-0 top-lg rounded-md border-[6px] border-transparent peer-checked:bg-blue-500 pointer-events-none"></div>
+                    <div class="text-center">
+                        <h6 class="text-red-50">Hver tredje måned</h6>
+                        <span class="block w-fill h-[2px] bg-red-50 justify-center"></span>
+                        <div>
+                            <span style="font-family: 'Sansita', sans-serif;">297 KR</span>
+                            <!-- <span class="text-red-400 line-through">198 KR</span> -->
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 -left-s top-sm rounded-md border-[6px] border-transparent peer-checked:bg-blue-500 pointer-events-none"></div>
                   </label>
               
-                  <label for="choisenr5" class="relative flex items-center justify-center w-[250px] h-[60px] bg-red-700 rounded-2xl cursor-pointer text-red-50 text-sm font-regular hover:border hover:border-blue-500 transition">
+                  <label for="choisenr5" class="relative flex items-center justify-center w-[250px] h-[60px] py-m bg-red-700 rounded-2xl cursor-pointer text-red-50 text-sm font-regular hover:border hover:border-blue-500 transition">
                     <input type="radio" id="choisenr5" name="choise" class="peer hidden" />
-                    <span>Hvert halve år</span>
-                    <div class="absolute inset-0 top-lg rounded-md border-[6px] border-transparent peer-checked:bg-blue-500 pointer-events-none"></div>
+                     <div class="text-center">
+                        <h6 class="text-red-50">Hvert halve år</h6>
+                        <span class="block w-fill h-[2px] bg-red-50 justify-center"></span>
+                        <div>
+                            <span style="font-family: 'Sansita', sans-serif;">594 KR</span>
+                            <!-- <span class="text-red-400 line-through">99 KR</span> -->
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 -left-s top-sm rounded-md border-[6px] border-transparent peer-checked:bg-blue-500 pointer-events-none"></div>
                   </label>
                 </div>
               </section>
               
         </form>
-        <section class="flex flex-col items-end justify-between md:flex-row gap-xs mt-m">
+        <section class="flex flex-col items-center md:items-end justify-between md:flex-row gap-xs mt-m">
            <Button variant="secondary" size="medium" href="/abonner">
                 Tilbage
             </Button>
