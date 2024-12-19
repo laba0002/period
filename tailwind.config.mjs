@@ -150,17 +150,12 @@ export default {
         "border_radius-3xl": "100px",
       },
       boxShadow: {
-        dropred: "5px 6px 7px 0px rgba(231, 35, 45, 0.8)",
-        innerred: "inset 0 2px 4px rgba(231, 35, 45, 0.8)",
-        dropblue: "5px 6px 7px 0px rgba(0, 0, 255, 0.5)",
-        innerblue: "inset 0 2px 4px rgba(0, 0, 255, 0.5)",
+        dropred: "5px 6px 7px 0px rgba(231, 35, 45, 0.6)",
+        innerred: "inset 0 2px 4px rgba(231, 35, 45, 0.6)",
+        dropblue: "5px 6px 7px 0px rgba(0, 0, 250, 0.3)",
+        innerblue: "inset 0 2px 4px rgba(0, 0, 250, 0.3)",
       },
     },
   },
-  plugins: [
-    require("@tailwindcss/typography"),
-    require("@tailwindcss/forms"),
-    require("@tailwindcss/aspect-ratio"),
-    require("@tailwindcss/container-queries"),
-  ],
+  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms"), require("@tailwindcss/aspect-ratio"), require("@tailwindcss/container-queries")],
 };
