@@ -99,8 +99,8 @@ export default {
       // largeMobile: ["2.986rem", { lineHeight: "4rem" }],
       // xlargeMobile: ["6rem", { lineHeight: "6rem" }],
 
-      konsultativMobile: ["0.75rem", { lineHeight: "1rem" }],
-      bodyMobile: ["0.85rem", { lineHeight: "1.25rem" }],
+      konsultativMobile: ["0.8rem", { lineHeight: "1rem" }],
+      bodyMobile: ["1rem", { lineHeight: "1.5rem" }],
       baseMobile: ["1.2rem", { lineHeight: "1.8rem" }],
       smallMobile: ["1.44rem", { lineHeight: "2rem" }],
       smallMediumMobile: ["1.728rem", { lineHeight: "2.5rem" }],
