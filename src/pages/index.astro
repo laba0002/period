@@ -385,15 +385,71 @@ details[open] summary::before {
 
 </style>
 
-<script>
+<script>  
+	import { inView } from "motion";
+
+const inviewelement = document.querySelector(".titel");
+inView(
+	inviewelement , () => {
+		inviewelement.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+	})
+
+	const inviewelement1 = document.querySelector(".point1");
+inView(
+	inviewelement1 , () => {
+		inviewelement1.classList.add("animate__animated","animate__fadeInLeft", "animate__delay-2s")
+	})
+	
+	const inviewelement2 = document.querySelector(".point2");
+inView(
+	inviewelement2 , () => {
+		inviewelement2.classList.add("animate__animated","animate__fadeInLeft", "animate__delay-3s")
+	})
+
+	const inviewelement3 = document.querySelector(".point3");
+inView(
+	inviewelement3 , () => {
+		inviewelement3.classList.add("animate__animated","animate__fadeInLeft", "animate__delay-4s")
+	})
+
+	const inviewelement4 = document.querySelector(".knap1");
+inView(
+	inviewelement4 , () => {
+		inviewelement4.classList.add("animate__animated","animate__bounceInUp", "animate__delay-5s")
+	})
+
+	const inviewelement5 = document.querySelector(".section1");
+inView(
+	inviewelement5 , () => {
+		inviewelement5.classList.add("animate__animated","animate__fadeInUp", "animate__delay-1s")
+	})
+
+	const inviewelement6 = document.querySelector(".section2");
+inView(
+	inviewelement6 , () => {
+		inviewelement6.classList.add("animate__animated","animate__fadeInUp", "animate__delay-1s")
+	})
+
+	const inviewelement7 = document.querySelector(".section3");
+inView(
+	inviewelement7 , () => {
+		inviewelement7.classList.add("animate__animated","animate__fadeInUp", "animate__delay-1s")
+	})
+
+	const inviewelement8 = document.querySelector(".section4");
+inView(
+	inviewelement8 , () => {
+		inviewelement8.classList.add("animate__animated","animate__fadeInUp", "animate__delay-1s")
+	})
+
 	setTimeout(function() {
 	  document.getElementById("popup").style.display = "block";
-	}, 5000);
+	}, 7000);
   
 	document.getElementById("close-btn").addEventListener("click", function() {
 	  document.getElementById("popup").style.display = "none";
 	});
-  
+
   </script>
 
 <!--  
