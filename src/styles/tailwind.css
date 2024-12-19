@@ -43,7 +43,7 @@
     @apply text-baseMobile md:text-baseDesk text-red-700;
   }
   p {
-    @apply text-bodyMobile md:text-bodyDesk;
+    @apply text-bodyMobile md:text-bodyDesk  text-red-950;
     line-height: 22.7px;
   }
 }

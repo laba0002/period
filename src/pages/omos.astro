@@ -23,27 +23,33 @@ import ida from "../assets/images/ida.png";
     <section class="md:py-lg py-xs grid grid-cols-1 md:grid-cols-2  mx-xs md:mx-2xl">
       <div class="flex flex-col items-center md:items-start">
         <h1 class="hidden md:flex text-red-700">Bag om<br>Period.</h1>
-        <h1 class=" md:hidden text-red-700">Bag om Period.</h1>
+        <h1 class=" lg:hidden text-red-700">Bag om Period.</h1>
         <Image src={cirkelFotos} class="block md:hidden" alt="tre portræt billeder"></Image>
-        <h3 class="md:max-w-xl max-w-full">
+        <h3 class="md:max-w-xl max-w-full titel">
           En idé, og masser af hårdt arbejde - sådan blev vores eksamensprojekt til virkelighed!
         </h3>
       </div>
-      <Image class="md:block hidden" src={cirkelFotos} alt="tre portræt billeder"></Image>
+    <div class="hidden lg:block">
+        <div class="flex flex-row gap-m md:gap-none justify-between   mx-auto pb-sm">
+          <Image class="shadow-dropblue h-[110px] w-[110px] md:h-[190px] md:w-[190px] point1 rounded-full object-cover md:transition-all md:hover:scale-105" src={selma} alt="Selma"></Image>
+          <Image class="shadow-dropblue h-[110px] w-[110px] md:h-[190px] md:w-[190px] point2 mt-3xl  rounded-full object-cover md:transition-all md:hover:scale-105" src={ida} alt="Ida"></Image>
+          <Image class=" shadow-dropblue h-[110px] w-[110px] md:h-[190px] md:w-[190px] point3 rounded-full object-cover md:transition-all md:hover:scale-105" src={laura} alt="Laura"></Image>
+        </div>
+    </div>
     </section>
 
     <section class="py-xl grid grid-cols-1 lg:grid-cols-3  mx-xs md:mx-2xl justify-items-center">
-      <Image class="p-xs" src={omOsPhoto1} alt="Et billede af to piger der smiler og spiser pizza"></Image>
+      <Image class="p-xs lg:billede1" src={omOsPhoto1} alt="Et billede af to piger der smiler og spiser pizza"></Image>
       <div class="flex flex-col gap-xs">
         <h2 class="">Fra idé til abonnement</h2>
         <p>Det hele startede med en simpel tanke: Hvordan gør vi livet lettere for menstruerende personer? Vi kendte frustrationen ved pludselig at mangle produkter og tænkte: Hvorfor ikke levere alt det nødvendige direkte til døren - hver måned?</p>
         <p>I dag er idéen blevet til virkelighed. Vores kasser bliver bestilt af mennesker over hele Danmark, og vi elsker at gøre hverdagen lidt nemmere for alle, der har brug for en hjælpende hånd.</p>
       </div>
-      <Image class="p-xs" src={omOsPhoto2} alt="Et billede af to piger der smiler"></Image>
+      <Image class="p-xs lg:billede2" src={omOsPhoto2} alt="Et billede af to piger der smiler"></Image>
     </section>
   </article>
 
-  <section class="py-xl hidden lg:block">
+  <section class="py-xl hidden lg:block ">
     <div class="overflow-clip">
       <section id="horisontalscrollsection" class="h-[100vw] p-none">
         <ul id="horisontalliste" class="list-none pl-0 flex sticky top-[4vh]">
@@ -57,7 +63,7 @@ import ida from "../assets/images/ida.png";
     </div>
    </section>
 
-  <section class="py-xl hidden md:block lg:hidden">
+  <section class="py-xl hidden md:block lg:hidden ">
     <div class="overflow-clip">
       <section id="horisontalscrollsectiontablet" class="h-[100vw] p-none">
         <ul id="horisontallistetablet" class="list-none pl-0 flex sticky top-[4vh]">
@@ -87,12 +93,12 @@ import ida from "../assets/images/ida.png";
 
   <h2 class="text-center pt-xl pb-sm md:pb-none">Hold dig opdateret!</h2>
   <section class="grid grid-cols-1 md:grid-cols-2 items-center pb-xl"> 
-    <Image class="order-last md:-order-1" src={haandMedBind} alt="Et billede af et par hænder der holder et menstruations bind"></Image>
+    <Image class="order-last md:-order-1 section1" src={haandMedBind} alt="Et billede af et par hænder der holder et menstruations bind"></Image>
     <section class="px-sm md:px-[0px] pb-ml md:pb-none justify-self-center md:justify-self-auto">
-      <div class="max-w-lg h-min bg-blue-100 rounded-border_radius-md flex flex-col p-sm shadow-dropblue">
+      <div class="max-w-lg h-min bg-blue-100 rounded-border_radius-md flex flex-col p-sm shadow-dropblue section2">
         <h6 class="text-red-950">Vil du være med i familien?</h6>
         <h4 class="pt-xxs text-red-950">Tilmeld dig vores nyhedsbrev, og bliv opdateret på Period.</h4>
-        <form class="pt-m">
+        <form class="pt-m ">
           <input class="bg-blue-400 p-xs rounded-border_radius-md w-full border-none hover:bg-blue-400 enabled:border-red-400 text-blue-950 placeholder:text-blue-950" type="email" placeholder="Din e-mail" required="" />
         </form>
         <div class="place-self-end pt-xxs">
@@ -161,25 +167,32 @@ import ida from "../assets/images/ida.png";
 		const inviewelement2 = document.querySelector(".point2");
 	inView(
 		inviewelement2 , () => {
-			inviewelement2.classList.add("animate__animated","animate__fadeInUp", "animate__delay-1s")
+			inviewelement2.classList.add("animate__animated","animate__fadeInUp", "animate__delay-2s")
 		})
 
 		const inviewelement3 = document.querySelector(".point3");
 	inView(
 		inviewelement3 , () => {
-			inviewelement3.classList.add("animate__animated","animate__fadeInUp", "animate__delay-1s")
+			inviewelement3.classList.add("animate__animated","animate__fadeInUp", "animate__delay-2s")
 		})
 
-		const inviewelement4 = document.querySelector(".knap1");
+		const inviewelement4 = document.querySelector(".billede1");
 	inView(
 		inviewelement4 , () => {
-			inviewelement4.classList.add("animate__animated","animate__bounceInUp", "animate__delay-1s")
+			inviewelement4.classList.add("animate__animated","animate__fadeInLeft", "animate__delay-2s")
 		})
+
+    const inviewelement9 = document.querySelector(".billede2");
+	inView(
+		inviewelement9 , () => {
+			inviewelement9.classList.add("animate__animated","animate__fadeInRight", "animate__delay-2s")
+		})
+
 
 		const inviewelement5 = document.querySelector(".section1");
 	inView(
 		inviewelement5 , () => {
-			inviewelement5.classList.add("animate__animated","animate__fadeInUp", "animate__delay-1s")
+			inviewelement5.classList.add("animate__animated","animate__fadeInLeft", "animate__delay-1s")
 		})
 
 		const inviewelement6 = document.querySelector(".section2");
