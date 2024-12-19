@@ -67,35 +67,37 @@ import Button from '../components/Button.astro';
 
 <section>
     <div class="rotate-180 overflow-clip w-auto"><Wave></Wave></div>
-    <section class="md:grid md:grid-cols-2 bg-red-50/60 ">
-      <div class="grid grid-cols-2 gap-xs mb-xs mx-ml">
-        <div class="img-box col-span-2">
-          <Image class="image1" src={info1} alt="info" />
-          <Image class="image2" src={info1hover} alt="info hover" />
-        </div>
-        <div class="img-box">
-          <Image class="image1" src={info2} alt="info" />
-          <Image class="image2" src={info2hover} alt="info hover" />
-        </div>
-        <div class="img-box">
-          <Image class="image1" src={info3} alt="info" />
-          <Image class="image2" src={info3hover} alt="info hover" />
-        </div>
-      </div>
-      <div class="grid grid-cols-2 gap-xs mx-ml">
-        <div class="img-box col-span-2 md:order-last">
-          <Image class="image1" src={info4} alt="info" />
-          <Image class="image2" src={info4hover} alt="info hover" />
-        </div>
-        <div class="img-box">
-          <Image class="image1" src={info5} alt="info" />
-          <Image class="image2" src={info5hover} alt="info hover" />
-        </div>
-        <div class="img-box">
-          <Image class="image1" src={info6} alt="info" />
-          <Image class="image2" src={info6hover} alt="info hover" />
-        </div>
-      </div>
+    <section class="  bg-red-50/60 ">
+   <div class="mx-ml md:grid md:grid-cols-2 gap-sm ">
+          <div class="grid grid-cols-2 gap-xs pb-xs min-h-full  ">
+            <div class="img-box col-span-2">
+              <Image class="image1" src={info1} alt="info" />
+              <Image class="image2" src={info1hover} alt="info hover" />
+            </div>
+            <div class="img-box">
+              <Image class="image1" src={info2} alt="info" />
+              <Image class="image2" src={info2hover} alt="info hover" />
+            </div>
+            <div class="img-box">
+              <Image class="image1" src={info3} alt="info" />
+              <Image class="image2" src={info3hover} alt="info hover" />
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-xs pb-xs min-h-full ">
+            <div class="img-box col-span-2 md:order-last">
+              <Image class="image1 " src={info4} alt="info" />
+              <Image class="image2" src={info4hover} alt="info hover" />
+            </div>
+            <div class="img-box">
+              <Image class="image1" src={info5} alt="info" />
+              <Image class="image2" src={info5hover} alt="info hover" />
+            </div>
+            <div class="img-box">
+              <Image class="image1" src={info6} alt="info" />
+              <Image class="image2" src={info6hover} alt="info hover" />
+            </div>
+          </div>
+   </div>
     </section>
     <div class="overflow-clip w-auto"><Wave></Wave></div>
   </section>
