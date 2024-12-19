@@ -246,6 +246,17 @@ details[open] summary::before {
   transform: translateY(-50%) rotate(180deg); /* Rotate arrow when open */
 }
 
+.accordion-button::after {
+  background-image: initial;
+  width: 0;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: initial;
+  width: 0;
+}
+
+
 .custom-scroll {
   width: 100%;
   overflow-x: auto;;
