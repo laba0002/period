@@ -10,7 +10,7 @@ import Wave from "../components/Wave.astro";
 ---
 <MainLayout title="Period">
 
-	<section class="grid grid-cols-1 md:grid-cols-2 max-w-xl md:max-w-2xl lg:max-w-6xl mx-xs md:mx-auto pb-2xl pt-m md:pt-none">
+	<section class="grid grid-cols-1 md:grid-cols-2 mx-xs md:mx-2xl pb-2xl pt-m md:pt-none">
 		<div class="flex flex-col justify-evenly ">
 			<h1 class="text-red-500 text-xlargeMobile">Period pakken</h1>
 			<h2 class="text-red-800 pb-m">gør din mestruation <span class="font-[800]">meget</span> lettere</h2>
@@ -151,8 +151,9 @@ import Wave from "../components/Wave.astro";
 	</section>
 
 	<section class="flex flex-row justify-center">
-		<div class="flex flex-col  w-9xl md:w-[500px]">
+		<div class="flex flex-col mx-sm w-auto md:w-[500px]">
 			<h2 class="text-red-800 mb-xs md:mb-sm ">Q&A</h2>
+			
 	  <div class=" flex flex-col gap-xs md:gap-sm ">
 	    <details class="mb-xs">
 	      <summary class="text-red-700 border-b border-red-900 border-b-4  accordion-summary pb-xs">Hvordan fungerer pakken?</summary>
@@ -204,7 +205,7 @@ import Wave from "../components/Wave.astro";
 				</p>
 				</details>
 		</div>
-
+	</div>
 	</section>
 	
 </MainLayout>
@@ -238,6 +239,17 @@ details summary::before {
 details[open] summary::before {
   transform: translateY(-50%) rotate(180deg); /* Rotate arrow when open */
 }
+
+.accordion-button::after {
+  background-image: initial;
+  width: 0;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: initial;
+  width: 0;
+}
+
 
 .custom-scroll {
   width: 100%;
