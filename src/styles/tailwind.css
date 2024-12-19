@@ -27,16 +27,16 @@
     @apply text-largeMobile md:text-largeDesk text-red-800 md:pb-xs;
   }
   h2 {
-    @apply text-mediumLargeMobile font-bold md:text-mediumLargeDesk text-red-700;
+    @apply text-mediumLargeMobile font-bold md:text-mediumLargeDesk text-red-700 md:pb-xxs;
   }
   h3 {
-    @apply text-mediumMobile font-extrabold  md:text-mediumDesk text-red-800;
+    @apply text-mediumMobile font-extrabold  md:text-mediumDesk text-red-800 md:pb-xxs;
   }
   h4 {
-    @apply text-smallMediumMobile md:text-smallMediumDesk text-blue-900 pt-sm pb-xxs;
+    @apply text-smallMediumMobile md:text-smallMediumDesk text-blue-900 md:pb-xxs;
   }
   h5 {
-    @apply text-smallMobile md:text-smallDesk text-blue-950;
+    @apply text-smallMobile md:text-smallDesk text-blue-950 md:pb-xxs;
   }
   h6,
   summary {
