@@ -13,7 +13,7 @@ import Wave from "../components/Wave.astro";
 ---
 <MainLayout title="Period">
 
-	<section class="grid grid-cols-1 lg:grid-cols-2 lg:auto-cols-fr mx-xs md:mx-2xl pb-4xl md:pt-xxs pt-none">
+	<section class="grid grid-cols-1 lg:grid-cols-2 lg:auto-cols-fr mx-xs md:mx-2xl mb-4xl md:pt-xxs pt-none">
 		<div class="flex flex-col md:pt-lg">
 			<h1 class="text-red-500 text-xlargeMobile md:text-xlargeDesk">Period pakken</h1>
 			<h2 class="text-red-800 max-w-xl">gør din mestruation <span class="font-[800]">meget</span> lettere</h2>
@@ -56,8 +56,8 @@ import Wave from "../components/Wave.astro";
 
 	<Steps></Steps>
 
-	<section>
-		<div class="rotate-180 w-auto overflow-clip"><Wave></Wave></div>
+	<section class="mt-2xl md:mt-4xl">
+		<div class=" rotate-180 w-auto overflow-clip"><Wave></Wave></div>
 
 		<div class=" bg-red-50/60 w-full overflow-x-auto scroll-snap-x ">
 			<div class="flex space-x-4 gap-sm custom-scroll">
@@ -153,8 +153,8 @@ import Wave from "../components/Wave.astro";
 		
 	</section>
 
-	<section class="flex flex-row justify-center">
-		<div class="flex flex-col mx-sm w-auto md:w-[500px]">
+	<section class="mt-2xl  flex flex-row justify-center">
+		<div class="flex flex-col mx-sm w-auto md:w-[600px]">
 			<h2 class="text-red-800 mb-xs md:mb-sm ">Q&A</h2>
 			
 	  <div class=" flex flex-col gap-xs md:gap-sm ">
@@ -211,8 +211,8 @@ import Wave from "../components/Wave.astro";
 	</div>
 	</section>
 
-	<section class="mt-lg mb-lg mx-m md:mx-4xl grid lg:grid-cols-2 items-center">
-		<div class="flex flex-row gap-s mx-xxs md:gap-none justify-around md:justify-between lg:grid lg:grid-rows-3 lg:grid-cols-2  md:mx-auto pb-xs">
+	<section class="mt-2xl  mb-lg mx-m md:mx-4xl grid lg:grid-cols-2 items-center">
+		<div class="flex flex-row gap-s mx-xxs md:gap-none justify-around md:justify-between lg:grid lg:grid-rows-3 lg:grid-cols-2  md:mx-auto pb-sm">
 			<Image class="h-[110px] w-[110px] md:h-[190px] md:w-[190px] lg:col-start-1 md:col-end-2 lg:row-start-2 lg:row-end-3 rounded-full object-cover" src={selma} alt="Selma"></Image>
 			<Image class="h-[110px] w-[110px] md:h-[190px] md:w-[190px] lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2  rounded-full object-cover" src={ida} alt="Ida"></Image>
 			<Image class="h-[110px] w-[110px] md:h-[190px] md:w-[190px] lg:col-start-2 lg:col-end-3 lg:row-start-3 lg:row-end-4 rounded-full object-cover" src={laura} alt="Laura"></Image>
