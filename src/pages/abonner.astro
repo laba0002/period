@@ -10,7 +10,15 @@ import AbonnerSteps from "../components/AbonnerSteps.astro";
 
 <AbonnerLayout title="Abonnér på Period.">
     <article class="px-sm flex flex-col mx-xs md:mx-2xl">
-        <AbonnerSteps></AbonnerSteps>
+        <div class="flex flex-col">
+            <AbonnerSteps></AbonnerSteps>
+           <div class=" flex flex-row items-center">
+                <span class="w-full h-[5px] bg-blue-950"></span>
+                <span class="w-full h-[2px] bg-blue-950"></span>
+                <span class="w-full h-[2px] bg-blue-950"></span>
+           </div>
+            
+        </div>
         <h1 class="text-center mt-sm mt:mb-m lg:mt-lg">Tilpas dit eget abonnement</h1>
         
         <form class="flex flex-col gap-sm" id="stepOneForm">
