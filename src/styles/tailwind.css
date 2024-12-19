@@ -24,7 +24,7 @@
   }
 
   h1 {
-    @apply text-largeMobile md:text-largeDesk text-red-800 md:pb-xs;
+    @apply text-largeMobile md:text-largeDesk text-red-800 md:pb-xxs;
   }
   h2 {
     @apply text-mediumLargeMobile font-bold md:text-mediumLargeDesk text-red-700 md:pb-xxs;
