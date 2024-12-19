@@ -35,7 +35,7 @@ import AbonnerSteps from "../components/AbonnerSteps.astro";
                         <label for="number" class="text-lg text-blue-950">Nr.</label>
                         <input type="text" id="number" name="number" placeholder="Nr." class="w-full p-3 rounded-3xl bg-blue-300 border-none focus:ring-blue-500">
                     </div>
-                    <div class="w-1/2 space-y-4 pt-xxs">
+                    <div class="w-1/2 space-y-4">
                         <label for="postalcode" class="text-lg text-blue-950">Postnr.</label>
                         <input type="text" id="postalcode" name="postalcode" placeholder="Postnr." class="w-full p-3 rounded-3xl bg-blue-300 border-none focus:ring-blue-500">
                     </div>
@@ -46,9 +46,9 @@ import AbonnerSteps from "../components/AbonnerSteps.astro";
                 </div>
             </section>
         
-            <section class="order-1" >
+            <section class="order-1 mt-m" >
                 <h4 class="">Ny bruger</h2>
-                <div class="w-3xl h-[2px] bg-blue-950"></div>
+                <div class="w-full h-[2px] bg-blue-950"></div>
                 <div class="space-y-4 pt-xxs">
                     <label for="username" class="text-lg text-blue-950">Brugernavn</label>
                     <input type="text" id="username" name="username" placeholder="Brugernavn" class="w-full p-3 rounded-3xl bg-blue-300 border-none focus:ring-blue-500">
@@ -63,12 +63,14 @@ import AbonnerSteps from "../components/AbonnerSteps.astro";
                 </div>
             </section>
         </form>
-        
+    <section class="flex flex-col items-center justify-between md:flex-row gap-xs mt-m">
+        <Button variant="secondary" size="medium" href="/steptwo">
+            Tilbage
+        </Button>
+        <Button type="submit" variant="primary" size="large" href="/laststep">
+            Abonnér
+        </Button>
+    </section>
     </article>
-    <Button variant="secondary" size="medium" href="/steptwo">
-        <a href="/steptwo">Tilbage</a>
-    </Button>
-    <Button type="submit" variant="primary" size="large" href="/stepthree">
-        <a href="/laststep">Abonnér</a>
-    </Button>
+   
 </AbonnerLayout>
