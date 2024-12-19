@@ -25,15 +25,15 @@ import Button from '../components/Button.astro';
 <MainLayout title="Om pakken">
 <section>
     <div class="md:grid md:grid-cols-2 ">
-          <div class="mb-m flex flex-col gap-xxs md:gap-s mx-xs md:mx-2xl md:mt-2xl">
-                <h2 class="text-red-800">Nysgerrig på din <br> nye bedste ven?</h2>
-                <h4 class="text-red-700">Få mere information <br> om indholdet i pakken</h4>
+          <div class="mb-m flex flex-col gap-xxs md:gap-s mx-xs md:mx-2xl md:mt-2xl ">
+                <h2 class="text-red-800 ">Nysgerrig på din <br> nye bedste ven?</h2>
+                <h4 class="text-red-700 titel">Få mere information <br> om indholdet i pakken</h4>
           </div>
           <Image class="hidden w-11/12 md:block  ml-auto" src={mockup} alt="mockup af pakke"/>
     </div>
 
     <div class="grid grid-rows-3 lg:grid-rows-4 gap-ml lg:grid-cols-3 lg:max-h-full   mx-xs  md:mx-2xl  lg:mt-[-20%]">
-        <div class="flex flex-row items-center lg:flex-col gap-sm lg:row-end-3 lg:row-start-1">
+        <div class="flex flex-row items-center lg:flex-col gap-sm lg:row-end-3 lg:row-start-1 point1">
             <Image class="h-[150px] w-auto md:w-3/4 md:h-auto " src={bind} alt="bind"/>
             <div>
                 <h4 class="text-blue-900">Pålidelige bind</h4>
@@ -41,7 +41,7 @@ import Button from '../components/Button.astro';
             </div>
         </div>
 
-        <div class="flex flex-row items-center lg:flex-col gap-sm  lg:row-start-2 lg:row-end-4 lg:col-start-2 lg:col-end-3 ">
+        <div class="flex flex-row items-center lg:flex-col gap-sm  lg:row-start-2 lg:row-end-4 lg:col-start-2 lg:col-end-3 point2">
             <Image class="h-[150px] order-last lg:order-first w-auto md:w-3/4 md:h-auto" src={tampon} alt="tampon"/>
             <div class="">
                 <h4 class="text-blue-900">Komfortable tamponer</h4>
@@ -49,7 +49,7 @@ import Button from '../components/Button.astro';
             </div>
         </div>
 
-        <div class="flex flex-row items-center lg:flex-col gap-sm lg:row-end-5 lg:row-start-3  lg:col-start-3 lg:col-end-4 ">
+        <div class="flex flex-row items-center lg:flex-col gap-sm lg:row-end-5 lg:row-start-3  lg:col-start-3 lg:col-end-4 point3">
             <Image class="h-[150px] w-auto md:w-3/4 md:h-auto " src={selfcare} alt="selfcare"/>
             <div class="">
                 <h4 class="text-blue-900">Self-care goodies</h4>
@@ -62,11 +62,13 @@ import Button from '../components/Button.astro';
 <div class=" ml-s lg:pl-s mt-sm md:ml-lg lg:mt-[-10%] flex flex-col md:row-start-3 md:row-end-4 md:col-start-1 md:col-end-3 mb-xl md:mb-4xl ">
     <h5 class="text-blue-900 pb-xs md:pb-xs pl-xxs">Lyder det som noget for dig?</h5>
 </section>
-<div class="hidden md:flex"><Button variant="primary" size="large" href="/abonner">Få abonnement</Button></div>
-<div class="md:hidden flex"><Button variant="primary" size="medium" href="/abonner">Abonnér her</Button></div>
+<div class="knap1">
+    <div class="hidden md:flex"><Button variant="primary" size="large" href="/abonner">Få abonnement</Button></div>
+    <div class="md:hidden flex"><Button variant="primary" size="medium" href="/abonner">Abonnér her</Button></div>
+</div>
 </div>
 
-<section>
+<section class="section1">
     <div class="rotate-180 overflow-clip w-auto"><Wave></Wave></div>
     <section class="  bg-red-50/60 ">
         <div class=" max-w-xl md:max-w-4xl lg:max-w-6xl md:mx-auto mx-sm md:grid lg:grid-cols-2 gap-sm ">
@@ -104,18 +106,18 @@ import Button from '../components/Button.astro';
     <div class="overflow-clip w-auto"><Wave></Wave></div>
   </section>
   
-  <div class="mt-lg"><Steps></Steps></div>
+  <div class="mt-lg section2"><Steps></Steps></div>
   
-  <section class="flex flex-col gap-ml items-center mt-ml mb-xl">
+  <section class="flex flex-col gap-ml items-center mt-ml mb-xl ">
     <h3 class="text-red-800 text-center">Få en menstruationspakke,<br />som tager sig af dig</h3>
-    <div class="text-red-950 text-center flex flex-col gap-s">
+    <div class="text-red-950 text-center flex flex-col gap-s section3">
       <p>Din cyklus, din komfort.</p>
       <p>
         Med et abonnement hos os, er der ingen stress, kun self-care.<br />
         Tilmeld dig Period. abonnementet i dag, og mærk forskellen!
       </p>
     </div>
-    <Button variant="primary" size="large" href="/abonner">Abonnér</Button>
+    <div class="knap2"><Button variant="primary" size="large" href="/abonner">Abonnér</Button></div>
   </section>
   </MainLayout>
   
@@ -153,4 +155,64 @@ import Button from '../components/Button.astro';
     opacity: 1;
   }
   </style>
+
+   
+<script>
+	import { inView } from "motion";
+
+	const inviewelement = document.querySelector(".titel");
+	inView(
+		inviewelement , () => {
+			inviewelement.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+		})
+
+		const inviewelement1 = document.querySelector(".point1");
+	inView(
+		inviewelement1 , () => {
+			inviewelement1.classList.add("animate__animated","animate__fadeInUp", "animate__delay-2s")
+		})
+		
+		const inviewelement2 = document.querySelector(".point2");
+	inView(
+		inviewelement2 , () => {
+			inviewelement2.classList.add("animate__animated","animate__fadeInUp", "animate__delay-1s")
+		})
+
+		const inviewelement3 = document.querySelector(".point3");
+	inView(
+		inviewelement3 , () => {
+			inviewelement3.classList.add("animate__animated","animate__fadeInUp", "animate__delay-1s")
+		})
+
+		const inviewelement4 = document.querySelector(".knap1");
+	inView(
+		inviewelement4 , () => {
+			inviewelement4.classList.add("animate__animated","animate__bounceInUp", "animate__delay-1s")
+		})
+
+		const inviewelement5 = document.querySelector(".section1");
+	inView(
+		inviewelement5 , () => {
+			inviewelement5.classList.add("animate__animated","animate__fadeInUp", "animate__delay-1s")
+		})
+
+		const inviewelement6 = document.querySelector(".section2");
+	inView(
+		inviewelement6 , () => {
+			inviewelement6.classList.add("animate__animated","animate__fadeInUp", "animate__delay-1s")
+		})
+	
+		const inviewelement7 = document.querySelector(".section3");
+	inView(
+		inviewelement7 , () => {
+			inviewelement7.classList.add("animate__animated","animate__fadeInUp", "animate__delay-1s")
+		})
+
+		const inviewelement8 = document.querySelector(".knap2");
+	inView(
+		inviewelement8 , () => {
+			inviewelement8.classList.add("animate__animated","animate__bounceInUp", "animate__delay-2s")
+		})
+
+</script>
   
