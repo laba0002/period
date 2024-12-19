@@ -8,6 +8,17 @@ import tamponer from "../assets/images/tamponer.webp";
 import AbonnerSteps from "../components/AbonnerSteps.astro";
 ---
 
+<script client:load>
+    function toggleInfo() {
+      const infoBox = document.getElementById("info-box");
+      if (infoBox.style.display === "none" || infoBox.style.display === "") {
+        infoBox.style.display = "block";
+      } else {
+        infoBox.style.display = "none";
+      }
+    }
+  </script>
+
 <AbonnerLayout title="Abonnér på Period.">
     <article class="px-sm flex flex-col mx-xs md:mx-2xl">
         <div class="flex flex-col">
