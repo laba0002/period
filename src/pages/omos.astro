@@ -25,7 +25,7 @@ import ida from "../assets/images/ida.png";
         <h1 class="hidden md:flex text-red-700">Bag om<br>Period.</h1>
         <h1 class=" lg:hidden text-red-700">Bag om Period.</h1>
         <Image src={cirkelFotos} class="block md:hidden" alt="tre portræt billeder"></Image>
-        <h3 class="md:max-w-xl max-w-full titel">
+        <h3 class="md:max-w-xl max-w-full titel text-center">
           En idé, og masser af hårdt arbejde - sådan blev vores eksamensprojekt til virkelighed!
         </h3>
       </div>
@@ -37,7 +37,9 @@ import ida from "../assets/images/ida.png";
         </div>
     </div>
     </section>
+  </article>
 
+  <article class="px-sm md:px-[0px]">
     <section class="py-xl grid grid-cols-1 lg:grid-cols-3  mx-xs md:mx-2xl justify-items-center">
       <Image class="p-xs billede1" src={omOsPhoto1} alt="Et billede af to piger der smiler og spiser pizza"></Image>
       <div class="flex flex-col gap-xs">
@@ -201,17 +203,7 @@ import ida from "../assets/images/ida.png";
 			inviewelement6.classList.add("animate__animated","animate__fadeInUp", "animate__delay-1s")
 		})
 	
-		const inviewelement7 = document.querySelector(".section3");
-	inView(
-		inviewelement7 , () => {
-			inviewelement7.classList.add("animate__animated","animate__fadeInUp", "animate__delay-1s")
-		})
 
-		const inviewelement8 = document.querySelector(".knap2");
-	inView(
-		inviewelement8 , () => {
-			inviewelement8.classList.add("animate__animated","animate__bounceInUp", "animate__delay-2s")
-		})
 
 </script>
     
