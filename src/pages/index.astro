@@ -43,7 +43,7 @@ import Wave from "../components/Wave.astro";
 			<div class="flex md:hidden">
 				<img class="pb-sm" src="/gif/box-frame-5.gif" alt="">
 			</div>
-			<div class="flex flex-row place-items-center gap-s max-w-lg lg:point1">
+			<div class="flex flex-row place-items-center gap-s max-w-lg point1">
 			<div>
 				<svg class="p-xxs" width="37" height="52" viewBox="0 0 37 52" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M18.4141 51.5C28.2917 51.5 36.3284 43.4652 36.3284 33.5882C36.3284 23.915 19.5393 1.96062 18.8243 1.03108L18.4141 0.5L18.0039 1.03455C17.2899 1.96235 0.5 23.9183 0.5 33.5899C0.500193 43.4652 8.53678 51.5 18.4141 51.5Z" fill="#981117"/>
@@ -51,7 +51,7 @@ import Wave from "../components/Wave.astro";
 				</div>
 		<h6 class="text-red-950">Skræddersyet menstruationspakke med bind, tamponer og selfcare goodies</h6>
 	</div>
-	<div class="flex flex-row place-items-center gap-s max-w-lg lg:point2">
+	<div class="flex flex-row place-items-center gap-s max-w-lg point2">
 		<div>
 			<svg class="p-xxs" width="37" height="52" viewBox="0 0 37 52" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M18.4141 51.5C28.2917 51.5 36.3284 43.4652 36.3284 33.5882C36.3284 23.915 19.5393 1.96062 18.8243 1.03108L18.4141 0.5L18.0039 1.03455C17.2899 1.96235 0.5 23.9183 0.5 33.5899C0.500193 43.4652 8.53678 51.5 18.4141 51.5Z" fill="#981117"/>
@@ -59,7 +59,7 @@ import Wave from "../components/Wave.astro";
 			</div>
 	<h6 class="text-red-950">Levering lige til din hoveddør - lige til tiden</h6>
 </div>
-<div class="flex flex-row place-items-center gap-s max-w-lg lg:point3">
+<div class="flex flex-row place-items-center gap-s max-w-lg point3">
 	<div>
 		<svg class="p-xxs" width="37" height="52" viewBox="0 0 37 52" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path d="M18.4141 51.5C28.2917 51.5 36.3284 43.4652 36.3284 33.5882C36.3284 23.915 19.5393 1.96062 18.8243 1.03108L18.4141 0.5L18.0039 1.03455C17.2899 1.96235 0.5 23.9183 0.5 33.5899C0.500193 43.4652 8.53678 51.5 18.4141 51.5Z" fill="#981117"/>
@@ -68,7 +68,7 @@ import Wave from "../components/Wave.astro";
 <h6 class="text-red-950">Hyggeligt og praktisk - på dine præmisser!</h6>
 </div>
 </section>
-<div class="lg:knap1">
+<div class="knap1">
 	<div class="hidden md:flex pt-xs"><Button variant="primary" size="large" href="/abonner">Få abonnement</Button></div>
 	<div class="md:hidden flex pt-s"><Button variant="primary" size="medium" href="/abonner">Abonnér</Button></div>
 </div>
@@ -78,9 +78,9 @@ import Wave from "../components/Wave.astro";
 		</div>
 	</section>
 
-<div class="lg:section1">	<Steps></Steps></div>
+<div class="section1">	<Steps></Steps></div>
 
-	<section class="mt-2xl md:mt-4xl lg:section2 block lg:hidden">
+	<section class="mt-2xl md:mt-4xl section2 block lg:hidden">
 		<div class=" rotate-180 w-auto overflow-clip"><Wave></Wave></div>
 
 		<div class=" bg-red-50/60 w-full overflow-x-auto scroll-snap-x ">
@@ -136,7 +136,7 @@ import Wave from "../components/Wave.astro";
 		
 	</section>
 
-	<section class="mt-2xl md:mt-4xl lg:section3  hidden overflow-hidden lg:block slider-wrapper">
+	<section class="mt-2xl md:mt-4xl section3  hidden overflow-hidden lg:block slider-wrapper">
 		<div class=" rotate-180 w-auto overflow-clip"><Wave></Wave></div>
 
 		<div class=" bg-red-50/60 w-full slider">
@@ -194,7 +194,7 @@ import Wave from "../components/Wave.astro";
 		
 	</section>
 
-	<section class="mt-2xl  flex flex-row justify-center lg:section4">
+	<section class="mt-2xl  flex flex-row justify-center section4">
 		<div class="flex flex-col mx-sm w-full md:w-[600px]">
 			<h2 class="text-red-800 mb-xs md:mb-sm ">Q&A</h2>
 			
@@ -252,7 +252,7 @@ import Wave from "../components/Wave.astro";
 	</div>
 	</section>
 
-	<section class="mt-2xl  mb-lg mx-sm md:mx-4xl grid grid-cols-1 lg:grid-cols-2 items-center lg:section5">
+	<section class="mt-2xl  mb-lg mx-sm md:mx-4xl grid grid-cols-1 lg:grid-cols-2 items-center section5">
 		<div class="flex flex-row md:gap-s justify-around md:justify-between lg:grid lg:grid-rows-3 lg:grid-cols-2  md:mx-auto pb-sm">
 			<Image class="shadow-dropblue h-[100px] w-[100px] md:h-[190px] md:w-[190px] lg:col-start-1 md:col-end-2 lg:row-start-2 lg:row-end-3 rounded-full object-cover md:transition-all md:hover:scale-105" src={selma} alt="Selma"></Image>
 			<Image class="shadow-dropblue h-[100px] w-[100px] md:h-[190px] md:w-[190px] lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2  rounded-full object-cover md:transition-all md:hover:scale-105" src={ida} alt="Ida"></Image>

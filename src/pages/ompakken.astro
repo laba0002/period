@@ -27,13 +27,13 @@ import Button from '../components/Button.astro';
     <div class="md:grid md:grid-cols-2 ">
           <div class="mb-m flex flex-col gap-xxs md:gap-s mx-xs md:mx-2xl md:mt-2xl ">
                 <h2 class="text-red-800 ">Nysgerrig på din <br> nye bedste ven?</h2>
-                <h4 class="text-red-700 lg:titel">Få mere information <br> om indholdet i pakken</h4>
+                <h4 class="text-red-700 titel">Få mere information <br> om indholdet i pakken</h4>
           </div>
           <Image class="hidden w-11/12 md:block  ml-auto" src={mockup} alt="mockup af pakke"/>
     </div>
 
     <div class="grid grid-rows-3 lg:grid-rows-4 gap-ml lg:grid-cols-3 lg:max-h-full   mx-xs  md:mx-2xl  lg:mt-[-20%]">
-        <div class="flex flex-row items-center lg:flex-col gap-sm lg:row-end-3 lg:row-start-1 lg:point1">
+        <div class="flex flex-row items-center lg:flex-col gap-sm lg:row-end-3 lg:row-start-1 point1">
             <Image class="h-[150px] w-auto md:w-3/4 md:h-auto " src={bind} alt="bind"/>
             <div>
                 <h4 class="text-blue-900">Pålidelige bind</h4>
@@ -41,7 +41,7 @@ import Button from '../components/Button.astro';
             </div>
         </div>
 
-        <div class="flex flex-row items-center lg:flex-col gap-sm  lg:row-start-2 lg:row-end-4 lg:col-start-2 lg:col-end-3 lg:point2">
+        <div class="flex flex-row items-center lg:flex-col gap-sm  lg:row-start-2 lg:row-end-4 lg:col-start-2 lg:col-end-3 point2">
             <Image class="h-[150px] order-last lg:order-first w-auto md:w-3/4 md:h-auto" src={tampon} alt="tampon"/>
             <div class="">
                 <h4 class="text-blue-900">Komfortable tamponer</h4>
@@ -49,7 +49,7 @@ import Button from '../components/Button.astro';
             </div>
         </div>
 
-        <div class="flex flex-row items-center lg:flex-col gap-sm lg:row-end-5 lg:row-start-3  lg:col-start-3 lg:col-end-4 lg:point3">
+        <div class="flex flex-row items-center lg:flex-col gap-sm lg:row-end-5 lg:row-start-3  lg:col-start-3 lg:col-end-4 point3">
             <Image class="h-[150px] w-auto md:w-3/4 md:h-auto " src={selfcare} alt="selfcare"/>
             <div class="">
                 <h4 class="text-blue-900">Self-care goodies</h4>
@@ -63,13 +63,13 @@ import Button from '../components/Button.astro';
 <div class=" ml-s lg:pl-s mt-sm md:ml-lg lg:mt-[-10%] flex flex-col md:row-start-3 md:row-end-4 md:col-start-1 md:col-end-3 mb-xl md:mb-4xl ">
     <h5 class="text-blue-900 pb-xs md:pb-xs pl-xxs">Lyder det som noget for dig?</h5>
 </section>
-<div class="lg:knap1">
+<div class="knap1">
     <div class="hidden md:flex"><Button variant="primary" size="large" href="/abonner">Få abonnement</Button></div>
     <div class="md:hidden flex"><Button variant="primary" size="medium" href="/abonner">Abonnér her</Button></div>
 </div>
 </div>
 
-<section class="lg:section1">
+<section class="section1">
     <div class="rotate-180 overflow-clip w-auto"><Wave></Wave></div>
     <section class="  bg-red-50/60 ">
         <div class=" max-w-xl md:max-w-4xl lg:max-w-6xl md:mx-auto mx-sm md:grid lg:grid-cols-2 gap-sm ">
@@ -107,7 +107,7 @@ import Button from '../components/Button.astro';
     <div class="overflow-clip w-auto"><Wave></Wave></div>
   </section>
   
-  <div class="mt-lg lg:section2"><Steps></Steps></div>
+  <div class="mt-lg section2"><Steps></Steps></div>
   
   <section class="flex flex-col gap-ml items-center mt-ml mb-xl ">
     <h3 class="text-red-800 text-center">Få en menstruationspakke,<br />som tager sig af dig</h3>
@@ -118,7 +118,7 @@ import Button from '../components/Button.astro';
         Tilmeld dig Period. abonnementet i dag, og mærk forskellen!
       </p>
     </div>
-    <div class="lg:knap2"><Button variant="primary" size="large" href="/abonner">Abonnér</Button></div>
+    <div class="knap2"><Button variant="primary" size="large" href="/abonner">Abonnér</Button></div>
   </section>
   </MainLayout>
   
