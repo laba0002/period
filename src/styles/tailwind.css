@@ -13,7 +13,8 @@
   h3,
   h4,
   h5,
-  a {
+  a,
+  span {
     font-family: "Sansita";
   }
 
@@ -39,7 +40,8 @@
     @apply text-smallMobile md:text-smallDesk text-blue-950 md:pb-xxs;
   }
   h6,
-  summary {
+  summary,
+  span {
     @apply text-baseMobile md:text-baseDesk text-red-700;
   }
   p {
